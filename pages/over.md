@@ -9,16 +9,6 @@ full-width: false
 redirect_plugin:
   redirect_to: ''
   redirect_from: ''
-widgets-group:
-  widget-blocks:
-  - template: widget-info-box
-    title: Info box
-    subtitle: some info
-    content: Some content
-    button:
-      btn-text: a button
-      btn-url: https://photos.google.com/
-  widgets: false
 widgets: true
 widget-blocks:
 - template: widget-code
