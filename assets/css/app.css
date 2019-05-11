@@ -14,6 +14,9 @@ html, body {
   min-height: calc(100vh - 90px - 150px);
   width: 100%; }
 
+html {
+  height: 100%; }
+
 * {
   transition: 0.35s all ease; }
 
@@ -55,7 +58,7 @@ a, a:hover {
   text-decoration: none;
   color: black; }
 
-a:not(.txt-modern):not(.nav-link):not(.btn) {
+a[href*='lennertderyck.be']:not(.txt-modern):not(.nav-link):not(.btn), p a:not(.txt-modern):not(.nav-link):not(.btn) {
   color: var(--accent-4);
   cursor: pointer; }
 
@@ -65,6 +68,12 @@ p {
 
 p:not(.txt-modern) div:not(.txt-modern) p {
   font-weight: 400; }
+
+.maxw-100 {
+  max-width: 100% !important; }
+
+.maxw-fit {
+  max-width: fit-content !important; }
 
 .txt-sm {
   font-size: 0.8rem;
@@ -254,8 +263,8 @@ form input.long {
   background-color: var(--accent-2);
   border-radius: var(--bd-radius);
   min-height: 34px;
-  width: fit-content;
-  padding-left: 10px; }
+  padding-left: 10px;
+  overflow: hidden; }
 
 form select {
   position: relative;

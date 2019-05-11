@@ -11,27 +11,26 @@
     gtag('config', 'UA-131746750-3');
     </script>
 
+    <script src="https://ce.lennertderyck.be/library/elements.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Contactformulier \ Beta &nbsp; &mdash; &nbsp; Lennert De Ryck </title>
+    <title>Contactformulier \ Beta &nbsp; &mdash; &nbsp; Lennert De Ryck</title>
     <link rel="shortcut icon" type='image/x-icon' href="https://lennertderyck.be/wp-content/uploads/2017/05/cropped-logo_personal_new_logo-ldr-origineel-online-2-32x32.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!--<<link rel="stylesheet" href="/assets/code-lib/bootstrap/bootstrap.min.css">-->
+    <script src="/assets/js/cookies.js"></script>
 
     <link rel="stylesheet" href="/assets/css/app.css">
-
-    <script src="https://ce.lennertderyck.be/library/elements.js"></script>
-    <!--<link rel="stylesheet" href="/assets/code-lib/ce/elements.css">-->
 
     <link href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,600,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
 
     <!-- Other recources-->
-    <!--<link href="/plugins/github-widget/github-widget.css" rel="stylesheet" type="text/css"/>-->
     <script src="/assets/js/color-thief.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
     <body>
         <!-- Load Facebook SDK for JavaScript -->
@@ -62,8 +61,8 @@
         </div>
 
         <!-- REAL CONTENT -->
-        <div class="d-none alert alert-warning alert-dismissible fade show" role="alert">
-            <p class="mb-0"><strong>Holy guacamole!</strong> Deze site is nu nog sneller! <br class="d-inline d-md-none"> <a class="btn d-inline ml-4" href="#">Lees meer</a></p>
+        <div class="d-none alert alert-warning alert-dismissible fade show" role="alert" id="testAlert">
+            <p class="mb-0"><strong>Holy guacamole!</strong> Deze site is nu nog sneller! <br class="d-inline d-md-none"> <a class="btn d-inline ml-4" onclick="hideAlert('testAlert')">Lees meer</a></p>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
@@ -104,7 +103,7 @@
       <a href="/" class="txt-color-white">Home</a>
       
         
-          \ <a href="/contact/" class="txt-color-white">Contact</a>
+        <span class="txt-color-white">\</span> <a href="/contact/" class="txt-color-white">Contact</a>
         
       
         
@@ -120,49 +119,52 @@
   </div>
 
 
+
         <div id="site-content">
-            <div class="container">
+            <div class="container" style="max-width: 800px;">
     <div class="row">
         
-            <div class="page-content col-12 col-md-9">
+            <div class="page-content col-12">
                 <form action="https://getform.io/f/d8172339-fed5-487a-84b7-aa99aeb6b0b3" method="POST" enctype="multipart/form-data">
   <div class="row">
-    <div class="col-auto group">
+    <div class="col-5 group">
       <p class="txt-modern">
           Naam
         </p>
-        <input type="text" name="name">
+        <input class="w-100" type="text" name="name">
     </div>
 
-    <div class="col-auto group">
+    <div class="col group">
       <p class="txt-modern">
           Email
         </p>
-        <input class="longer" type="email" name="email">
+        <input class="longer w-100" type="email" name="email">
     </div>
   </div>
 
-  <div class="group">
-    <p class="txt-modern">
-      Organisatie of bedrijf
-    </p>
-    <div class="input-container">
-      <input type="checkbox" name="vehicle"><span class="font-main ml-2 mr-3 txt-modern mb-0">Ja</span>
-      <input class="longer checked-show" type="text" name="company" placeholder="Organisatie of bedrijf">
+  <div class="row">
+    <div class="col-5 group">
+      <p class="txt-modern">
+        Organisatie of bedrijf
+      </p>
+      <div class="input-container maxw-fit">
+        <input type="checkbox" name="vehicle"><span class="font-main ml-2 mr-3 txt-modern mb-0">Ja</span>
+        <input class="longer checked-show" type="text" name="company" placeholder="Organisatie of bedrijf">
+      </div>
     </div>
-  </div>
 
-  <div class="group">
-    <p class="txt-modern">
-      Onderwerp
-    </p>
-    <div class="container-select">
-      <select>
-        <option value="offerte">Offerte</option>
-        <option value="stack">Stack</option>
-        <option value="bestanden">Bestanden</option>
-        <option value="other">Andere</option>
-      </select>
+    <div class="col-auto group">
+        <p class="txt-modern">
+            Onderwerp
+          </p>
+          <div class="container-select">
+            <select>
+              <option value="offerte">Offerte</option>
+              <option value="stack">Stack</option>
+              <option value="bestanden">Bestanden</option>
+              <option value="other">Andere</option>
+            </select>
+          </div>
     </div>
   </div>
 
@@ -170,13 +172,18 @@
     <p class="txt-modern">
       Bericht
     </p>
-    <textarea name="bericht" cols="50" rows="7"></textarea>
+    <textarea name="bericht" class="w-100" cols="50" rows="7"></textarea>
   </div>
 
   <div class="group">
     <p class="txt-modern">Bestanden</p>
     <div id="filedad">
-      <p class="input-container"><small>Sleep je bestanden naar hier of klik om bestanden te kiezen</small></p>
+      <div class="input-container mb-3 pl-3 w-100">
+        <i data-feather="upload-cloud"></i>
+        <p class="mb-0 p-3 d-block">
+          <small><strong>Sleep</strong> je bestanden naar hier of <strong>klik</strong> om bestanden te kiezen</small>
+        </p>
+      </div>
       <input id="dadField" type="file" name="file" multiple onchange="javascript:updateList()">
     </div>
     <p class="txt-modern mt-3 mb-1">
@@ -186,7 +193,7 @@
       Voorlopig heb je nog geen bestanden geupload
     </div>
   </div>
-  <button class="btn" type="submit">Send</button>
+  <button class="btn" type="submit">Versturen</button>
 </form>
 
 <style>
@@ -206,7 +213,7 @@
   }
 
   .input-container input:checked ~ input.checked-show {
-    width: initial;
+    width: 100%;
   }
 
   #filedad{
@@ -231,19 +238,19 @@
   /*******/
 </style>
 <script>
-updateList = function() {
-  var input = document.getElementById('dadField');
-  var output = document.getElementById('fileList');
+  updateList = function() {
+    var input = document.getElementById('dadField');
+    var output = document.getElementById('fileList');
 
-  output.innerHTML = '<ul>';
-  for (var i = 0; i < input.files.length; ++i) {
-    output.innerHTML += '<li>' + input.files.item(i).name + '</li>';
+    output.innerHTML = '<ul>';
+    for (var i = 0; i < input.files.length; ++i) {
+      output.innerHTML += '<li>' + input.files.item(i).name + '</li>';
+    }
+    output.innerHTML += '</ul>';
   }
-  output.innerHTML += '</ul>';
-}
-    
-    //a.t
-    </script>
+      
+      //a.t
+</script>
             </div>
             <div class="page-widgets col-12 col-md-3">                
                 
@@ -262,7 +269,7 @@ updateList = function() {
           <div style="font-family: Oswald; font-weight: 300; letter-spacing: 2px; font-size: 1.2rem; pointer-events: none; user-select: none;">#THINKBEYONDTHEBOX</div>
           <div class="txt-modern" style="font-size: 0.8rem; letter-spacing: 1px;">
             <p class="mb-0" style="line-height: 15px;">
-              © 2019 Lennert De Ryck &nbsp;・&nbsp; Alle <br class="d-inline d-md-none">rechten voorbehouden &nbsp;⎥&nbsp; <a href="/privacy" class="txt-color-main">Privacy</a>
+              © 2019 Lennert De Ryck &nbsp;・&nbsp; Alle <br class="d-inline d-md-none">rechten voorbehouden &nbsp;⎥&nbsp; <a href="/privacy" class="txt-color-main">Privacy</a><span class="txt-color-3"> &nbsp;・&nbsp; </span><a href="/admin" class="txt-color-3" target="_blank" rel="noopener">Admin</a>
             </p>
           </div>
       </div>
