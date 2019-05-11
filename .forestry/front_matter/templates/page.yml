@@ -5,6 +5,7 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
 - type: boolean
   name: titlebar
   label: titlebar
@@ -23,9 +24,13 @@ fields:
 - type: boolean
   name: add-to-menu
   label: add-to-menu
-- type: list
-  name: widget-blocks
-  label: widget-blocks
+- name: widget-blocks
+  type: blocks
+  label: Widget blocks
+  template_types: []
+  config:
+    min: 
+    max: 
 - type: boolean
   name: full-width
   label: full-width
