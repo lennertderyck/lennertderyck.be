@@ -29,7 +29,7 @@ widget-blocks:
   title: ''
   subtitle: ''
   content: ''
-- template: widget-info-box
+- template: widget
   title: Portfolio
   subtitle: Projecten & stijl
   content: "Ontdek wat ik al deed van projecten,  \nontdek mijn stijl."

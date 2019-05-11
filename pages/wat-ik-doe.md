@@ -8,21 +8,21 @@ permalink: wat-ik-doe
 add-to-menu: false
 full-width: false
 widget-blocks:
-- template: widget-info-box
+- template: widget
   title: Portfolio
   subtitle: Projecten en stijl
   content: Ontdek wat ik al deed van projecten, ontdek mijn stijl.
   button-label: Portfolio
   button-url: ''
   show-button: true
-- template: widget-info-box
+- template: widget
   title: Github
   subtitle: Webdev
   content: Ontdek wat ik doe op vlak van webdesign
   button-label: Github
   button-url: https://github.com/lennertderyck
   show-button: true
-- template: widget-info-box
+- template: widget
   title: Mijn uitrusting
   content: "##### Apple MacBook Pro 2016\n\n13-inch  \n265GB SSD\n\n##### Stack cloud-platform\n\nVoor
     het makkelijk delen van bestanden en maken van backups\n\n##### Adobe Creative
