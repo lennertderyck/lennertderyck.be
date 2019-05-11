@@ -49,6 +49,7 @@ widget-blocks:
 - template: widget
   title: Portfolio
   subtitle: "{{ site.baseurl }}/projects"
+  content: "Ontdek wat ik al deed van projecten,  \nontdek mijn stijl."
 
 ---
 ### HALLO!
