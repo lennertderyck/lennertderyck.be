@@ -13,10 +13,13 @@
     --accent-4: #017069;
     --accent-5: #006771;
 }
-
 html, body {
     min-height: calc(100vh - 90px - 150px);
     width: 100%;
+}
+
+html {
+    height: 100%;
 }
 
 * {
