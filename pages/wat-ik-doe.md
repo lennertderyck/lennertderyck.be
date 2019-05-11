@@ -6,6 +6,7 @@ ft-image: ''
 title: Wat ik doe
 permalink: wat-ik-doe
 add-to-menu: false
+full-width: false
 widget-blocks:
 - template: widget-info-box
   title: Portfolio

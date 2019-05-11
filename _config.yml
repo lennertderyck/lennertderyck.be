@@ -43,7 +43,6 @@ collections:
     output: true
   projects:
     output: true
-    layout: page
 
 defaults:
   - scope:

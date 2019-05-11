@@ -1,15 +1,16 @@
 ---
 layout   : default
 ---
-<div class="container">
+<div class="container" {% if page.full-width == true %}style="max-width: 800px;"{% endif %}>
     <div class="row">
         {% if page.widgets == true %}
-            <div class="page-content col-12 col-md-9">
+            <div class="page-content col-12{% if page.full-width == false %} col-md-9{% endif %}">
                 {{ content }}
             </div>
             <div class="page-widgets col-12 col-md-3">                
                 {% for item in page.widget-blocks %}
                     <div class="widget mb-5">
+
                         {% if item.template == "widget-info-box" %}
                             <div class="h-section">
                                 <h4>{{ item.title }}</h4>
@@ -34,13 +35,16 @@ layout   : default
                                 <a href="{{ item.button-url }}" class="btn">{{ item.button-label }}</a>
                             {% endif %}
                         {% endif %}
+
                     </div>
                 {% endfor %}
             </div>
         {% endif %}
         {% if page.widgets == false %}
             <div class="page-content col-12">
-                {{ content }}
+                <div class="container">
+                    {{ content }}
+                </div>
             </div>
         {% endif %}
     </div>

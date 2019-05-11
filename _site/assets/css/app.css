@@ -69,6 +69,12 @@ p {
 p:not(.txt-modern) div:not(.txt-modern) p {
   font-weight: 400; }
 
+.maxw-100 {
+  max-width: 100% !important; }
+
+.maxw-fit {
+  max-width: fit-content !important; }
+
 .txt-sm {
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -257,8 +263,8 @@ form input.long {
   background-color: var(--accent-2);
   border-radius: var(--bd-radius);
   min-height: 34px;
-  width: fit-content;
-  padding-left: 10px; }
+  padding-left: 10px;
+  overflow: hidden; }
 
 form select {
   position: relative;

@@ -5,6 +5,7 @@ title: Over mij
 permalink: "/over"
 add-to-menu: true
 ft-image: ''
+full-width: false
 redirect_plugin:
   redirect_to: ''
   redirect_from: ''

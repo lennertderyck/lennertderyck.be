@@ -121,48 +121,50 @@
 
 
         <div id="site-content">
-            <div class="container">
+            <div class="container" style="max-width: 800px;">
     <div class="row">
         
-            <div class="page-content col-12 col-md-9">
+            <div class="page-content col-12">
                 <form action="https://getform.io/f/d8172339-fed5-487a-84b7-aa99aeb6b0b3" method="POST" enctype="multipart/form-data">
   <div class="row">
-    <div class="col-auto group">
+    <div class="col-5 group">
       <p class="txt-modern">
           Naam
         </p>
-        <input type="text" name="name">
+        <input class="w-100" type="text" name="name">
     </div>
 
-    <div class="col-auto group">
+    <div class="col group">
       <p class="txt-modern">
           Email
         </p>
-        <input class="longer" type="email" name="email">
+        <input class="longer w-100" type="email" name="email">
     </div>
   </div>
 
-  <div class="group">
-    <p class="txt-modern">
-      Organisatie of bedrijf
-    </p>
-    <div class="input-container">
-      <input type="checkbox" name="vehicle"><span class="font-main ml-2 mr-3 txt-modern mb-0">Ja</span>
-      <input class="longer checked-show" type="text" name="company" placeholder="Organisatie of bedrijf">
+  <div class="row">
+    <div class="col-5 group">
+      <p class="txt-modern">
+        Organisatie of bedrijf
+      </p>
+      <div class="input-container maxw-fit">
+        <input type="checkbox" name="vehicle"><span class="font-main ml-2 mr-3 txt-modern mb-0">Ja</span>
+        <input class="longer checked-show" type="text" name="company" placeholder="Organisatie of bedrijf">
+      </div>
     </div>
-  </div>
 
-  <div class="group">
-    <p class="txt-modern">
-      Onderwerp
-    </p>
-    <div class="container-select">
-      <select>
-        <option value="offerte">Offerte</option>
-        <option value="stack">Stack</option>
-        <option value="bestanden">Bestanden</option>
-        <option value="other">Andere</option>
-      </select>
+    <div class="col-auto group">
+        <p class="txt-modern">
+            Onderwerp
+          </p>
+          <div class="container-select">
+            <select>
+              <option value="offerte">Offerte</option>
+              <option value="stack">Stack</option>
+              <option value="bestanden">Bestanden</option>
+              <option value="other">Andere</option>
+            </select>
+          </div>
     </div>
   </div>
 
@@ -170,13 +172,13 @@
     <p class="txt-modern">
       Bericht
     </p>
-    <textarea name="bericht" cols="50" rows="7"></textarea>
+    <textarea name="bericht" class="w-100" cols="50" rows="7"></textarea>
   </div>
 
   <div class="group">
     <p class="txt-modern">Bestanden</p>
     <div id="filedad">
-      <div class="input-container mb-3 pl-3">
+      <div class="input-container mb-3 pl-3 w-100">
         <i data-feather="upload-cloud"></i>
         <p class="mb-0 p-3 d-block">
           <small><strong>Sleep</strong> je bestanden naar hier of <strong>klik</strong> om bestanden te kiezen</small>
@@ -211,7 +213,7 @@
   }
 
   .input-container input:checked ~ input.checked-show {
-    width: initial;
+    width: 100%;
   }
 
   #filedad{
@@ -283,9 +285,5 @@
     <script>
         feather.replace()
     </script>
-
-        <div class="sub" id="main">
-                <ul id="list"></ul>
-              </div>
     </body>
 </html>

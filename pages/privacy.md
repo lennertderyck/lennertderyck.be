@@ -6,6 +6,7 @@ ft-image: ''
 title: Privacy
 permalink: privacy
 add-to-menu: false
+full-width: false
 widget-blocks:
 - template: widget-info-box
   show-button: false
