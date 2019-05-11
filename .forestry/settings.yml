@@ -11,17 +11,9 @@ sections:
   match: "**/*"
   templates:
   - page
-- type: jekyll-pages
-  label: Pages
-  create: all
 - type: directory
   path: _projects
   label: Projects
-  create: all
-  match: "**/*"
-- type: directory
-  path: _repos
-  label: Repos
   create: all
   match: "**/*"
 upload_dir: uploads
