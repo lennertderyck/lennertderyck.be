@@ -33,6 +33,7 @@ widget-blocks:
   button-label: ''
   button-url: ''
   show-button: false
+- template: widget
 redirect_plugin:
   redirect_to: ''
   redirect_from: ''
