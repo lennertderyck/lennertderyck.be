@@ -6,24 +6,25 @@ fields:
   name: layout
   label: layout
   hidden: true
-- type: boolean
-  name: titlebar
-  label: titlebar
-- type: boolean
-  name: widgets
-  label: widgets
-- type: text
-  name: ft-image
-  label: ft-image
 - type: text
   name: title
-  label: title
+  label: Title
 - type: text
   name: permalink
   label: permalink
 - type: boolean
+  name: titlebar
+  label: Titlebar
+  description: Show titlebar
+- type: boolean
   name: add-to-menu
-  label: add-to-menu
+  label: Add to main nav
+- type: text
+  name: ft-image
+  label: ft-image
+- type: boolean
+  name: widgets
+  label: widgets
 - name: widget-blocks
   type: blocks
   label: Widget blocks
