@@ -1,0 +1,41 @@
+---
+label: Page
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: boolean
+  name: titlebar
+  label: titlebar
+- type: boolean
+  name: widgets
+  label: widgets
+- type: text
+  name: ft-image
+  label: ft-image
+- type: text
+  name: title
+  label: title
+- type: text
+  name: permalink
+  label: permalink
+- type: boolean
+  name: add-to-menu
+  label: add-to-menu
+- type: list
+  name: widget-blocks
+  label: widget-blocks
+- type: boolean
+  name: full-width
+  label: full-width
+- type: field_group
+  name: redirect_plugin
+  label: redirect_plugin
+  fields:
+  - type: text
+    name: redirect_to
+    label: redirect_to
+  - type: text
+    name: redirect_from
+    label: redirect_from
