@@ -63,7 +63,12 @@ redirect_plugin:
   <div class="group">
     <p class="txt-modern">Bestanden</p>
     <div id="filedad">
-      <p class="input-container"><small>Sleep je bestanden naar hier of klik om bestanden te kiezen</small></p>
+      <div class="input-container mb-3 pl-3">
+        <i data-feather="upload-cloud"></i>
+        <p class="mb-0 p-3 d-block">
+          <small>Sleep je bestanden naar hier of klik om bestanden te kiezen</small>
+        </p>
+      </div>
       <input id="dadField" type="file" name="file" multiple onchange="javascript:updateList()">
     </div>
     <p class="txt-modern mt-3 mb-1">
@@ -118,16 +123,16 @@ redirect_plugin:
   /*******/
 </style>
 <script>
-updateList = function() {
-  var input = document.getElementById('dadField');
-  var output = document.getElementById('fileList');
+  updateList = function() {
+    var input = document.getElementById('dadField');
+    var output = document.getElementById('fileList');
 
-  output.innerHTML = '<ul>';
-  for (var i = 0; i < input.files.length; ++i) {
-    output.innerHTML += '<li>' + input.files.item(i).name + '</li>';
+    output.innerHTML = '<ul>';
+    for (var i = 0; i < input.files.length; ++i) {
+      output.innerHTML += '<li>' + input.files.item(i).name + '</li>';
+    }
+    output.innerHTML += '</ul>';
   }
-  output.innerHTML += '</ul>';
-}
-    
-    //a.t
-    </script>
+      
+      //a.t
+</script>

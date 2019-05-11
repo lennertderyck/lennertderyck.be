@@ -35,3 +35,15 @@
     </div>
   </div>
 {% endif %}
+{% if page.layout == "project" %}
+<div id="pageTitle" >
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          {% include breadcrumbs.html %}
+          <h1 class="page-title font-scnd uppc txt-color-white fontw-400 mb-0">{{ page.title }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

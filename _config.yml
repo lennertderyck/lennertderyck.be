@@ -41,6 +41,9 @@ sass:
 collections:
   repos:
     output: true
+  projects:
+    output: true
+    layout: page
 
 defaults:
   - scope:
@@ -48,3 +51,8 @@ defaults:
       type: "repos"
     values:
       layout: "repo"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
