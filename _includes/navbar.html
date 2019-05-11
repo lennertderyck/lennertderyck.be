@@ -1,0 +1,37 @@
+<nav id="navMain" class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="/">
+    <img src="{{ site.baseurl }}/assets/images/LOGO_LDR_TEXT_RIGHT_ZWART.svg" alt="Logo Lennert De Ryck" class="no-save" width="300px">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavMainCollapse" aria-controls="NavMainCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="NavMainCollapse">
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ site.baseurl }}/wat-ik-doe">Wat ik doe</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ site.baseurl }}/over">Over mij</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ site.baseurl }}/social">Social</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ site.baseurl }}/contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+{% if page.titlebar == true %}
+<div id="pageTitle" >
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          {% include breadcrumbs.html %}
+          <h1 class="page-title font-scnd uppc txt-color-white fontw-400 mb-0">{{ page.title }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

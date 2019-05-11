@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<div class="container-fluid mt-5 px-0 pt-4">
+    <img src="{{ site.baseurl }}/{{ page.project-image }}" class="project-image img-fit" alt="" height="350px" width="100%">
+    <div class="container" id="repo">
+        <div class="row mb-5">
+            <div class="offset-lg-4 col-12 col-lg-8">
+                <h1 class="display-3 mt-3 mb-5 repo-proj-title">{{ page.proj-title }}</h1>
+                <div class="card pages-card shadow">
+                    <div class="row">
+                        <div class="col-5 pr-0 d-none d-md-block">
+                            <img class="img-fit h-100 w-100" src="{{ site.baseurl }}/{{ page.gh-pages-preview }}" alt="Page preview of {{ page.proj-title }}" width="100%">
+                        </div>
+                        <div class="col h-100 my-auto p-5 pl-0">
+                            <h6 class="txt-sm">Github Pages</h6>
+                            <h3 class="fontw-500">Visit the projectpage</h3>
+                            <a href="{{ page.gh-pages-url }}" class="proj-gh-url" target="_blank" rel="noopener">Visit the project</a> &nbsp; <a href="{{ page.proj-gh-url }}" class="proj-gh-url" target="_blank" rel="noopener">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-4 repo-more-proj mr-5">
+                <h1 class="display-6 mb-3 txt-color-black fontw-600">Discover more projects</h1>
+                {% for card in site.repos %}
+                    {% if card.url != page.url %}
+                        <a class="card more-proj-card shadow mb-3" href="{{ card.url}}">
+                            <img class="img-fit h-100 w-100" src="{{ site.baseurl }}/{{ card.project-image }}" alt="Page preview of {{ card.proj-title }}" width="100%">
+                            <div class="overlay d-flex flex-column justify-content-center">
+                                <h4 class="lspacing-1 mb-1">{{ card.proj-title}}</h4>
+                                <small>{{ card.project-tags | default: "" | array_to_sentence_string: "" }}</small>
+                            </div>
+                        </a>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

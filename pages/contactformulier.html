@@ -1,0 +1,133 @@
+---
+layout: page
+titlebar: true
+widgets: true
+ft-image: ''
+title: Contactformulier
+permalink: "/contact/form"
+add-to-menu: false
+widget-blocks: []
+redirect_plugin:
+  redirect_to: ''
+  redirect_from: ''
+
+---
+<form action="https://getform.io/f/d8172339-fed5-487a-84b7-aa99aeb6b0b3" method="POST" enctype="multipart/form-data">
+  <div class="row">
+    <div class="col-auto group">
+      <p class="txt-modern">
+          Naam
+        </p>
+        <input type="text" name="name">
+    </div>
+
+    <div class="col-auto group">
+      <p class="txt-modern">
+          Email
+        </p>
+        <input class="longer" type="email" name="email">
+    </div>
+  </div>
+
+  <div class="group">
+    <p class="txt-modern">
+      Organisatie of bedrijf
+    </p>
+    <div class="input-container">
+      <input type="checkbox" name="vehicle"><span class="font-main ml-2 mr-3 txt-modern mb-0">Ja</span>
+      <input class="longer checked-show" type="text" name="company" placeholder="Organisatie of bedrijf">
+    </div>
+  </div>
+
+  <div class="group">
+    <p class="txt-modern">
+      Onderwerp
+    </p>
+    <div class="container-select">
+      <select>
+        <option value="offerte">Offerte</option>
+        <option value="stack">Stack</option>
+        <option value="bestanden">Bestanden</option>
+        <option value="other">Andere</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="group">
+    <p class="txt-modern">
+      Bericht
+    </p>
+    <textarea name="bericht" cols="50" rows="7"></textarea>
+  </div>
+
+  <div class="group">
+    <p class="txt-modern">Bestanden</p>
+    <div id="filedad">
+      <p class="input-container"><small>Sleep je bestanden naar hier of klik om bestanden te kiezen</small></p>
+      <input id="dadField" type="file" name="file" multiple onchange="javascript:updateList()">
+    </div>
+    <p class="txt-modern mt-3 mb-1">
+      <small class="fontw-600">Gekozen bestanden</small>
+    </p>
+    <div id="fileList" class="small font-main">
+      Voorlopig heb je nog geen bestanden geupload
+    </div>
+  </div>
+  <button class="btn" type="submit">Send</button>
+</form>
+
+<style>
+  .checked-show {
+    display: none;
+  }
+
+  input:checked ~ input.checked-show {
+    display: initial;
+  }
+
+  .input-container .checked-show {
+    display: initial;
+    width: 0px;
+    padding: 0px;
+    border-radius: 0px;
+  }
+
+  .input-container input:checked ~ input.checked-show {
+    width: initial;
+  }
+
+  #filedad{
+    position: relative;
+    height: 50px;
+    width: 436px;
+  }
+
+  #filedad input, #filedad p {
+    height: 100%;
+    width: 100%;
+  }
+
+  #filedad input {
+    position: absolute;
+    top: 0px;
+    left: Opx;
+    visibility: 0;
+    opacity: 0;
+  }
+
+  /*******/
+</style>
+<script>
+updateList = function() {
+  var input = document.getElementById('dadField');
+  var output = document.getElementById('fileList');
+
+  output.innerHTML = '<ul>';
+  for (var i = 0; i < input.files.length; ++i) {
+    output.innerHTML += '<li>' + input.files.item(i).name + '</li>';
+  }
+  output.innerHTML += '</ul>';
+}
+    
+    //a.t
+    </script>
