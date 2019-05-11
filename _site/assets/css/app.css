@@ -55,7 +55,7 @@ a, a:hover {
   text-decoration: none;
   color: black; }
 
-a:not(.txt-modern):not(.nav-link):not(.btn) {
+a[href*='lennertderyck.be']:not(.txt-modern):not(.nav-link):not(.btn), p a:not(.txt-modern):not(.nav-link):not(.btn) {
   color: var(--accent-4);
   cursor: pointer; }
 
