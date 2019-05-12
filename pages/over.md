@@ -46,10 +46,6 @@ widget-blocks:
     allowtransparency="true"></iframe>
   title: Spotify
   content: Ontdek ook mijn muziek tijdens het werken
-- template: widget
-  title: Portfolio
-  subtitle: "{{ site.baseurl }}/projects"
-  content: "Ontdek wat ik al deed van projecten,  \nontdek mijn stijl."
 
 ---
 ### HALLO!
