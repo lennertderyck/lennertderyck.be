@@ -147,6 +147,10 @@ p:not(.txt-modern) div:not(.txt-modern) p {
     padding-top: 70px;
 }
 
+#site-content.page-no-title {
+    min-height: calc(100vh - 150px - 90px - 48px);
+}
+
 .txt-note, .page-content blockquote p {
     color: var(--accent-3) !important;
 }
@@ -356,6 +360,11 @@ p:not(.txt-modern) div:not(.txt-modern) p {
         position: relative;
         width: fit-content;
     }
+
+    /* form .container-select select {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    } */
 
     form .container-select::after {
         position: absolute;

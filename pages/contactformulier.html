@@ -102,22 +102,22 @@ redirect_plugin:
       <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
         <div class="card-body">
           <div class="group mb-4">
-              <p class="txt-modern">
-                soort
-              </p>
-              <div class="input-container w-fit d-inline-flex mr-3">
-                <input type="checkbox" name="digtaal-banner"><span class="font-main ml-2 mr-3 txt-modern mb-0">Banner</span>
-              </div>
-              <div class="input-container w-fit d-inline-flex mr-3">
-                <input type="checkbox" name="digitaal-reclame"><span class="font-main ml-2 mr-3 txt-modern mb-0">Reclame</span>
-              </div>
-              <div class="input-container w-fit d-inline-flex">
-                <input type="checkbox" name="digitaal-andere"><span class="font-main ml-2 mr-3 txt-modern mb-0">Andere</span>
-              </div>
+            <p class="txt-modern">
+              soort
+            </p>
+            <div class="input-container w-fit d-inline-flex mr-3">
+              <input type="checkbox" name="digtaal-banner"><span class="font-main ml-2 mr-3 txt-modern mb-0">Banner</span>
             </div>
-            <div class="group">
-              <p class="txt-modern">Deadline</p>  
-              <input type="date" id="start" name="digitaal-deadline">
+            <div class="input-container w-fit d-inline-flex mr-3">
+              <input type="checkbox" name="digitaal-reclame"><span class="font-main ml-2 mr-3 txt-modern mb-0">Reclame</span>
+            </div>
+            <div class="input-container w-fit d-inline-flex">
+              <input type="checkbox" name="digitaal-andere"><span class="font-main ml-2 mr-3 txt-modern mb-0">Andere</span>
+            </div>
+          </div>
+          <div class="group mb-0">
+            <p class="txt-modern">Deadline</p>  
+            <input type="date" id="start" name="digitaal-deadline">
           </div>
         </div>
       </div>
@@ -133,24 +133,45 @@ redirect_plugin:
       <div id="Two" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
         <div class="card-body">
             <div class="group mb-4">
-                <p class="txt-modern">
-                  soort
-                </p>
-                <div class="input-container w-fit d-inline-flex mr-3">
-                  <input type="checkbox" name="drukwerk-banner"><span class="font-main ml-2 mr-3 txt-modern mb-0">Persoonlijk</span>
-                </div>
-                <div class="input-container w-fit d-inline-flex mr-3">
-                  <input type="checkbox" name="drukwerk-reclame"><span class="font-main ml-2 mr-3 txt-modern mb-0">Commercieel</span>
-                </div>
-                <div class="input-container w-fit d-inline-flex">
-                  <input type="checkbox" name="drukwerk-andere"><span class="font-main ml-2 mr-3 txt-modern mb-0">Andere</span>
+              <p class="txt-modern">
+                soort
+              </p>
+              <div class="input-container w-fit d-inline-flex mr-3">
+                <input type="checkbox" name="drukwerk-banner"><span class="font-main ml-2 mr-3 txt-modern mb-0">Persoonlijk</span>
+              </div>
+              <div class="input-container w-fit d-inline-flex mr-3">
+                <input type="checkbox" name="drukwerk-reclame"><span class="font-main ml-2 mr-3 txt-modern mb-0">Commercieel</span>
+              </div>
+              <div class="input-container w-fit d-inline-flex">
+                <input type="checkbox" name="drukwerk-andere"><span class="font-main ml-2 mr-3 txt-modern mb-0">Andere</span>
+              </div>
+            </div>
+
+            <div class="group mb-4">
+              <p class="txt-modern">
+                Aantal kleuren
+              </p>
+
+              <div class="input-container d-inline-flex mr-3 mb-3"><input type="radio" name="drukwerk-kleuren" value="quadri"><span class="font-main ml-2 mr-3 txt-modern mb-0">Standaard drukwerk - Quadri (4 kleuren, CMYK)</span></div>
+              <div class="input-container d-inline-flex mr-3 mb-3"><input type="radio" name="drukwerk-kleuren" value="monotoon"><span class="font-main ml-2 mr-3 txt-modern mb-0">Monotoon (1 kleur)</span></div>
+              <div class="input-container d-inline-flex mr-3 mb-3"><input type="radio" name="drukwerk-kleuren" value="duotoon"><span class="font-main ml-2 mr-3 txt-modern mb-0">Duotoon (2 kleuren)</span></div>
+              <div class="input-container d-inline-flex mr-3"><input type="radio" name="drukwerk-kleuren" value="tritoon"><span class="font-main ml-2 mr-3 txt-modern mb-0">Tritoon (3 kleuren)</span></div>
+            </div>
+
+            <div class="group mb-4">
+              <p class="txt-modern">
+                Gebruik PMS-inkten (Pantone)
+              </p>
+                <div class="input-container w-fit">
+                  <input type="checkbox" name="drukwerk-pms" value="ja"><span class="font-main ml-2 mr-3 txt-modern mb-0">Ja</span>
                 </div>
               </div>
-              <div class="group mb-0">
-                <p class="txt-modern">Deadline</p>  
-                <input type="date" id="start" name="drukwerk-deadline">
-            </div>
-        </div>
+
+            <div class="group mb-0">
+              <p class="txt-modern">Deadline</p>  
+              <input type="date" id="start" name="drukwerk-deadline">
+          </div>
+      </div>
       </div>
     </div>
 
@@ -163,10 +184,40 @@ redirect_plugin:
 
       <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
         <div class="card-body">
-          <div class="group">
-          <p class="txt-modern">Deadline</p>  
-          <input type="date" id="start" name="job-flex-floc-deadline">
-        </div>
+          <div class="row">
+            <div class="col-12 col-md-auto group">
+              <p class="txt-modern">
+                soort
+              </p>
+              <div class="input-container w-fit d-inline-flex mr-3">
+                <input type="checkbox" name="flex-floc-textiel"><span class="font-main ml-2 mr-3 txt-modern mb-0">Textiel</span>
+              </div>
+              <div class="input-container w-fit d-inline-flex mr-3">
+                <input type="checkbox" name="flex-floc-bestickering"><span class="font-main ml-2 mr-3 txt-modern mb-0">bestickering</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md group">
+              <p class="txt-modern">
+                Kleuren
+              </p>
+              <div class="container-select">
+                <select name="flex-floc-kleuren">
+                  <option value="transparant">Transparant (bestickering)</option>
+                  <option value="1">1 kleur</option>
+                  <option value="2">2 kleuren</option>
+                  <option value="3">3 kleuren</option>
+                  <option value="4">4 kleuren</option>
+                  <option value="meer">Meer dan 4</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="group mb-0">
+            <p class="txt-modern">Deadline</p>  
+            <input type="date" id="start" name="job-flex-floc-deadline">
+          </div>
         </div>
       </div>
     </div>
@@ -181,9 +232,16 @@ redirect_plugin:
       <div id="collapseFive" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
         <div class="card-body">
           <div class="group">
-          <p class="txt-modern">Deadline</p>  
-          <input type="date" id="start" name="job-andere-deadline">
-        </div>
+            <p class="txt-modern">
+              Gedetailleerde beschrijving
+            </p>
+            <textarea name="andere-beschrijving" class="w-100" cols="50" rows="7"></textarea>
+          </div>
+
+          <div class="group mb-0">
+            <p class="txt-modern">Deadline</p>  
+            <input type="date" id="start" name="andere-deadline">
+          </div>
         </div>
       </div>
     </div>
@@ -192,9 +250,9 @@ redirect_plugin:
   <div class="group">
     <p class="txt-modern">Bestanden</p>
     <div id="filedad" class="w-100">
-      <div class="input-container mb-3 pl-3 w-100">
+      <div class="input-container mb-3 pl-3 w-100 d-flex flex-column text-center p-4">
         <i data-feather="upload-cloud"></i>
-        <p class="mb-0 p-3 d-block">
+        <p class="mb-0 mt-2 d-block">
           <small><strong>Sleep</strong> je bestanden naar hier of <strong>klik</strong> om bestanden te kiezen</small>
         </p>
       </div>
@@ -232,8 +290,6 @@ redirect_plugin:
 
   #filedad{
     position: relative;
-    height: 50px;
-    width: 436px;
   }
 
   #filedad input, #filedad p {
