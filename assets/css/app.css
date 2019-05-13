@@ -8,7 +8,8 @@
   --accent-2: #f1f2f3;
   --accent-3: #999999;
   --accent-4: #017069;
-  --accent-5: #006771; }
+  --accent-5: #006771;
+  --accent-6: #fbfbfb; }
 
 html, body {
   min-height: calc(100vh - 90px - 150px);
@@ -74,6 +75,9 @@ p:not(.txt-modern) div:not(.txt-modern) p {
 
 .maxw-fit {
   max-width: fit-content !important; }
+
+.w-fit {
+  width: fit-content !important; }
 
 .txt-sm {
   font-size: 0.8rem;
@@ -237,7 +241,7 @@ form div.group {
 form div.group .txt-modern {
   margin-bottom: 7px; }
 
-form div[class*="col"] {
+form div[class*="col-"], form div[class="col"] {
   padding-left: 15px;
   padding-right: 15px; }
 
@@ -292,6 +296,20 @@ form .container-select::after {
   height: 0;
   border: 6px solid transparent;
   border-color: black transparent transparent transparent; }
+
+/* ACCORDION */
+.accordion {
+  border-radius: var(--bd-radius);
+  overflow: hidden; }
+
+.accordion .card, .accordion .card-header {
+  border: none; }
+
+.accordion .card-header {
+  background-color: var(--accent-2); }
+
+.accordion .card > div:nth-child(2) {
+  background-color: var(--accent-6); }
 
 /* FOOTER */
 footer {
