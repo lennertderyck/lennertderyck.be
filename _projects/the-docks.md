@@ -1,12 +1,7 @@
 ---
 tags:
-- Wvd
 - School
-- Print
-- Sign
 - Branding
-- Online
-- Fotografie
 - Web
 title: The Docks
 client: Arteveldehogeschool
