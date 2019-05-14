@@ -19,23 +19,16 @@ fields:
     maxSize: 250
   label: Featured image
 - name: tags
-  type: select
-  default: ''
-  config:
-    required: false
-    options:
-    - Web
-    - School
-    - Fotografie
-    - WVD
-    - Print
-    - Sign
-    - Online
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
+  type: tag_list
+  default:
+  - Wvd
+  - School
+  - Print
+  - Sign
+  - Branding
+  - Online
+  - Fotografie
+  - Web
   label: Tags
 pages:
 - _projects/personal-startpage.md
