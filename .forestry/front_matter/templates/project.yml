@@ -31,4 +31,5 @@ fields:
     maxSize: 250
   label: Featured image
 pages:
+- _projects/open-scouts-weekend-16.md
 - _projects/personal-startpage.md
