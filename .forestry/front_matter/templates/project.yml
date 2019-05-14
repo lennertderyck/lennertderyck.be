@@ -31,6 +31,7 @@ fields:
     maxSize: 250
   label: Featured image
 pages:
+- _projects/geboortekaart-igor.md
 - _projects/the-docks.md
 - _projects/hotel-iconografie.md
 - _projects/koleur-gantoise.md
