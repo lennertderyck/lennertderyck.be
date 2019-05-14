@@ -10,9 +10,6 @@ fields:
   name: client
   label: Client
 - type: text
-  name: tags
-  label: Tags
-- type: text
   name: project-url
   label: Project link
   description: Url to project
@@ -21,5 +18,24 @@ fields:
   config:
     maxSize: 250
   label: Featured image
+- name: tags
+  type: select
+  default: ''
+  config:
+    required: false
+    options:
+    - Web
+    - School
+    - Fotografie
+    - WVD
+    - Print
+    - Sign
+    - Online
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Tags
 pages:
 - _projects/personal-startpage.md
