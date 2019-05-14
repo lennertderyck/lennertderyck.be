@@ -745,6 +745,16 @@ footer {
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
   /* MAIN NAV */
+  @keyframes menuCollapse {
+    0% {
+      height: 0%; }
+    100% {
+      height: 100%; } }
+  @keyframes menuCollapseClosed {
+    0% {
+      height: 100%; }
+    100% {
+      height: 0%; } }
   #NavMainCollapse {
     position: fixed;
     background-color: white;
@@ -753,7 +763,18 @@ footer {
     left: 0px;
     right: 0px;
     height: 100vh;
-    z-index: 4000; }
+    z-index: 4000;
+    animation-name: menuCollapse;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out; }
+
+  /* #NavMainCollapse {
+      animation-name: menuCollapseClosed;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-in-out;
+  } */
+  #NavMainCollapse > ul {
+    text-align: center; }
 
   #navMain > #NavMainCollapse li {
     text-transform: uppercase;
@@ -762,8 +783,10 @@ footer {
     font-size: 24px;
     color: inherit;
     letter-spacing: 2px !important;
-    color: var(--color);
-    padding-left: 36px; }
+    color: var(--color); }
+
+  #navMain > #NavMainCollapse li:last-child {
+    padding-right: 1.3125em; }
 
   #navMain > #NavMainCollapse li::after {
     display: none; } }
