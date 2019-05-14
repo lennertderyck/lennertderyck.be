@@ -6,18 +6,6 @@ fields:
 - type: text
   name: title
   label: Title
-- type: text
-  name: client
-  label: Client
-- type: text
-  name: project-url
-  label: Project link
-  description: Url to project
-- name: ft-img
-  type: file
-  config:
-    maxSize: 250
-  label: Featured image
 - name: tags
   type: tag_list
   default:
@@ -30,5 +18,17 @@ fields:
   - Fotografie
   - Web
   label: Tags
+- type: text
+  name: client
+  label: Client
+- type: text
+  name: project-url
+  label: Project link
+  description: Url to project
+- name: ft-img
+  type: file
+  config:
+    maxSize: 250
+  label: Featured image
 pages:
 - _projects/personal-startpage.md
