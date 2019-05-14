@@ -1,6 +1,7 @@
 ---
 label: Project
 hide_body: false
+display_field: title
 fields:
 - type: text
   name: title
@@ -8,9 +9,6 @@ fields:
 - type: text
   name: client
   label: Client
-- type: text
-  name: about
-  label: About
 - type: text
   name: tags
   label: Tags
