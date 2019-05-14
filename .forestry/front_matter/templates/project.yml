@@ -30,3 +30,5 @@ fields:
   - Fotografie
   - Web
   label: Tags
+pages:
+- _projects/personal-startpage.md
