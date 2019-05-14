@@ -27,7 +27,7 @@ html {
     transition: 0.35s all ease;
 }
 
-*:focus {
+*:focus, button:focus {
     outline: none;
     box-shadow: none;
 }
@@ -172,7 +172,6 @@ p:not(.txt-modern) div:not(.txt-modern) p {
         font-weight: 300;
         text-transform: uppercase;
         letter-spacing: 1.1px;
-
         padding: .75em 1.3125em;
     }
 
@@ -196,6 +195,64 @@ p:not(.txt-modern) div:not(.txt-modern) p {
     #navMain > #NavMainCollapse li:last-child::after {
         display: none;
     }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(4px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    .navbar-toggler {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        border: none;
+        width: 35px;
+    }
+
+    .navbar-toggler > div {
+        background-color: var(--accent-main);
+        height: 3px;
+        width: 35px;
+        border-radius: 120px;
+        margin-bottom: 10px;
+        // animation-name: float;
+        animation-duration: 2.7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+    .navbar-toggler > div:last-child {
+        margin-bottom: 0px;
+        align-self: flex-end;
+    }
+
+    .navbar-toggler:hover > div.top {
+        width: 50%;
+    }
+
+    .navbar-toggler:hover > div.bottom {
+        width: 50%;
+    }
+
+    .navbar-toggler:not(.collapsed) > div.top {
+        width: 50%;
+        transform: translateX(100%)
+    }
+
+    .navbar-toggler:not(.collapsed) > div.bottom {
+        width: 50%;
+        transform: translateX(-100%)
+    }
+
 
 /* PAGE TITLE */
     #pageTitle {
@@ -839,6 +896,12 @@ p:not(.txt-modern) div:not(.txt-modern) p {
 @media (min-width: 768px) and (max-width: 991.98px) { ... }  */
 
 // Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    #navMain > a > img {
+        width: 250px;
+    }
+}
+
 @media (min-width: 576px) {
     /* PORTFOLIO CARDS */
         .cards-portfolio {
@@ -849,23 +912,51 @@ p:not(.txt-modern) div:not(.txt-modern) p {
 
 @media (max-width: 768px) { 
     /* PORTFOLIO CARDS */
-    .cards-portfolio {
-        column-count: 1;
-        column-gap: 60px;
-    }
+        .cards-portfolio {
+            column-count: 1;
+            column-gap: 60px;
+        }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
     /* PORTFOLIO CARDS */
-    .cards-portfolio {
-        column-count: 1;
-        column-gap: 60px;
+        .cards-portfolio {
+            column-count: 1;
+            column-gap: 60px;
+        }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    /* MAIN NAV */
+    #NavMainCollapse {
+        position: fixed;
+        background-color: white;
+        top: calc(0px + 150px);
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        height: 100vh;
+        z-index: 4000;
+    }
+
+    #navMain > #NavMainCollapse li {
+        text-transform: uppercase;
+        font-family: "Overpass" !important;
+        font-weight: 700;
+        font-size: 24px;
+        color: inherit;
+        letter-spacing: 2px !important;
+        color: var(--color);
+        padding-left: 36px;
+    }
+
+    #navMain > #NavMainCollapse li::after {
+        display: none;
     }
 }
 
-
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
 }
