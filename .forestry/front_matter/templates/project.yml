@@ -1,19 +1,25 @@
 ---
 label: Project
-hide_body: true
+hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: text
   name: client
-  label: client
+  label: Client
 - type: text
   name: about
-  label: about
+  label: About
 - type: text
   name: tags
-  label: tags
+  label: Tags
 - type: text
   name: project-url
-  label: project-url
+  label: Project link
+  description: Url to project
+- name: ft-img
+  type: file
+  config:
+    maxSize: 250
+  label: Featured image
