@@ -1,13 +1,8 @@
 ---
 tags:
 - Wvd
-- School
 - Print
-- Sign
-- Branding
 - Online
-- Fotografie
-- Web
 title: Grootouderfeest
 client: Edugo Internaat
 project-url: ''
