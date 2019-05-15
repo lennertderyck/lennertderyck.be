@@ -16,7 +16,10 @@ full-width: false
     <div class="container" style="padding-bottom: 234.375px; padding-top: 168.750px;">
         <div class="row">
             <div class="col">
-                <p class="strong font-scnd uppc fontw-600 txt-color-white no-select" style="font-size: 75px; line-height: 75px;">
+                <p class="d-none d-sm-block strong font-scnd uppc fontw-600 txt-color-white no-select" style="font-size: 75px; line-height: 75px;">
+                    Een jong grafisch ontwerper met grote dromen en een passie voor vormgeving
+                </p>
+                <p class="d-block d-sm-none strong font-scnd uppc fontw-600 txt-color-white no-select" style="font-size: 60px; line-height: 75px;">
                     Een jong grafisch ontwerper met grote dromen en een passie voor vormgeving
                 </p>
             </div>
@@ -41,7 +44,7 @@ full-width: false
         </div>
         <div id="portfolio-wrapper" class="p-0">
             <div id="portfolio" class="cards-portfolio pt-4 wide">
-                {% assign items = site.projects | sort: 'date' | reverse %}
+                {% assign items = site.projects | sort: 'date' %}
                 {% assign tags = item.tags | split: ", " %}
                 {% for item in items limit:5 %}
                     <a class="card portfolio-item no-select {% for tags in item.tags %}{{ tags }} {% endfor %}" href="{{ item.url | remove:'.html' }}">
