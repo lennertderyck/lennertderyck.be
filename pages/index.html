@@ -41,55 +41,19 @@ full-width: false
         </div>
         <div class="col">
             <div class="card-columns cards-portfolio pt-3">
-                <div class="card no-select">
-                    <img src="{{ site.baseurl }}/assets/images/portfolio/pf_gh_personal_startpage_dark.png" class="img-fit" alt="...">
+                {% assign items = site.projects | sort: 'date' | reverse %}
+                {% for item in items limit:5 %}
+                <a class="card no-select" href="{{ item.url }}">
+                    <img src="{{ site.baseurl }}{{ item.ft-img }}" class="img-fit" alt="...">
                     <div class="card-body txt-color-white">
                         <div class="d-flex flex-column justify-content-end w-100 h-100">
-                            <h3 class="card-title lspacing-1 uppc mb-1 txt-color-white">Personal startpage</h3>
-                            <p class="card-text txt-modern mb-0 fontw-400 txt-color-white">web, wvd</p>
+                            <h3 class="card-title lspacing-1 uppc mb-1 txt-color-white">{{ item.title }}</h3>
+                            <p class="card-text txt-modern mb-0 fontw-400 txt-color-white">{% for tags in item.tags %}<span class="tag">{{ tags }}</span>{% endfor %}</p>
                         </div>
                     </div>
-                </div>
+                </a>
+                {% endfor %}
 
-                <div class="card no-select">
-                    <img src="{{ site.baseurl }}/assets/images/portfolio/pf_copacowolo.png" class="img-fit" alt="...">
-                    <div class="card-body txt-color-white">
-                        <div class="d-flex flex-column justify-content-end w-100 h-100">
-                            <h3 class="card-title lspacing-1 uppc mb-1 txt-color-white">Copacowolo</h3>
-                            <p class="card-text txt-modern mb-0 fontw-400 txt-color-white">print, wvd</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card no-select">
-                    <img src="{{ site.baseurl }}/assets/images/portfolio/pf_icons_hotel.jpg" class="img-fit" alt="...">
-                    <div class="card-body txt-color-white">
-                        <div class="d-flex flex-column justify-content-end w-100 h-100">
-                            <h3 class="card-title lspacing-1 uppc mb-1 txt-color-white">Hotel iconografie</h3>
-                            <p class="card-text txt-modern mb-0 fontw-400 txt-color-white">branding, school, sign</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card no-select">
-                    <img src="{{ site.baseurl }}/assets/images/portfolio/pf_untitled.jpeg" class="img-fit" alt="...">
-                    <div class="card-body txt-color-white">
-                        <div class="d-flex flex-column justify-content-end w-100 h-100">
-                            <h3 class="card-title lspacing-1 uppc mb-1 txt-color-white">Untitled</h3>
-                            <p class="card-text txt-modern mb-0 fontw-400 txt-color-white">photography</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card no-select">
-                    <img src="{{ site.baseurl }}/assets/images/portfolio/pf_cityfest.png" class="img-fit" alt="...">
-                    <div class="card-body txt-color-white">
-                        <div class="d-flex flex-column justify-content-end w-100 h-100">
-                            <h3 class="card-title lspacing-1 uppc mb-1 txt-color-white">Cityfest</h3>
-                            <p class="card-text txt-modern mb-0 fontw-400 txt-color-white">Branding, school</p>
-                        </div>
-                    </div>
-                </div>
                 <div class="card no-select">
                     <div class="card-body txt-color-white">
                         <div class="d-flex flex-column justify-content-end w-100 h-100">

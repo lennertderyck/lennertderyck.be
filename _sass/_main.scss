@@ -160,6 +160,10 @@ p:not(.txt-modern) div:not(.txt-modern) p {
     color: var(--accent-3) !important;
 }
 
+.bd-radius {
+    border-radius: var(--bd-radius);
+}
+
 /* MAIN CONTENT ******************************/
 .pace {
     -webkit-pointer-events: none;
@@ -391,6 +395,15 @@ p:not(.txt-modern) div:not(.txt-modern) p {
         .cards-portfolio > .card:last-child > .card-body {
             background: none;
         }
+
+    /* TAGS */
+    .tag::after {
+        content: ", "
+    }
+
+    .tag:last-child::after {
+        display: none;
+    }
 
 /* SOCIAL JUICER */
     .juicer-ad {
