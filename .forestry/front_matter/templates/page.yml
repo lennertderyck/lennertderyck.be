@@ -6,6 +6,7 @@ fields:
   name: layout
   label: layout
   hidden: true
+  default: page
 - type: text
   name: title
   label: Title
