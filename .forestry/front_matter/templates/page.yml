@@ -12,6 +12,9 @@ fields:
 - type: text
   name: permalink
   label: permalink
+- type: text
+  name: ft-image
+  label: ft-image
 - type: boolean
   name: titlebar
   label: Titlebar
@@ -19,9 +22,6 @@ fields:
 - type: boolean
   name: add-to-menu
   label: Add to main nav
-- type: text
-  name: ft-image
-  label: ft-image
 - type: boolean
   name: widgets
   label: widgets
@@ -39,7 +39,6 @@ fields:
   label: full-width
 - type: field_group
   name: redirect_plugin
-  label: redirect_plugin
   fields:
   - type: text
     name: redirect_to
@@ -47,5 +46,6 @@ fields:
   - type: text
     name: redirect_from
     label: redirect_from
+  label: Redirect plugin
 pages:
 - pages/projecten.md
