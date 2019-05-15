@@ -23,6 +23,10 @@ fields:
   name: add-to-menu
   label: Add to main nav
 - type: boolean
+  name: full-width
+  label: Full width
+  description: Display content centered on page, without widgets
+- type: boolean
   name: widgets
   label: widgets
 - name: widget-blocks
@@ -34,9 +38,6 @@ fields:
   config:
     min: 
     max: 
-- type: boolean
-  name: full-width
-  label: full-width
 - type: field_group
   name: redirect_plugin
   fields:
