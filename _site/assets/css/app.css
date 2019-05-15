@@ -308,14 +308,14 @@ div.pace.pace-inactive ~ #loaderSplash {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.562) 0%, rgba(255, 255, 255, 0) 100%); }
 
 /* MORE PROJECTS */
-.cards-portfolio > .card:nth-last-child(2) {
+#portfolio.cards-portfolio > .card:nth-last-child(2) {
   margin-bottom: 0px; }
 
-.cards-portfolio > .card:last-child {
+#portfolio.cards-portfolio > .card:last-child {
   box-shadow: none;
   background: none; }
 
-.cards-portfolio > .card:last-child > .card-body {
+#portfolio.cards-portfolio > .card:last-child > .card-body {
   background: none; }
 
 /* TAGS */
@@ -324,6 +324,18 @@ div.pace.pace-inactive ~ #loaderSplash {
 
 .tag:last-child::after {
   display: none; }
+
+/* PROJECTS PAGE */
+#portfolio {
+  display: flex;
+  flex-wrap: wrap; }
+
+#portfolio.cards-portfolio > .card {
+  flex-basis: calc(100% / 2 - 50px);
+  margin-right: 50px; }
+
+#portfolio.cards-portfolio > .card:nth-child(even) {
+  margin-right: 0px; }
 
 /* SOCIAL JUICER */
 .juicer-ad {
@@ -799,12 +811,12 @@ footer {
     column-gap: 60px; } }
 @media (max-width: 768px) {
   /* PORTFOLIO CARDS */
-  .cards-portfolio {
+  .card-columns.cards-portfolio {
     column-count: 1;
     column-gap: 60px; } }
 @media (min-width: 768px) {
   /* PORTFOLIO CARDS */
-  .cards-portfolio {
+  .card-columns.cards-portfolio {
     column-count: 1;
     column-gap: 60px; } }
 /* Large devices (desktops, 992px and up) */
@@ -854,7 +866,15 @@ footer {
     padding-right: 1.3125em; }
 
   #navMain > #NavMainCollapse li::after {
-    display: none; } }
+    display: none; }
+
+  /* PORTFOLIO */
+  #portfolio.cards-portfolio > .card {
+    flex-basis: 100%;
+    margin-right: 0px; }
+
+  #portfolio.cards-portfolio > .card:nth-child(even) {
+    margin-right: 0px; } }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 992px) {
   #projects > .card {
@@ -864,12 +884,12 @@ footer {
     column-count: 2; }
 
   /* PORTFOLIO CARDS */
-  .cards-portfolio {
+  .card-columns .cards-portfolio {
     column-count: 3;
     column-gap: 50px; }
 
   /* MORE PROJECTS */
-  .cards-portfolio > .card:nth-last-child(2) {
+  .card-columns.cards-portfolio > .card:nth-last-child(2) {
     margin-bottom: 40px; } }
 @media (min-width: 1200px) {
   .container {

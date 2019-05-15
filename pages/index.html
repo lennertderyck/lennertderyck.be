@@ -40,7 +40,7 @@ full-width: false
             <a href="" class="txt-modern fontw-400">WERK VOOR DERDEN</a>
         </div>
         <div class="col">
-            <div class="card-columns cards-portfolio pt-3">
+            <div id="portfolio" class="cards-portfolio pt-3">
                 {% assign items = site.projects | sort: 'date' | reverse %}
                 {% for item in items limit:5 %}
                 <a class="card no-select" href="{{ item.url }}">
@@ -59,7 +59,7 @@ full-width: false
                         <div class="d-flex flex-column justify-content-end w-100 h-100">
                             <h3 class="card-title lspacing-1 uppc mb-1">Meer projecten</h3>
                             <p class="card-text txt-modern mb-3">ontdek meer</p>
-                            <a class="btn" href="#">Bekijken</a>
+                            <a class="btn" href="/projects">Bekijken</a>
                         </div>
                     </div>
                 </div>

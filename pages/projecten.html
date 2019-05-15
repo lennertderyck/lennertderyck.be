@@ -1,0 +1,33 @@
+---
+layout: 'page'
+title: Projecten
+permalink: "/projects"
+titlebar: true
+add-to-menu: false
+ft-image: ''
+widgets: false
+widget-blocks: []
+full-width: false
+redirect_plugin:
+  redirect_to: ''
+  redirect_from: ''
+
+---
+  <div class="row">
+    <div class="col px-0">
+      <div id="portfolio" class="card-columns cards-portfolio pt-3">
+        {% assign items = site.projects | sort: 'date' | reverse %}
+        {% for item in items %}
+        <a class="card no-select" href="{{ item.url }}">
+            <img src="{{ site.baseurl }}{{ item.ft-img }}" class="img-fit" alt="...">
+            <div class="card-body txt-color-white">
+                <div class="d-flex flex-column justify-content-end w-100 h-100">
+                    <h3 class="card-title lspacing-1 uppc mb-1 txt-color-white">{{ item.title }}</h3>
+                    <p class="card-text txt-modern mb-0 fontw-400 txt-color-white">{% for tags in item.tags %}<span class="tag">{{ tags }}</span>{% endfor %}</p>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>

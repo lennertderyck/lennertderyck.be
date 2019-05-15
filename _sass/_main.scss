@@ -383,16 +383,16 @@ p:not(.txt-modern) div:not(.txt-modern) p {
     }
 
     /* MORE PROJECTS */
-        .cards-portfolio > .card:nth-last-child(2) {
+        #portfolio.cards-portfolio > .card:nth-last-child(2) {
             margin-bottom: 0px;
         }
 
-        .cards-portfolio > .card:last-child {
+        #portfolio.cards-portfolio > .card:last-child {
             box-shadow: none;
             background: none;
         }
 
-        .cards-portfolio > .card:last-child > .card-body {
+        #portfolio.cards-portfolio > .card:last-child > .card-body {
             background: none;
         }
 
@@ -403,6 +403,21 @@ p:not(.txt-modern) div:not(.txt-modern) p {
 
     .tag:last-child::after {
         display: none;
+    }
+
+    /* PROJECTS PAGE */
+    #portfolio {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #portfolio.cards-portfolio > .card {
+        flex-basis: calc(100% / 2 - 50px);
+        margin-right: 50px;
+    }
+
+    #portfolio.cards-portfolio > .card:nth-child(even) {
+        margin-right: 0px;
     }
 
 /* SOCIAL JUICER */
@@ -991,7 +1006,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
 
 @media (max-width: 768px) { 
     /* PORTFOLIO CARDS */
-        .cards-portfolio {
+        .card-columns.cards-portfolio {
             column-count: 1;
             column-gap: 60px;
         }
@@ -1000,7 +1015,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
     /* PORTFOLIO CARDS */
-        .cards-portfolio {
+        .card-columns.cards-portfolio {
             column-count: 1;
             column-gap: 60px;
         }
@@ -1071,6 +1086,16 @@ p:not(.txt-modern) div:not(.txt-modern) p {
     #navMain > #NavMainCollapse li::after {
         display: none;
     }
+
+    /* PORTFOLIO */
+        #portfolio.cards-portfolio > .card {
+            flex-basis: 100%;
+            margin-right: 0px;
+        }
+
+        #portfolio.cards-portfolio > .card:nth-child(even) {
+            margin-right: 0px;
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -1088,13 +1113,13 @@ p:not(.txt-modern) div:not(.txt-modern) p {
     }
 
     /* PORTFOLIO CARDS */
-    .cards-portfolio {
+    .card-columns .cards-portfolio {
         column-count: 3;
         column-gap: 50px;
     }
 
     /* MORE PROJECTS */
-    .cards-portfolio > .card:nth-last-child(2) {
+    .card-columns.cards-portfolio > .card:nth-last-child(2) {
         margin-bottom: 40px;
     }
 }
