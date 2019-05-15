@@ -1,12 +1,5 @@
 ---
 tags:
-- Wvd
-- School
-- Print
-- Sign
-- Branding
-- Online
-- Fotografie
 - Web
 title: Essential Apps
 client: Persoonlijk
