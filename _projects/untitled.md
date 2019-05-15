@@ -11,3 +11,5 @@ galery:
 
 ---
 Eigen foto's van de laatste jaren. Bekijk het project voor meer foto's.
+
+Je kan de foto's gratis downloaden en voor alle doeleinden gebruiken.
