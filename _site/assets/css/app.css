@@ -9,7 +9,8 @@
   --accent-3: #999999;
   --accent-4: #017069;
   --accent-5: #006771;
-  --accent-6: #fbfbfb; }
+  --accent-6: #fbfbfb;
+  --accent-7: #0e484e; }
 
 html, body {
   min-height: calc(100vh - 90px - 150px);
@@ -136,13 +137,44 @@ p:not(.txt-modern) div:not(.txt-modern) p {
   display: none; }
 
 .pace .pace-progress {
-  background: #0492a9;
+  background: var(--accent-7);
   position: fixed;
-  z-index: 2000;
+  z-index: 5000;
   top: 0;
   right: 100%;
   width: 100%;
-  height: 2px; }
+  height: 5px; }
+
+#loaderSplash {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 400;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: white; }
+
+div.pace.pace-active ~ #loaderSplash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 400;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: white; }
+
+div.pace.pace-inactive ~ #loaderSplash {
+  display: none; }
 
 /* MAIN NAV */
 #navMain {
