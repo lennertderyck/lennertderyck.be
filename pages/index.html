@@ -43,7 +43,7 @@ full-width: false
             <div id="portfolio" class="cards-portfolio pt-3">
                 {% assign items = site.projects | sort: 'date' | reverse %}
                 {% for item in items limit:5 %}
-                <a class="card no-select" href="{{ item.url }}">
+                <a class="card no-select" href="{{ item.url | remove:'.html' }}">
                     <img src="{{ site.baseurl }}{{ item.ft-img }}" class="img-fit" alt="...">
                     <div class="card-body txt-color-white">
                         <div class="d-flex flex-column justify-content-end w-100 h-100">
