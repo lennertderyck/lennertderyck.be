@@ -49,5 +49,3 @@ fields:
     name: redirect_from
     label: redirect_from
   label: Redirect plugin
-pages:
-- pages/projecten.md
