@@ -13,13 +13,12 @@ widgets: true
 widget-blocks:
 - template: widget-code
   code: "<div id=\"about\" class=\"p-4 bd-radius\">\n\t<img src=\"https://github.lennertderyck.be/assets/images/about_profile.jpg\"
-    height=\"150px\" width=\"150px\" class=\"d-none\">\n\t<p class=\"no-margin-b txt-modern\"
-    style=\"margin-top: 75px;\">\n\t\tREGIO\n\t\n\t</p><p class=\"no-margin-t\">\n\t\tGent\n\t\n\t</p><p
-    class=\"no-margin-b txt-modern\">\n\t\tOPLEIDING\n\t\n\t</p><p class=\"no-margin-t\">\n\t\tGrafische
-    &amp; Digitale Media<br>\n\t\tArteveldehogeschool\n\t\n\t\n\t</p><p class=\"mb-0
-    txt-modern\">HOBBY'S</p>\n<p class=\"mb-0\">scouts, (web)design, muziek</p>\n<a
-    href=\"https://lennertderyck.be/wp-content/uploads/CV_LENNERT_DE_RYCK.pdf\" target=\"_blank\"
-    class=\"btn w-100 mt-3\" rel=\"noopener\">BEKIJK CV</a>\n<p></p></div>\n<style>\n\t#about
+    height=\"150px\" width=\"150px\" class=\"d-none\">\n\t<p class=\"no-margin-b txt-modern\">\n\t\tREGIO\n\t\n\t</p><p
+    class=\"no-margin-t\">\n\t\tGent\n\t\n\t</p><p class=\"no-margin-b txt-modern\">\n\t\tOPLEIDING\n\t\n\t</p><p
+    class=\"no-margin-t\">\n\t\tGrafische &amp; Digitale Media<br>\n\t\tArteveldehogeschool\n\t\n\t\n\t</p><p
+    class=\"mb-0 txt-modern\">HOBBY'S</p>\n<p class=\"mb-0\">scouts, (web)design,
+    muziek</p>\n<a href=\"https://lennertderyck.be/wp-content/uploads/CV_LENNERT_DE_RYCK.pdf\"
+    target=\"_blank\" class=\"btn w-100 mt-3\" rel=\"noopener\">BEKIJK CV</a>\n<p></p></div>\n<style>\n\t#about
     {\n\t\tdisplay: flex;\n\t\tflex-direction: column;\n\t\tjustify-content: center;\n\t\tposition:
     relative;\n\t\ttext-align: left;\n\t\tbackground-color: var(--accent-2);\n\t}\n\t\n\t#about
     img {\n\t\tposition: absolute;\n\t\ttop: -100px;\n\t\tleft: calc(50% - 75px);\n\t\talign-self:
