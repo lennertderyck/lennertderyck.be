@@ -29,40 +29,48 @@ full-width: false
             <h2>portfolio</h2>
         </div>
         <div class="col-12 mb-4">
-            <a href="" class="txt-modern fontw-400 mr-3">ALL</a>
-            <a href="" class="txt-modern fontw-400 mr-3">BRANDING</a>
-            <a href="" class="txt-modern fontw-400 mr-3">FOTOGRAFIE</a>
-            <a href="" class="txt-modern fontw-400 mr-3">ONLINE</a>
-            <a href="" class="txt-modern fontw-400 mr-3">PRINT</a>
-            <a href="" class="txt-modern fontw-400 mr-3">SCHOOL</a>
-            <a href="" class="txt-modern fontw-400 mr-3">SIGN</a>
-            <a href="" class="txt-modern fontw-400 mr-3">WEB</a>
-            <a href="" class="txt-modern fontw-400">WERK VOOR DERDEN</a>
+            <a onclick="filterPortfolio('All')" class="txt-modern fontw-400 mr-3">ALL</a>
+            <a onclick="filterPortfolio('Branding')" class="txt-modern fontw-400 mr-3">BRANDING</a>
+            <a onclick="filterPortfolio('Fotografie')" class="txt-modern fontw-400 mr-3">FOTOGRAFIE</a>
+            <a onclick="filterPortfolio('Online')" class="txt-modern fontw-400 mr-3">ONLINE</a>
+            <a onclick="filterPortfolio('Print')" class="txt-modern fontw-400 mr-3">PRINT</a>
+            <a onclick="filterPortfolio('School')" class="txt-modern fontw-400 mr-3">SCHOOL</a>
+            <a onclick="filterPortfolio('Sign')" class="txt-modern fontw-400 mr-3">SIGN</a>
+            <a onclick="filterPortfolio('Web')" class="txt-modern fontw-400 mr-3">WEB</a>
+            <a onclick="filterPortfolio('Wvd')" class="txt-modern fontw-400">WERK VOOR DERDEN</a>
         </div>
-        <div class="col">
-            <div id="portfolio" class="cards-portfolio pt-3">
+        <div id="portfolio-wrapper" class="p-0">
+            <div id="portfolio" class="cards-portfolio pt-4 wide">
                 {% assign items = site.projects | sort: 'date' | reverse %}
+                {% assign tags = item.tags | split: ", " %}
                 {% for item in items limit:5 %}
-                <a class="card no-select" href="{{ item.url | remove:'.html' }}">
-                    <img src="{{ site.baseurl }}{{ item.ft-img }}" class="img-fit" alt="...">
-                    <div class="card-body txt-color-white">
-                        <div class="d-flex flex-column justify-content-end w-100 h-100">
-                            <h3 class="card-title lspacing-1 uppc mb-1 txt-color-white">{{ item.title }}</h3>
-                            <p class="card-text txt-modern mb-0 fontw-400 txt-color-white">{% for tags in item.tags %}<span class="tag">{{ tags }}</span>{% endfor %}</p>
+                    <a class="card portfolio-item no-select {% for tags in item.tags %}{{ tags }} {% endfor %}" href="{{ item.url | remove:'.html' }}">
+                        <img src="{{ site.baseurl }}{{ item.ft-img }}" class="img-fit" alt="...">
+                        <div class="card-body txt-color-white">
+                            <div class="d-flex flex-column justify-content-end w-100 h-100">
+                                <h3 class="card-title lspacing-1 uppc mb-1 txt-color-white">{{ item.title }}</h3>
+                                <p class="card-text txt-modern mb-0 fontw-400 txt-color-white">{% for tags in item.tags %}<span class="tag">{{ tags }}</span>{% endfor %}</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
                 {% endfor %}
 
                 <div class="card no-select">
                     <div class="card-body txt-color-white">
                         <div class="d-flex flex-column justify-content-end w-100 h-100">
-                            <h3 class="card-title lspacing-1 uppc mb-1">Meer projecten</h3>
-                            <p class="card-text txt-modern mb-3">ontdek meer</p>
-                            <a class="btn" href="/projects">Bekijken</a>
+                            <h3 class="card-title lspacing-1 uppc mb-1">Nog meer projecten ontdekken?</h3>
+                            <p class="card-text txt-modern mb-3">bekijk alles</p>
+                            <a class="btn" href="/projects">portfolio</a>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="col-12 d-none">
+            <div class="h-section">
+                <h3 class="card-title lspacing-1 uppc mb-1">Meer projecten</h3>
+                <p class="card-text txt-modern mb-3">ontdek meer</p>
+                <a class="btn" href="/projects">Bekijken</a>
             </div>
         </div>
     </div>

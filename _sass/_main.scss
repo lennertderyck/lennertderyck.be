@@ -386,7 +386,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
         #portfolio.cards-portfolio > .card:not(a):nth-last-child(2) {
             margin-bottom: 0px;
         }
-
+        
         #portfolio.cards-portfolio > .card:not(a):last-child {
             box-shadow: none;
             background: none;
@@ -418,6 +418,49 @@ p:not(.txt-modern) div:not(.txt-modern) p {
 
     #portfolio.cards-portfolio > .card:nth-child(even) {
         margin-right: 0px;
+    }
+
+    /* PORTFOLIO PREVIEW WIDE */
+    #portfolio-wrapper {
+        overflow: scroll;
+        margin: 0 calc(-50vw + 50%);
+        height: 574px;
+    }
+
+    #portfolio-wrapper::-webkit-scrollbar {display: none;}
+
+    #portfolio.cards-portfolio.wide {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        min-width: fit-content;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    #portfolio.cards-portfolio.wide > .card {
+        flex-basis: unset;
+        margin-right: 50px;
+        min-width: 320px;
+        min-height: 500px;
+        max-width: 320px;
+        max-height: 500px;
+    }
+
+    #portfolio.cards-portfolio.wide > .card img {
+        height: 100%;
+    }
+
+    #portfolio.cards-portfolio.wide > .card:last-child {
+        margin-right: 0px;
+    }
+
+    #portfolio.cards-portfolio.wide > .card:nth-child(even) {
+        margin-right: 50px;
+    }
+
+    /* PORTFOLIO FILTER */
+    #portfolio.filtered > a:not(.filter-show) {
+        display: none;
     }
 
 /* SOCIAL JUICER */
@@ -539,11 +582,6 @@ p:not(.txt-modern) div:not(.txt-modern) p {
 
     .accordion .card > div:nth-child(2) {
         background-color: var(--accent-6);
-    }
-
-/* SITE CONTENT NOT SCROLL */
-    #NavMainCollapse.show ~ #site-content {
-
     }
 
 /* FOOTER */
