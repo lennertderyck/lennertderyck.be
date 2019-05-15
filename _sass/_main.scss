@@ -185,7 +185,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
   }
 
     #loaderSplash {
-        display: none;
+        display: flex;
         align-items: center;
         justify-content: center;
         z-index: 400;
@@ -213,7 +213,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
         right: 0px;
         background-color: white;
     }
-    
+
     div.pace.pace-inactive ~ #loaderSplash {
         display: none;
     }

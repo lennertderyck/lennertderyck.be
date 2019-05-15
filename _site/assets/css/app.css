@@ -146,7 +146,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
   height: 5px; }
 
 #loaderSplash {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   z-index: 400;
