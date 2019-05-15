@@ -7,8 +7,8 @@ client: Scouts Haegepoorters Destelbergen
 project-url: ''
 ft-img: "/uploads/COVER_COPACOWOLO-03.png"
 galery:
-- "/uploads/BANDJES_WOLOKAMP_18_VERSIE_2.png"
 - "/uploads/BANDJES_WOLOKAMP_18_VERSIE_1.png"
+- "/uploads/BANDJES_WOLOKAMP_18_VERSIE_2.png"
 
 ---
 Deze bandjes werden ontworpen als kampaandenken voor de woudlopertak van de scouts waar ik leiding geef.
