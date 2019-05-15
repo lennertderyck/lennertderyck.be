@@ -308,14 +308,14 @@ div.pace.pace-inactive ~ #loaderSplash {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.562) 0%, rgba(255, 255, 255, 0) 100%); }
 
 /* MORE PROJECTS */
-#portfolio.cards-portfolio > .card:nth-last-child(2) {
+#portfolio.cards-portfolio > .card:not(a):nth-last-child(2) {
   margin-bottom: 0px; }
 
-#portfolio.cards-portfolio > .card:last-child {
+#portfolio.cards-portfolio > .card:not(a):last-child {
   box-shadow: none;
   background: none; }
 
-#portfolio.cards-portfolio > .card:last-child > .card-body {
+#portfolio.cards-portfolio > .card:not(a):last-child > .card-body {
   background: none; }
 
 /* TAGS */

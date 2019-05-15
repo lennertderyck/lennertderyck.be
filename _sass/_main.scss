@@ -383,16 +383,16 @@ p:not(.txt-modern) div:not(.txt-modern) p {
     }
 
     /* MORE PROJECTS */
-        #portfolio.cards-portfolio > .card:nth-last-child(2) {
+        #portfolio.cards-portfolio > .card:not(a):nth-last-child(2) {
             margin-bottom: 0px;
         }
 
-        #portfolio.cards-portfolio > .card:last-child {
+        #portfolio.cards-portfolio > .card:not(a):last-child {
             box-shadow: none;
             background: none;
         }
 
-        #portfolio.cards-portfolio > .card:last-child > .card-body {
+        #portfolio.cards-portfolio > .card:not(a):last-child > .card-body {
             background: none;
         }
 
