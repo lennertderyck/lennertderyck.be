@@ -13,7 +13,7 @@ widget-blocks:
   subtitle: Projecten en stijl
   content: Ontdek wat ik al deed van projecten, ontdek mijn stijl.
   button-label: Portfolio
-  button-url: ''
+  button-url: "/projects"
   show-button: true
 - template: widget
   title: Github
