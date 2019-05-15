@@ -7,8 +7,7 @@ title: Hotel Iconografie
 client: Edugo Campus Glorieux
 project-url: ''
 ft-img: "/uploads/PROJECT_FOCUSED-1024x768.jpg"
-galery:
-- "/uploads/osw_uitnodiging_fb_banner-1024x379-1.png"
+galery: []
 
 ---
 De opdracht was het ontwerpen van een reeks iconen rond een zelfgekozen thema. Ik koos voor een hotel.   
