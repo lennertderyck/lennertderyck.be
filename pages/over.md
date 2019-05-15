@@ -13,8 +13,8 @@ widgets: true
 widget-blocks:
 - template: widget-code
   code: "<div id=\"about\" class=\"p-4 bd-radius\">\n\t<img src=\"https://github.lennertderyck.be/assets/images/about_profile.jpg\"
-    height=\"150px\" width=\"150px\">\n\t<p class=\"no-margin-b txt-modern\" style=\"margin-top:
-    75px;\">\n\t\tREGIO\n\t\n\t</p><p class=\"no-margin-t\">\n\t\tGent\n\t\n\t</p><p
+    height=\"150px\" width=\"150px\" class=\"d-none\">\n\t<p class=\"no-margin-b txt-modern\"
+    style=\"margin-top: 75px;\">\n\t\tREGIO\n\t\n\t</p><p class=\"no-margin-t\">\n\t\tGent\n\t\n\t</p><p
     class=\"no-margin-b txt-modern\">\n\t\tOPLEIDING\n\t\n\t</p><p class=\"no-margin-t\">\n\t\tGrafische
     &amp; Digitale Media<br>\n\t\tArteveldehogeschool\n\t\n\t\n\t</p><p class=\"mb-0
     txt-modern\">HOBBY'S</p>\n<p class=\"mb-0\">scouts, (web)design, muziek</p>\n<a
