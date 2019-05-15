@@ -11,8 +11,9 @@ tags:
 title: Essential Apps
 client: Persoonlijk
 project-url: https://github.lennertderyck.be/essential-apps/
-ft-img: "/uploads/Schermafbeelding-2018-06-20-om-22.49.28-1024x524.png"
+ft-img: ''
 galery:
+- "/uploads/Schermafbeelding-2018-06-20-om-22.49.28-1024x524.png"
 - "/uploads/Schermafbeelding-2018-06-20-om-22.49.44-e1529573944338.png"
 
 ---
