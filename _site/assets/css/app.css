@@ -18,6 +18,9 @@ html, body {
 html {
   height: 100%; }
 
+body.no-scroll {
+  overflow: hidden; }
+
 * {
   transition: 0.35s all ease; }
 
@@ -122,6 +125,25 @@ p:not(.txt-modern) div:not(.txt-modern) p {
   color: var(--accent-3) !important; }
 
 /* MAIN CONTENT ******************************/
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none; }
+
+.pace-inactive {
+  display: none; }
+
+.pace .pace-progress {
+  background: #0492a9;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px; }
+
 /* MAIN NAV */
 #navMain {
   height: 150px;
@@ -360,6 +382,7 @@ form .container-select::after {
 .accordion .card > div:nth-child(2) {
   background-color: var(--accent-6); }
 
+/* SITE CONTENT NOT SCROLL */
 /* FOOTER */
 footer {
   height: 90px;
