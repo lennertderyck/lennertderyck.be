@@ -45,6 +45,8 @@ widget-blocks:
     allowtransparency="true"></iframe>
   title: Spotify
   content: Ontdek ook mijn muziek tijdens het werken
+short-desc: Mijn naam is Lennert De Ryck. Sinds 2012 studeer ik in het grafisch vakgebied
+  en sinds 2015 ben ik bezig met werk voor derden. Mijn plan? ...
 
 ---
 ### HALLO!
