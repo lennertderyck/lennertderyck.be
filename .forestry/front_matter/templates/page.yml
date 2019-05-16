@@ -16,6 +16,16 @@ fields:
 - type: text
   name: ft-image
   label: ft-image
+- name: short-desc
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Short description
+  description: A short description for web indexing
 - type: boolean
   name: titlebar
   label: Titlebar
