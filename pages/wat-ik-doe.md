@@ -36,6 +36,8 @@ widget-blocks:
 redirect_plugin:
   redirect_to: ''
   redirect_from: ''
+short-desc: De diensten die ik aanbied, zoals het ontwerpen van logo's, banners of
+  omslagen, ...
 
 ---
 <div class="slider-wrapper d-none">
