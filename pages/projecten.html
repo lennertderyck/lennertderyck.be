@@ -1,5 +1,5 @@
 ---
-layout: 'page'
+layout: page
 title: Projecten
 permalink: "/projects"
 titlebar: true
@@ -11,9 +11,12 @@ full-width: false
 redirect_plugin:
   redirect_to: ''
   redirect_from: ''
+short-desc: |-
+  Ontdek wat ik al deed van projecten,
+  ontdek mijn stijl
 
 ---
-  <div class="row">
+<div class="row">
     <div class="col px-0">
       <div id="portfolio" class="cards-portfolio pt-3">
         {% assign items = site.projects | sort: 'date' %}
