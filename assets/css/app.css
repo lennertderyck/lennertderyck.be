@@ -109,7 +109,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
   font-size: 16px; }
 
 .bg-main {
-  background-image: url(/assets/images/backgr_paint_dark.png);
+  background-image: url(/assets/images/backgr_paint_dark-compressor.png);
   background-size: cover;
   background-position: 50% 50%; }
 
