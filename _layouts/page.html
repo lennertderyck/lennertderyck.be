@@ -16,7 +16,9 @@ layout   : default
                                 <h4>{{ item.title }}</h4>
                                 <tl>{{ item.subtitle }}</tl>
                             </div>
-                            <p class="mt-2">{{ item.content | markdownify }}</p>
+                            <p class="mt-2">
+                                {{ item.content | markdownify | remove:"<p>" | remove:"</p>" }}
+                            </p>
                             {% if item.show-button == true %}
                                 <a href="{{ item.button-url }}" class="btn">{{ item.button-label }}</a>
                             {% endif %}
