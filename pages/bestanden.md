@@ -4,11 +4,17 @@ title: Bestanden
 permalink: "/bestanden"
 ft-image: ''
 short-desc: ''
-titlebar: false
+titlebar: true
 add-to-menu: false
 full-width: false
-widgets: false
-widget-blocks: []
+widgets: true
+widget-blocks:
+- template: widget
+  title: Login
+  subtitle: aangvragen
+  content: U kan een login aanvragen als u klant bent
+  button-label: Aanvragen
+  button-url: "/contact/form"
 redirect_plugin:
   redirect_to: ''
   redirect_from: ''
