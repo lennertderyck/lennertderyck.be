@@ -32,3 +32,7 @@ fields:
   config:
     required: false
   label: Button url
+- name: show-button
+  type: boolean
+  label: Show button
+  default: true
