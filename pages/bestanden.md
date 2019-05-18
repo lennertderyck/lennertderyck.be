@@ -15,6 +15,7 @@ widget-blocks:
   content: U kan een login aanvragen als u klant bent
   button-label: Aanvragen
   button-url: "/contact/form"
+  show-button: true
 redirect_plugin:
   redirect_to: ''
   redirect_from: ''
