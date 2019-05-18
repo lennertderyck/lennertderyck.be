@@ -36,6 +36,6 @@ Het implementeren van deze werkwijze zal normaal gezien vrij vlot verlopen aange
 
 ### Status
 
-<span class="txt-modern">Bestanden overzetten</span> afgerond  
-<span class="txt-modern">Implementatie</span> bezig  
-<span class="txt-modern">Start effectief gebruik</span> binnenkort
+<span class="txt-modern">Bestanden overzetten</span> AFGEROND  
+<span class="txt-modern">Implementatie</span> BEZIG  
+<span class="txt-modern">Start effectief gebruik</span> BEGINT BINNENKORT
