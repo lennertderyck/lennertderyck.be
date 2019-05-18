@@ -10,8 +10,8 @@ full-width: false
 widgets: true
 widget-blocks:
 - template: widget
-  title: Login
-  subtitle: aangvragen
+  title: Stack login
+  subtitle: aanvragen
   content: U kan een login aanvragen als u klant bent
   button-label: Aanvragen
   button-url: "/contact/form"
@@ -37,10 +37,10 @@ Het implementeren van deze werkwijze zal normaal gezien vrij vlot verlopen aange
 ### STATUS
 
 <span class="txt-modern">Bestanden overzetten</span>  
-**Afgerond**
+_Afgerond_
 
 <span class="txt-modern">Implementatie</span>  
-**Bezig**
+_Bezig_
 
 <span class="txt-modern">Start effectief gebruik</span>  
-**Begint binnenkort**
+_Begint binnenkort_
