@@ -34,8 +34,13 @@ Daarnaast kunnen we bestanden aanleveren van een eigen veilig webadres, zo bent 
 
 Het implementeren van deze werkwijze zal normaal gezien vrij vlot verlopen aangezien uw bestanden altijd ook op Stack werden opgeslagen. Er is dus altijd een backup.
 
-### Status
+### STATUS
 
-<span class="txt-modern">Bestanden overzetten</span> AFGEROND  
-<span class="txt-modern">Implementatie</span> BEZIG  
-<span class="txt-modern">Start effectief gebruik</span> BEGINT BINNENKORT
+<span class="txt-modern">Bestanden overzetten</span>  
+**Afgerond**
+
+<span class="txt-modern">Implementatie</span>  
+**Bezig**
+
+<span class="txt-modern">Start effectief gebruik</span>  
+**Begint binnenkort**
