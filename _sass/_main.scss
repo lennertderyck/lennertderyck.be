@@ -257,7 +257,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
 
     #navMain li.nav-item.dropdown.show > div {
         box-shadow: var(--shadow);
-        border-radius: var(--bd-radius);
+        border-radius: var(--border-radius);
         overflow: hidden;
     }
 
@@ -397,7 +397,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
         // width: 325px;
         height: 200px;
         border: none;
-        border-radius: var(--bd-radius);
+        border-radius: var(--border-radius);
         overflow: hidden;
         box-shadow: 0px 6px 25px 3px rgba(0, 0, 0, 0.32);
         margin-bottom: 50px;
@@ -523,7 +523,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
 
     .j-stacker .feed-item {
         border: none !important;
-        border-radius: var(--bd-radius) !important;
+        border-radius: var(--border-radius) !important;
         overflow: hidden !important;
         box-shadow: 0px 6px 25px 3px rgba(0, 0, 0, 0.32) !important;
         padding: 0px !important;
@@ -554,7 +554,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
     }
 
     form input, form textarea {
-        border-radius: var(--bd-radius);
+        border-radius: var(--border-radius);
         border: none;
         background-color: var(--accent-2);
         // olor: var(--accent-3);
@@ -578,7 +578,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
         display: flex;
         align-items: center;
         background-color: var(--accent-2);
-        border-radius: var(--bd-radius);
+        border-radius: var(--border-radius);
         min-height: 34px;
         padding-left: 10px;
         overflow: hidden;
@@ -595,7 +595,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
         border: 0px;
         min-width: 188px;
         background-color: var(--accent-2);
-        border-radius: var(--bd-radius);
+        border-radius: var(--border-radius);
     }
 
     form .container-select {
@@ -621,7 +621,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
 
 /* ACCORDION */
     .accordion {
-        border-radius: var(--bd-radius);
+        border-radius: var(--border-radius);
         overflow: hidden;
     }
 
