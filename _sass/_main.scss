@@ -1,6 +1,6 @@
 :root {
     --font-main: 'Eina 02';
-    --bd-radius: 15px;
+    --border-radius: 15px;
 
     --font-main: "Overpass";
     --font-scnd: "Oswald";
@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color)
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     text-transform: uppercase;
     font-weight: normal;
     letter-spacing: 1.5px !important;
@@ -74,6 +74,10 @@ h3 {
 
 h4 {
     font-size: 27px;
+}
+
+h5 {
+    letter-spacing: 1px !important;
 }
 
 a, a:hover {
@@ -132,7 +136,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
 }
 
 .shadow {
-    box-shadow: 0px 6px 25px 3px rgba(0, 0, 0, 0.32);
+    box-shadow: 0px 6px 25px 3px rgba(0, 0, 0, 0.32) !important;
 }
 
 .txt-modern:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6), tl, #site-content h5 {
@@ -169,10 +173,6 @@ p:not(.txt-modern) div:not(.txt-modern) p {
 
 .txt-note, .page-content blockquote p {
     color: var(--accent-3) !important;
-}
-
-.bd-radius {
-    border-radius: var(--bd-radius);
 }
 
 .after-none::after {
@@ -499,6 +499,23 @@ p:not(.txt-modern) div:not(.txt-modern) p {
         display: none;
     }
 
+    /* PORTFOLIO FLOAT NAV */
+        #navFloat {
+            position: fixed;
+            bottom: 30px;
+            left: 0px;
+            right: 0px;
+            z-index: 5000;
+        }
+
+        #prevTitle, #nextTitle {
+            max-height: 3ch;
+            max-width: unset;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
 /* SOCIAL JUICER */
     .juicer-ad {
         display: none !important;
@@ -624,7 +641,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
     footer {
         // position: absolute;
         // bottom: 0px;
-        height: 90px;
+        min-height: 90px;
         background-color: #f1f2f3;
     }
 
@@ -1072,6 +1089,14 @@ p:not(.txt-modern) div:not(.txt-modern) p {
 @media (max-width: 576px) {
     #navMain > a > img {
         width: 250px;
+    }
+
+    #prevTitle, #nextTitle {
+        max-height: 3ch;
+        max-width: 15ch;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 

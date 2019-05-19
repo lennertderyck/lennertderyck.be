@@ -13,7 +13,6 @@
 
 
     <script src="{{ site.baseurl }}/assets/js/pace.min.js"></script>
-    <script src="https://ce.lennertderyck.be/library/elements.js"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,6 +23,7 @@
     <script src="{{ site.baseurl }}/assets/js/cookies.js"></script>
 
 
+    <script src="https://ce.lennertderyck.be/library/elements.js"></script>
     <link rel="stylesheet" href="{{ site.baseurl }}{% link assets/css/app.scss %}">
 
     <link href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i" rel="stylesheet">
@@ -79,6 +79,7 @@
         <div id="site-content" {% if page.titlebar == false %}class="page-no-title"{% endif %}>
             {{ content }}
         </div>
+        {% include projects-nav-float.html %}
         {% include widgets-bottom.html %}
         {% include footer.html %}
         {% include scripts-bottom.html %}

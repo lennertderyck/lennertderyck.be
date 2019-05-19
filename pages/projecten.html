@@ -20,7 +20,7 @@ widgets-bottom: false
 <div class="row">
     <div class="col px-0">
       <div id="portfolio" class="cards-portfolio pt-3">
-        {% assign items = site.projects | sort: 'date' %}
+        {% assign items = site.projects %}
         {% for item in items %}
         <a class="card no-select" href="{{ item.url | remove:'.html' }}">
             <img src="{{ site.baseurl }}{{ item.ft-img }}" class="img-fit" alt="...">
