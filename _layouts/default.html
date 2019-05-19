@@ -81,6 +81,9 @@
         <div id="site-content" {% if page.titlebar == false %}class="page-no-title"{% endif %}>
             {{ content }}
         </div>
+        <div id="alerts">
+            {% include alert-cookies.html %}
+        </div>
         {% include projects-nav-float.html %}
         {% include widgets-bottom.html %}
         {% include footer.html %}

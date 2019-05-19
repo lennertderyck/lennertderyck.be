@@ -8,7 +8,7 @@ permalink: privacy
 add-to-menu: false
 full-width: false
 widget-blocks:
-- template: widget-info-box
+- template: widget
   show-button: false
   title: Beheer
   subtitle: Cookies aanpassen
