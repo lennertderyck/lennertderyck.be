@@ -10,6 +10,7 @@ redirect_plugin:
   redirect_to: ''
   redirect_from: ''
 widgets: false
+widgets-bottom: false
 
 ---
 <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>

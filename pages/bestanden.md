@@ -19,6 +19,7 @@ widget-blocks:
 redirect_plugin:
   redirect_to: ''
   redirect_from: ''
+widgets-bottom: false
 
 ---
 Waar we vorig jaar afgestapt zijn bij het aanleveren van bestanden via Stack en een webserver gebruikten, gaan we opnieuw overstappen naar Stack. We hebben gemerkt dat de voordelen veel zwaarder opwegen tegenover de nadelen.

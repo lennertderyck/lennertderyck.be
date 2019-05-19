@@ -38,6 +38,7 @@ redirect_plugin:
   redirect_from: ''
 short-desc: De diensten die ik aanbied, zoals het ontwerpen van logo's, banners of
   omslagen, ...
+widgets-bottom: false
 
 ---
 <div class="slider-wrapper d-none">

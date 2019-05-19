@@ -79,6 +79,7 @@
         <div id="site-content" {% if page.titlebar == false %}class="page-no-title"{% endif %}>
             {{ content }}
         </div>
+        {% include widgets-bottom.html %}
         {% include footer.html %}
         {% include scripts-bottom.html %}
     </body>
