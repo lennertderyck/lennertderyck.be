@@ -216,6 +216,18 @@ Als uw wachtwoord bijvoorbeeld ‘koekjes zijn lekker’ zou zijn dan wordt uw w
                     <div class="widget mb-5">
 
                         
+                            <div class="h-section">
+                                <h4>Beheer</h4>
+                                <tl>Cookies aanpassen</tl>
+                            </div>
+                            <p class="mt-2">
+                                Voor <a href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&amp;hl=nl">Google Chrome</a><br />
+Voor <a href="" title="https://support.mozilla.org/nl/kb/cookies-verwijderen-gegevens-wissen-websites-opgeslagen">Mozilla Firefox</a><br />
+Voor <a href="https://support.apple.com/nl-be/guide/safari/sfri11471/mac">Safari</a>
+
+                            </p>
+                            
+                        
     
                         
 
@@ -246,6 +258,19 @@ Als uw wachtwoord bijvoorbeeld ‘koekjes zijn lekker’ zou zijn dan wordt uw w
 </div>
 
         </div>
+        <div id="alerts">
+            <div id="alertCookies" class="alert alert-warning fade animated faster" role="alert">
+    <div class="h-section mb-2">
+        <h4 class="mb-1">Fan van koekjes?</h4>
+        <p class="txt-modern mb-0">wij ook</p>
+    </div>
+    <p>We gebruiken cookies om deze site goed weer te geven en van enkele handige functies te voorzien.</p>
+    <div>
+        <button type="button" class="btn d-inline btn-secondary" onclick="cookieConsent()">Dat is ok</button>
+        <button type="button" class="btn d-inline btn-secondary bg-color-3" onclick="cookieBlock()">Cookies uitschakelen</button>
+    </div>
+</div>
+        </div>
         
         
         <footer class="mt-5 d-flex align-items-center"  >
@@ -268,6 +293,7 @@ Als uw wachtwoord bijvoorbeeld ‘koekjes zijn lekker’ zou zijn dan wordt uw w
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="/assets/js/main-crtl.js"></script>
+    <script src="/assets/js/cookie-ctrl.js"></script>
   
     <script>
         feather.replace()

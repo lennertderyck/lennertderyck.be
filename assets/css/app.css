@@ -521,6 +521,28 @@ footer {
   min-height: 90px;
   background-color: #f1f2f3; }
 
+/* ALERTS */
+#alerts {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  padding: 30px; }
+
+#alerts > .alert {
+  border: none;
+  background-color: white;
+  max-width: 420px;
+  padding: 25px;
+  border-radius: var(--border-radius) 0px 0px var(--border-radius);
+  box-shadow: var(--shadow); }
+
+#alerts > .alert:last-child {
+  margin-bottom: 0px; }
+
+/* COOKIES */
+.alert#alertCookies {
+  margin-right: -30px; }
+
 /********************************************************************/
 /* BUTTON */
 .button {
@@ -536,7 +558,7 @@ footer {
   border-radius: var(--card-header-bd-radius);
   color: black; }
 
-.btn {
+.btn, button {
   background-color: var(--accent-main);
   color: white;
   text-transform: uppercase;
@@ -545,7 +567,8 @@ footer {
   font-size: 12px;
   letter-spacing: 2px !important;
   padding: 0.500rem 0.8rem;
-  width: fit-content; }
+  width: fit-content;
+  border: none; }
 
 .btn:hover {
   color: white;
@@ -558,6 +581,12 @@ footer {
 *.bg-color-main a.btn {
   background-color: white;
   color: var(--accent-main); }
+
+.btn-group {
+  border: none; }
+
+.btn + .btn {
+  margin-left: 7px; }
 
 /* 404 */
 .error404 {
