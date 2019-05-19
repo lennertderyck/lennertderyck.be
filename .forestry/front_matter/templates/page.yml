@@ -39,7 +39,10 @@ fields:
   description: Display content centered on page, without widgets
 - type: boolean
   name: widgets
-  label: widgets
+  label: Widgets side
+- name: widgets-bottom
+  type: boolean
+  label: Widgets bottom
 - name: widget-blocks
   type: blocks
   label: Widget blocks
