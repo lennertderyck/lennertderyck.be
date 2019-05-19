@@ -17,6 +17,11 @@ widget-blocks:
     \ \nVoor [Safari](https://support.apple.com/nl-be/guide/safari/sfri11471/mac)"
   button-label: ''
   button-url: ''
+- template: widget-code
+  title: Cookie toestemming
+  subtitle: aanpassen
+  content: Hier kan u kiezen of dat u cookies van derden wil toestaan, of blokkeren.
+  code: <button id="cookieStatus">Toestemming</button>
 redirect_plugin:
   redirect_to: ''
   redirect_from: ''
