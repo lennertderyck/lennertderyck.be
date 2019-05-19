@@ -18,8 +18,8 @@ widget-blocks:
   button-label: ''
   button-url: ''
 - template: widget-code
-  title: Cookie toestemming
-  subtitle: aanpassen
+  title: Cookies
+  subtitle: toestemming
   content: Hier kan u kiezen of dat u cookies van derden wil toestaan, of blokkeren.
   code: <button id="cookieStatus">Toestemming</button>
 redirect_plugin:
