@@ -18,7 +18,7 @@ if (cookieStat == "consent") {
 } else if (cookieStat == "block") {
     console.log('    ' + 'Cookies are blocked');
     var allScript = document.querySelectorAll("script[src*='https://']:not([src*='lennertderyck'])");
-    for(var i = 0; i < allScript.length; i++){
+    for (var i = 0; i < allScript.length; i++){
         // allScript[i].setAttribute("src", "test");
         allScript[i].outerHTML = "";
     }
