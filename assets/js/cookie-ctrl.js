@@ -12,7 +12,8 @@ var btnCookieStatus = document.getElementById("cookieStatus");
 
 if (cookieStat == "consent") {
     console.log('    ' + 'Cookies are accepted');
-    btnCookieStatus.outerHTML = "Cookies blokkeren"
+    btnCookieStatus.innerHTML = "Cookies blokkeren"
+    btnCookieStatus.setAttribute('onclick', 'cookieBlock()');
 } else if (cookieStat == "block") {
     console.log('    ' + 'Cookies are blocked');
     var allScript = document.querySelectorAll("script[src*='https://']:not([src*='lennertderyck'])");
@@ -20,19 +21,26 @@ if (cookieStat == "consent") {
         // allScript[i].setAttribute("src", "test");
         allScript[i].outerHTML = "";
     }
-    btnCookieStatus.outerHTML = "Cookies toestaan"
+    btnCookieStatus.innerHTML = "Cookies toestaan"
+    btnCookieStatus.setAttribute('onclick', 'cookieConsent()');
 } else {
     alertCookies.classList.add("show");
-    btnCookieStatus.outerHTML = "Keuze niet mogelijk";
+    btnCookieStatus.innerHTML = "Keuze niet mogelijk";
     btnCookieStatus.classList.add("disabled");
 }
 
 function cookieConsent() {
     createCookie('cookie-stat','consent',1000);
-    alertCookies.classList.add("fadeOutRight");
+    if (cookieStat != "block") {
+        alertCookies.classList.add("fadeOutRight");
+    }
+    btnCookieStatus.innerHTML = "Cookies blokkeren";
+    btnCookieStatus.setAttribute('onclick', 'cookieBlock()');
 }
 
 function cookieBlock() {
     createCookie('cookie-stat','block',1000);
     alertCookies.classList.add("fadeOutRight");
+    btnCookieStatus.innerHTML = "Cookies toestaan"
+    btnCookieStatus.setAttribute('onclick', 'cookieConsent()');
 }
