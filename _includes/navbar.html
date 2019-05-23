@@ -37,7 +37,7 @@
   </div>
 </nav>
 {% if page.titlebar == true %}
-<div id="pageTitle" >
+<div id="pageTitle" class="bg-main">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -49,14 +49,17 @@
   </div>
 {% endif %}
 {% if page.layout == "project" %}
-<div id="pageTitle" >
-    <div class="container">
-      <div class="row">
-        <div class="col">
+<div id="pageTitle" class="project-heading">
+  <img id="projectFtImage" src="{{ page.ft-img }}" class="img-fit w-100" alt="">
+  <div class="bg h-100">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col d-flex flex-column justify-content-center align-items-center">
           {% include breadcrumbs.html %}
           <h1 class="page-title font-scnd uppc txt-color-white fontw-400 mb-0">{{ page.title }}</h1>
         </div>
       </div>
     </div>
   </div>
+ </div>
 {% endif %}
