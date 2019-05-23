@@ -187,6 +187,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
+    z-index: 10000 !important;
   }
   
   .pace-inactive {
@@ -216,7 +217,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
         left: 0px;
         right: 0px;
         background-color: white;
-        z-index: 10000 !important;
+        z-index: 9999 !important;
     }
 
     div.pace.pace-active ~ #loaderSplash {
