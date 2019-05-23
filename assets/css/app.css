@@ -285,17 +285,35 @@ div.pace.pace-inactive ~ #loaderSplash {
   border: none; }
 
 /* PAGE TITLE */
-#pageTitle {
-  background-image: url(/assets/images/backgr_paint_dark.png);
-  background-size: cover;
-  background-position: 50% 50%; }
-
 #pageTitle .col {
   padding-top: 50px;
   padding-bottom: 50px; }
 
 #pageTitle #breadcrumbs {
   margin-bottom: 30px; }
+
+/* PROJECT */
+#projectFtImage {
+  height: 340px; }
+
+#pageTitle.project-heading {
+  position: relative;
+  overflow: hidden; }
+
+#pageTitle.project-heading:hover #projectFtImage {
+  filter: blur(0px); }
+
+#pageTitle.project-heading .bg {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.562) 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1; }
+
+#pageTitle.project-heading .container #breadcrumbs {
+  margin-bottom: 10px; }
 
 /* COL TITLE */
 .col > h1, .col > h2, .col > h4 {
