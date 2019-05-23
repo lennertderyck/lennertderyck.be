@@ -145,8 +145,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
   pointer-events: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  user-select: none;
-  z-index: 10000 !important; }
+  user-select: none; }
 
 .pace-inactive {
   display: none; }
@@ -154,7 +153,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
 .pace .pace-progress {
   background: var(--accent-7);
   position: fixed;
-  z-index: 5000;
+  z-index: 10000 !important;
   top: 0;
   right: 100%;
   width: 100%;
