@@ -172,7 +172,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
   left: 0px;
   right: 0px;
   background-color: white;
-  z-index: 10000; }
+  z-index: 10000 !important; }
 
 div.pace.pace-active ~ #loaderSplash {
   display: flex;
