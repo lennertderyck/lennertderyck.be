@@ -6,8 +6,9 @@ tags:
 title: Grootouderfeest
 client: Edugo Internaat
 project-url: ''
-ft-img: "/uploads/uitnodiging_grootouderfeest-1024x510.png"
+ft-img: "/uploads/poffertjes_0.jpg"
 galery:
+- "/uploads/uitnodiging_grootouderfeest-1024x510.png"
 - "/uploads/BUTTON_TALENT-01.png"
 
 ---
