@@ -7,6 +7,7 @@ client: Persoonlijk
 project-url: ''
 ft-img: "/uploads/mockup_koleur_gantoise-e1529574278156.png"
 galery:
+- "/uploads/mockup_koleur_gantoise-e1529574278156.png"
 - "/uploads/koleur_gantoise_verwerking3-1024x724.png"
 - "/uploads/koleur_gantoise_verwerking2-1024x724.png"
 - "/uploads/koleur_gantoise_verwerking-1024x724.png"
