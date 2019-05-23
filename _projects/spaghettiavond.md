@@ -8,6 +8,7 @@ client: Scouts Haegepoorters Destelbergen
 project-url: ''
 ft-img: "/uploads/banner_spaghettiavond_2017-1024x390.png"
 galery:
+- "/uploads/banner_spaghettiavond_2017-1024x390.png"
 - "/uploads/PLACEMAT_SPAGHETTIAVOND_2017-e1529574079276.png"
 
 ---

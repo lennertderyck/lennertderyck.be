@@ -35,12 +35,12 @@ fields:
   config: {}
   label: Gallerij
 pages:
+- _projects/spaghettiavond.md
 - _projects/web-workshop.md
 - _projects/cityfest.md
 - _projects/essential-apps.md
 - _projects/lyon.md
 - _projects/grootouderfeest.md
-- _projects/spaghettiavond.md
 - _projects/untitled.md
 - _projects/tombola-tickets.md
 - _projects/kampaandenken-wolokamp-18.md
