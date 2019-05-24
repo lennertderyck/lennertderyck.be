@@ -322,7 +322,7 @@ div.pace.pace-inactive ~ #loaderSplash {
 /* PAGE CONTENT TYPOGRAPHY */
 .page-content h3 {
   margin-bottom: 16px;
-  margin-top: 40px; }
+  margin-top: 20px; }
 
 .page-content h3:first-child {
   margin-top: 0px !important; }
