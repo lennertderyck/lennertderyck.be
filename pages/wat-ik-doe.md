@@ -24,11 +24,11 @@ widget-blocks:
   show-button: true
 - template: widget
   title: Mijn uitrusting
-  content: "##### Apple MacBook Pro 2016\n\n13-inch  \n265GB SSD\n\n##### Stack cloud-platform\n\nVoor
-    het makkelijk delen van bestanden en maken van backups\n\n##### Adobe Creative
-    Cloud\n\nAcrobat Pro  \nPhotoshop CC 2018  \nLightroom Classic CC 2018  \nIllustrator
-    CC 2018  \nInDesign CC 2018\n\n##### Canon EOS D1300\n\nMet 18-55mm IS II lens
-    \ \nUV-filter  \nVelbon statief"
+  content: "##### Apple MacBook Pro 2016\n\n13-inch  \n265GB SSD\n\n<br>\n\n#####
+    Stack cloud-platform\n\nVoor het makkelijk delen van bestanden en maken van backups\n\n<br>\n\n#####
+    Adobe Creative Cloud\n\nAcrobat Pro  \nPhotoshop CC 2018  \nLightroom Classic
+    CC 2018  \nIllustrator CC 2018  \nInDesign CC 2018\n\n<br>\n\n##### Canon EOS
+    D1300\n\nMet 18-55mm IS II lens  \nUV-filter  \nVelbon statief"
   subtitle: ''
   button-label: ''
   button-url: ''
@@ -139,7 +139,7 @@ Heb je nog iets anders in gedachten of valt uw project niet in één van deze ca
 
 </div>
 
-<style> 
+<style>
 .slider-wrapper { /* --margin-x: calc(100vw - 35px;) _/ overflow: scroll; /_ margin-left: var(--margin-x); margin-right: var(--margin-x); */ margin: 0 calc(-50vw + 50%); margin-top: -35px; padding: 35px 35px; }  
 .slider-wrapper::-webkit-scrollbar { display: none; }  
 .slider { display: flex; flex-direction: row; width: fit-content; overflow: visible; }  
@@ -148,7 +148,7 @@ Heb je nog iets anders in gedachten of valt uw project niet in één van deze ca
 .slider-item:hover { box-shadow: 0 5px 24px rgba(0, 0, 0, .64); }
 </style>
 
-### OVER
+### <h3 class="mt-0">OVER</h3>
 
 Het voornaamste wat ik doe is grafisch ontwerp, zowel drukwerk als digitaal of print. De productie van de ontwerpen neem ik niet voor mijn rekening, ik zal enkel de bestanden aanleveren. Daarbij is het ook mogelijk documenten te laten controleren en voorzien van de juiste eigenschappen om het te kunnen publiceren.
 
