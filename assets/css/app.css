@@ -436,6 +436,10 @@ div.pace.pace-inactive ~ #loaderSplash {
   overflow: hidden;
   text-overflow: ellipsis; }
 
+/* CAROUSEL */
+.carousel.slide {
+  max-height: 395px; }
+
 /* SOCIAL JUICER */
 .juicer-ad {
   display: none !important; }
