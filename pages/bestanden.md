@@ -22,10 +22,7 @@ redirect_plugin:
 widgets-bottom: false
 
 ---
-### VEREISTEN
-
-Wanneer je documenten doorstuurt, zorg je er voor dat ze zo ‘puur’ als mogelijk zijn.  
-Hieronder vind je enkele instructies voor het doorsturen van documenten.
+### Vereisten
 
 ##### AFBEELDINGEN / ILLUSTRATIES (NIET VECTORIEEL)
 
@@ -66,14 +63,14 @@ Vectortekeningen of logo’s worden aangeleverd met enkel de nodige elementen. D
 **Aanvaarde bestandsformaten: .ai .eps .svg .emf .dwg .line .draw .cdr**  
 **Voorkeur: .ai .eps .svg**
 
-### NAAMGEVING
+### Naamgeving
 
 Geef doorgestuurde documenten een duidelijke naam, dit maakt de verwerking van bestanden makkelijker.  
 Bv.: Een logo stuur je door als LOGO_\[ONDERWERP\].\[extensie\], dus als je een logo voor het bedrijf Febelgra doorstuurt noem je het logo LOGO_FEBELGRA.ai
 
 Het komt vaak voor dat u als klant afbeeldingen, illustraties of teksten in uw ontwerp wil laten opnemen. Daarom geven we u de kans deze snel en makkelijk te versturen.
 
-### BESTANDEN AANLEVEREN
+### Bestanden aanleveren
 
 ##### Bij offerte
 
@@ -85,7 +82,7 @@ U kan ook gebruik maken van WeTransfer of Firefox Send. Het enige nadeel hieraan
 
 Als klant krijgt u een link naar uw bestanden op Stack, daar zal u ook een folder aantreffen waar u bestanden in kan uploaden.
 
-### BESTANDEN ONTVANGEN
+### Bestanden ontvangen
 
 ##### Bestandsformaten
 
