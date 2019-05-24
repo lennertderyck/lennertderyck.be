@@ -403,6 +403,11 @@ p:not(.txt-modern) div:not(.txt-modern) p {
 /* PAGE CONTENT TYPOGRAPHY */
     .page-content h3 {
         margin-bottom: 16px;
+        margin-top: 40px;
+    }
+
+    .page-content h3:first-child {
+        background: red;
     }
 
     /* WIDGETS */
