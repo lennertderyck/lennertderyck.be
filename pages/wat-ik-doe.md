@@ -33,6 +33,109 @@ widget-blocks:
   button-label: ''
   button-url: ''
   show-button: false
+- template: widget-code
+  code: |-
+    <div class="slider-wrapper d-none">
+
+    <div class="slider">
+
+    <div class="slider-item p-4 bd-radius mr-4 no-select">
+
+    <div class="h-section">
+
+    <h2>Logo's</h2>
+
+    <p class="txt-modern txt-color-white">Nieuw, vernieuwing of iconen</p>
+
+    </div>
+
+    <p class="mb-0">
+
+    Start u een nieuw bedrijf? Heb je een lokale club? Of moet je mensen wegwijs maken in een gebouw?
+
+    </p>
+
+    </div>
+
+    <div class="slider-item p-4 bd-radius mr-4 no-select">
+
+    <div class="h-section">
+
+    <h2>Digitaal</h2>
+
+    <p class="txt-modern txt-color-white">banners en omslagen</p>
+
+    </div>
+
+    <p class="mb-0">
+
+    Geef je pagina op social media dat extra met een mooie omslag of maak online reclame.
+
+    </p>
+
+    </div>
+
+    <div class="slider-item p-4 bd-radius mr-4 no-select">
+
+    <div class="h-section">
+
+    <h2>Drukwerk</h2>
+
+    <p class="txt-modern txt-color-white">Persoonlijk & commercieel</p>
+
+    </div>
+
+    <p class="mb-0">
+
+    Ontwerp voor persoonlijk drukwerk, brochures voor uw bedrijf of organisatie of affiches en posters
+
+    </p>
+
+    </div>
+
+    <div class="slider-item p-4 bd-radius mr-4 no-select">
+
+    <div class="h-section">
+
+    <h2>Flex & flox</h2>
+
+    <p class="txt-modern txt-color-white">Bestickering & textieldruk</p>
+
+    </div>
+
+    <p class="mb-0">
+
+    Een ontwerp voor bestickering van ramen of bedrukking van andere materialen
+
+    </p>
+
+    </div>
+
+    <div class="slider-item p-4 bd-radius mr-4 no-select">
+
+    <div class="h-section">
+
+    <h2>Andere</h2>
+
+    <p class="txt-modern txt-color-white">Neem contact op</p>
+
+    </div>
+
+    <p class="mb-0">
+
+    Heb je nog iets anders in gedachten of valt uw project niet in één van deze categorieën?
+
+    </p>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <style>
+    .slider-wrapper { /* --margin-x: calc(100vw - 35px;) / overflow: scroll; / margin-left: var(--margin-x); margin-right: var(--margin-x); */ margin: 0 calc(-50vw + 50%); margin-top: -35px; padding: 35px 35px; }.slider-wrapper::-webkit-scrollbar { display: none; }.slider { display: flex; flex-direction: row; width: fit-content; overflow: visible; }.slider-item { width: 370px; max-width: 370px; max-height: 350px; background-color: #006771; box-shadow: 0 3px 12px rgba(0, 0, 0, 0.55); }.slider-item * { color: white; }.slider-item:hover { box-shadow: 0 5px 24px rgba(0, 0, 0, .64); }
+    </style>
 redirect_plugin:
   redirect_to: ''
   redirect_from: ''
@@ -41,114 +144,7 @@ short-desc: De diensten die ik aanbied, zoals het ontwerpen van logo's, banners 
 widgets-bottom: false
 
 ---
-<div class="slider-wrapper d-none">
-
-<div class="slider">
-
-<div class="slider-item p-4 bd-radius mr-4 no-select">
-
-<div class="h-section">
-
-<h2>Logo's</h2>
-
-<p class="txt-modern txt-color-white">Nieuw, vernieuwing of iconen</p>
-
-</div>
-
-<p class="mb-0">
-
-Start u een nieuw bedrijf? Heb je een lokale club? Of moet je mensen wegwijs maken in een gebouw?
-
-</p>
-
-</div>
-
-<div class="slider-item p-4 bd-radius mr-4 no-select">
-
-<div class="h-section">
-
-<h2>Digitaal</h2>
-
-<p class="txt-modern txt-color-white">banners en omslagen</p>
-
-</div>
-
-<p class="mb-0">
-
-Geef je pagina op social media dat extra met een mooie omslag of maak online reclame.
-
-</p>
-
-</div>
-
-<div class="slider-item p-4 bd-radius mr-4 no-select">
-
-<div class="h-section">
-
-<h2>Drukwerk</h2>
-
-<p class="txt-modern txt-color-white">Persoonlijk & commercieel</p>
-
-</div>
-
-<p class="mb-0">
-
-Ontwerp voor persoonlijk drukwerk, brochures voor uw bedrijf of organisatie of affiches en posters
-
-</p>
-
-</div>
-
-<div class="slider-item p-4 bd-radius mr-4 no-select">
-
-<div class="h-section">
-
-<h2>Flex & flox</h2>
-
-<p class="txt-modern txt-color-white">Bestickering & textieldruk</p>
-
-</div>
-
-<p class="mb-0">
-
-Een ontwerp voor bestickering van ramen of bedrukking van andere materialen
-
-</p>
-
-</div>
-
-<div class="slider-item p-4 bd-radius mr-4 no-select">
-
-<div class="h-section">
-
-<h2>Andere</h2>
-
-<p class="txt-modern txt-color-white">Neem contact op</p>
-
-</div>
-
-<p class="mb-0">
-
-Heb je nog iets anders in gedachten of valt uw project niet in één van deze categorieën?
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-<style>
-.slider-wrapper { /* --margin-x: calc(100vw - 35px;) _/ overflow: scroll; /_ margin-left: var(--margin-x); margin-right: var(--margin-x); */ margin: 0 calc(-50vw + 50%); margin-top: -35px; padding: 35px 35px; }  
-.slider-wrapper::-webkit-scrollbar { display: none; }  
-.slider { display: flex; flex-direction: row; width: fit-content; overflow: visible; }  
-.slider-item { width: 370px; max-width: 370px; max-height: 350px; background-color: #006771; box-shadow: 0 3px 12px rgba(0, 0, 0, 0.55); }  
-.slider-item * { color: white; }  
-.slider-item:hover { box-shadow: 0 5px 24px rgba(0, 0, 0, .64); }
-</style>
-
-### <h3 class="mt-0">OVER</h3>
+### Over
 
 Het voornaamste wat ik doe is grafisch ontwerp, zowel drukwerk als digitaal of print. De productie van de ontwerpen neem ik niet voor mijn rekening, ik zal enkel de bestanden aanleveren. Daarbij is het ook mogelijk documenten te laten controleren en voorzien van de juiste eigenschappen om het te kunnen publiceren.
 
