@@ -4,10 +4,10 @@ title: Bestanden
 permalink: "/bestanden-2"
 ft-image: ''
 short-desc: ''
-titlebar: false
+titlebar: true
 add-to-menu: false
 full-width: false
-widgets: false
+widgets: true
 widgets-bottom: false
 widget-blocks: []
 redirect_plugin:
