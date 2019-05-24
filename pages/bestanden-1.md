@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Bestanden
-permalink: "/bestanden"
+permalink: "/bestanden-2"
 ft-image: ''
 short-desc: ''
 titlebar: false
