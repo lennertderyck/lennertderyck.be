@@ -40,6 +40,8 @@ fields:
 - type: boolean
   name: widgets
   label: Widgets side
+  default: true
+  hidden: true
 - name: widgets-bottom
   type: boolean
   label: Widgets bottom
@@ -63,4 +65,5 @@ fields:
     label: redirect_from
   label: Redirect plugin
 pages:
+- pages/branding-guidelines.md
 - pages/bestanden.md
