@@ -24,11 +24,11 @@ widget-blocks:
   show-button: true
 - template: widget
   title: Mijn uitrusting
-  content: "##### Apple MacBook Pro 2016\n\n13-inch  \n265GB SSD\n\n##### Stack cloud-platform\n\nVoor
-    het makkelijk delen van bestanden en maken van backups\n\n##### Adobe Creative
-    Cloud\n\nAcrobat Pro  \nPhotoshop CC 2018  \nLightroom Classic CC 2018  \nIllustrator
-    CC 2018  \nInDesign CC 2018\n\n##### Canon EOS D1300\n\nMet 18-55mm IS II lens
-    \ \nUV-filter  \nVelbon statief"
+  content: "##### Apple MacBook Pro 2016\n\n13-inch  \n265GB SSD\n\n<br>\n\n#####
+    Stack cloud-platform\n\nVoor het makkelijk delen van bestanden en maken van backups\n\n<br>\n\n#####
+    Adobe Creative Cloud\n\nAcrobat Pro  \nPhotoshop CC 2018  \nLightroom Classic
+    CC 2018  \nIllustrator CC 2018  \nInDesign CC 2018\n\n<br>\n\n##### Canon EOS
+    D1300\n\nMet 18-55mm IS II lens  \nUV-filter  \nVelbon statief"
   subtitle: ''
   button-label: ''
   button-url: ''
