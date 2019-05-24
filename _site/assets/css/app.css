@@ -321,9 +321,13 @@ div.pace.pace-inactive ~ #loaderSplash {
 
 /* PAGE CONTENT TYPOGRAPHY */
 .page-content h3 {
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  margin-top: 40px; }
 
-/* WIDGETS */
+.page-content h3:first-child {
+  margin-top: 0px !important; }
+
+#over
 .page-widgets .h-section {
   margin-bottom: 5px; }
 
@@ -435,6 +439,10 @@ div.pace.pace-inactive ~ #loaderSplash {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
+
+/* CAROUSEL */
+.carousel.slide {
+  max-height: 395px; }
 
 /* SOCIAL JUICER */
 .juicer-ad {

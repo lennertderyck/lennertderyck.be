@@ -407,8 +407,10 @@ p:not(.txt-modern) div:not(.txt-modern) p {
     }
 
     .page-content h3:first-child {
-        background: red;
+        margin-top: 0px !important;
     }
+
+    #over
 
     /* WIDGETS */
     .page-widgets .h-section {
