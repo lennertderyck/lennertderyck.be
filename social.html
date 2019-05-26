@@ -222,10 +222,10 @@
         <div class="modal fade" id="modalClientfiles" tabindex="-1" role="dialog" aria-labelledby="modalClientfilesTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header pb-0 border-0">
             <div class="h-section mb-0">
                 <h5 class="modal-title" id="modalClientfilesTitle">Cloud bestanden</h5>
-                <p class="txt-modern mb-0">instellen</p>
+                <p class="txt-modern mb-0">Storage code</p>
             </div>
             <button type="button" class="close d-none" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -233,11 +233,8 @@
         </div>
         <div class="modal-body">
             <div class="form-group mb-0">
-                <p class="txt-modern">
-                    Storage code
-                </p>
                 <small class="about">Dit is de code die u kreeg per mail en lijkt op 'DsmDTjS48IKTfvy'</small>
-                <input type="text" class="longer" id="inputClientfilesCode">
+                <input type="text" class="w-100" id="inputClientfilesCode">
             </div>
         </div>
         <div class="modal-footer">
@@ -253,9 +250,15 @@
     var btnTestClientfilesCodeNotExisting = document.getElementById("btnTestClientfilesCodeNotExisting");
 
     if (cookieClientfilesCode != "") {
-        btnTestClientfilesCodeNotExisting.outerHTML = "";
+        // btnTestClientfilesCodeNotExisting.outerHTML = "";
+        btnTestClientfilesCodeNotExisting.style.display = "none"
     } else {
-        btnTestClientfilesCodeExists.outerHTML = "";
+        // btnTestClientfilesCodeExists.outerHTML = "";
+        btnTestClientfilesCodeExists.style.display = "none"
+    }
+
+    if (window.location.href.endsWith("?storagecode")) {
+        $('#modalClientfiles').modal('show')
     }
 
     function saveClientfilesCode() {
