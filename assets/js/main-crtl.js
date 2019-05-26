@@ -37,3 +37,5 @@ function filterPortfolio(tag) {
         cards[0].classList.remove("filter-show")
     }
 }
+
+/* CLIENT STACK FORWARD */

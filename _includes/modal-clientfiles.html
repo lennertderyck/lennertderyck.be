@@ -1,0 +1,64 @@
+<div class="modal fade" id="modalClientfiles" tabindex="-1" role="dialog" aria-labelledby="modalClientfilesTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <div class="h-section mb-0">
+                <h5 class="modal-title" id="modalClientfilesTitle">Cloud bestanden</h5>
+                <p class="txt-modern mb-0">instellen</p>
+            </div>
+            <button type="button" class="close d-none" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group mb-0">
+                <p class="txt-modern">
+                    Storage code
+                </p>
+                <small class="about">Dit is de code die u kreeg per mail en lijkt op 'DsmDTjS48IKTfvy'</small>
+                <input type="text" class="longer" id="inputClientfilesCode">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="saveClientfilesCode()">Opslaan & testen</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script>
+    var cookieClientfilesCode = getCookie('client-CFCode');
+    var btnTestClientfilesCodeExists = document.getElementById("btnTestClientfilesCodeExists");
+    var btnTestClientfilesCodeNotExisting = document.getElementById("btnTestClientfilesCodeNotExisting");
+
+    if (cookieClientfilesCode != "") {
+        btnTestClientfilesCodeNotExisting.outerHTML = "";
+    } else {
+        btnTestClientfilesCodeExists.outerHTML = "";
+    }
+
+    function saveClientfilesCode() {
+        var inputClientfilesCode = document.getElementById("inputClientfilesCode").value;
+        createCookie('client-CFCode',inputClientfilesCode,1000);
+        // window.location.replace("https://storage.lennertderyck.be/s/" + inputClientfilesCode)
+        var win = window.open("https://storage.lennertderyck.be/s/" + inputClientfilesCode, '_blank');
+        win.focus();
+    }
+
+    function testClientfilesCode() {
+        var inputClientfilesCode = document.getElementById("inputClientfilesCode").value;
+        var cookieClientfilesCode = getCookie('client-CFCode');
+        var modalClientfiles = document.getElementById("modalClientfiles");
+
+        if (cookieClientfilesCode != "") {
+            // window.location.href = "http://www.w3schools.com" + "/storage";
+            // window.location.replace("https://storage.lennertderyck.be/s/" + cookieClientfilesCode)
+            var win = window.open("https://storage.lennertderyck.be/s/" + cookieClientfilesCode, '_blank');
+            win.focus();
+            console.log("client-CFCode cookie exists");
+        } else {
+            modalClientfiles.classList.add('show');
+            console.log("client-CFCode cookie not existing");
+        }
+    }
+</script>

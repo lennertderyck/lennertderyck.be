@@ -4,14 +4,30 @@
     <script src="/assets/js/cookies.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140323499-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <script id="googleAnalyics">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'UA-140323499-1');
+        gtag('config', 'UA-140323499-1');
     </script>
+    <script>
+        // GOOGLE ANALYTICS OPT OUT
+        // Set to the same value as the web property used on the site
+        var gaProperty = 'UA-140323499-1';
 
+        // Disable tracking if the opt-out cookie exists.
+        var disableStr = 'ga-disable-' + gaProperty;
+        if (document.cookie.indexOf(disableStr + '=true') > -1) {
+        window[disableStr] = true;
+        }
+
+        // Opt-out function
+        function gaOptout() {
+        document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+        window[disableStr] = true;
+        }
+    </script>
 
     <script src="/assets/js/pace.min.js"></script>
 
@@ -98,7 +114,7 @@
       <li class="nav-item">
         <a class="nav-link" href="/social">Social</a>
       </li>
-      <li class="nav-item after-none pr-lg-0">
+      <li class="nav-item after-none pr-lg-0 ">
         <a class="nav-link" href="/contact">Contact</a>
       </li>
       <li class="nav-item dropdown d-none">
@@ -149,9 +165,13 @@
           <div style="font-family: Oswald; font-weight: 300; letter-spacing: 2px; font-size: 1.2rem; pointer-events: none; user-select: none;">#THINKBEYONDTHEBOX</div>
           <div class="txt-modern" style="font-size: 0.8rem; letter-spacing: 1px;">
             <p class="mb-0" style="line-height: 15px;">
-              © 2019 Lennert De Ryck &nbsp;・&nbsp; Alle <br class="d-inline d-md-none">rechten voorbehouden &nbsp;⎥&nbsp; <a href="/privacy" class="txt-color-main">Privacy</a><span class="txt-color-3 d-none d-md-inline"> &nbsp;・&nbsp;<a href="https://app.forestry.io/sites/rrgolibtmktc8w/#/" class="txt-color-3" target="_blank" rel="noopener">Admin</a></span>
+              © 2019 Lennert De Ryck &nbsp;・&nbsp; Alle <br class="d-inline d-md-none">rechten voorbehouden &nbsp;⎥&nbsp; <a href="/privacy" class="txt-color-main">Privacy</a><br class="d-md-none"><span class="txt-color-3 d-none d-md-inline"> &nbsp;・&nbsp;<a href="https://app.forestry.io/sites/rrgolibtmktc8w/#/" class="txt-color-3" target="_blank" rel="noopener">Admin</a></span>
             </p>
           </div>
+      </div>
+      <div class="col d-flex align-items-center justify-content-end">
+        <button class="btn h-fit bg-color-3" id="btnTestClientfilesCodeNotExisting" data-toggle="modal" data-target="#modalClientfiles" onclick="testClientfilesCode()">client files</button>
+        <button class="btn h-fit bg-color-3" id="btnTestClientfilesCodeExists" onclick="testClientfilesCode()">client files</button>
       </div>
     </div>
   </div>
@@ -167,5 +187,69 @@
     <script>
         feather.replace()
     </script>
+        <div class="modal fade" id="modalClientfiles" tabindex="-1" role="dialog" aria-labelledby="modalClientfilesTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <div class="h-section mb-0">
+                <h5 class="modal-title" id="modalClientfilesTitle">Cloud bestanden</h5>
+                <p class="txt-modern mb-0">instellen</p>
+            </div>
+            <button type="button" class="close d-none" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group mb-0">
+                <p class="txt-modern">
+                    Storage code
+                </p>
+                <small class="about">Dit is de code die u kreeg per mail en lijkt op 'DsmDTjS48IKTfvy'</small>
+                <input type="text" class="longer" id="inputClientfilesCode">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="saveClientfilesCode()">Opslaan & testen</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script>
+    var cookieClientfilesCode = getCookie('client-CFCode');
+    var btnTestClientfilesCodeExists = document.getElementById("btnTestClientfilesCodeExists");
+    var btnTestClientfilesCodeNotExisting = document.getElementById("btnTestClientfilesCodeNotExisting");
+
+    if (cookieClientfilesCode != "") {
+        btnTestClientfilesCodeNotExisting.outerHTML = "";
+    } else {
+        btnTestClientfilesCodeExists.outerHTML = "";
+    }
+
+    function saveClientfilesCode() {
+        var inputClientfilesCode = document.getElementById("inputClientfilesCode").value;
+        createCookie('client-CFCode',inputClientfilesCode,1000);
+        // window.location.replace("https://storage.lennertderyck.be/s/" + inputClientfilesCode)
+        var win = window.open("https://storage.lennertderyck.be/s/" + inputClientfilesCode, '_blank');
+        win.focus();
+    }
+
+    function testClientfilesCode() {
+        var inputClientfilesCode = document.getElementById("inputClientfilesCode").value;
+        var cookieClientfilesCode = getCookie('client-CFCode');
+        var modalClientfiles = document.getElementById("modalClientfiles");
+
+        if (cookieClientfilesCode != "") {
+            // window.location.href = "http://www.w3schools.com" + "/storage";
+            // window.location.replace("https://storage.lennertderyck.be/s/" + cookieClientfilesCode)
+            var win = window.open("https://storage.lennertderyck.be/s/" + cookieClientfilesCode, '_blank');
+            win.focus();
+            console.log("client-CFCode cookie exists");
+        } else {
+            modalClientfiles.classList.add('show');
+            console.log("client-CFCode cookie not existing");
+        }
+    }
+</script>
     </body>
 </html>
