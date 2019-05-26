@@ -7,8 +7,9 @@ window.onload = logState();
 var alertCookies = document.getElementById("alertCookies");
 var scripts = document.scripts;
 var allScripts = document.getElementsByTagName("script");
-var cookieStat = getCookie('cookie-stat')
+var cookieStat = getCookie('cookie-stat');
 var btnCookieStatus = document.getElementById("cookieStatus");
+var googleAnalyics = document.getElementById("googleAnalyics");
 
 if (cookieStat == "consent") {
     console.log('    ' + 'Cookies are accepted');
@@ -22,6 +23,8 @@ if (cookieStat == "consent") {
         // allScript[i].setAttribute("src", "test");
         allScript[i].outerHTML = "";
     }
+    window.onload = gaOptout();
+
     alertCookies.classList.add("d-none");
     btnCookieStatus.innerHTML = "Cookies toestaan"
     btnCookieStatus.setAttribute('onclick', 'cookieConsent()');
@@ -49,4 +52,20 @@ function cookieBlock() {
     }
     btnCookieStatus.innerHTML = "Cookies toestaan"
     btnCookieStatus.setAttribute('onclick', 'cookieConsent()');
+}
+
+// GOOGLE ANALYTICS OPT OUT
+// Set to the same value as the web property used on the site
+var gaProperty = 'UA-140323499-1';
+
+// Disable tracking if the opt-out cookie exists.
+var disableStr = 'ga-disable-' + gaProperty;
+if (document.cookie.indexOf(disableStr + '=true') > -1) {
+  window[disableStr] = true;
+}
+
+// Opt-out function
+function gaOptout() {
+  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+  window[disableStr] = true;
 }

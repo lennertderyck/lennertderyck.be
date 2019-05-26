@@ -87,6 +87,9 @@ p:not(.txt-modern) div:not(.txt-modern) p {
 .w-fit {
   width: fit-content !important; }
 
+.h-fit {
+  height: fit-content !important; }
+
 .txt-sm {
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -463,30 +466,39 @@ div.pace.pace-inactive ~ #loaderSplash {
   overflow: visible !important; }
 
 /* FORMS */
-form div.group {
+form div.group, div.form-group {
   margin-bottom: 2rem; }
 
-form div.group .txt-modern {
+div.form-group small {
+  display: block;
+  font-family: var(--font-main);
+  margin-top: -7px;
+  color: var(--accent-3); }
+
+div.form-group small + input {
+  margin-top: 7px; }
+
+form div.group .txt-modern, div.form-group .txt-modern {
   margin-bottom: 7px; }
 
 form div[class*="col-"], form div[class="col"] {
   padding-left: 15px;
   padding-right: 15px; }
 
-form input, form textarea {
+form input, form textarea, input, textarea {
   border-radius: var(--border-radius);
   border: none;
   background-color: var(--accent-2);
   padding: 5px 10px;
   font-family: var(--font-main); }
 
-form input::placeholder {
+form input::placeholder, input::placeholder {
   color: var(--accent-3); }
 
-form input.longer {
+form input.longer, input.longer {
   width: calc(164px + 120px); }
 
-form input.long {
+form input.long, input.long {
   width: calc(164px + 180px); }
 
 .input-container {
@@ -570,6 +582,20 @@ footer {
 /* COOKIES */
 .alert#alertCookies {
   margin-right: -30px; }
+
+/* MODALS */
+div.modal .modal-content {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  border: none; }
+
+div.modal .modal-body {
+  padding-top: 25px;
+  padding-bottom: 25px; }
+
+div.modal .modal-footer {
+  background-color: var(--accent-2);
+  border: none; }
 
 /********************************************************************/
 /* BUTTON */
