@@ -71,7 +71,7 @@ a[href*='lennertderyck.be']:not(.txt-modern):not(.nav-link):not(.btn), p a:not(.
   color: var(--accent-4);
   cursor: pointer; }
 
-p {
+p, small {
   font-family: var(--font-main);
   color: var(--color); }
 
@@ -141,6 +141,18 @@ p:not(.txt-modern) div:not(.txt-modern) p {
 
 .after-none::after {
   display: none !important; }
+
+.alert {
+  background-color: var(--accent-5);
+  font-family: var(--font-main);
+  border-radius: var(--border-radius);
+  border-radius: 0px;
+  color: white;
+  border: none; }
+
+.alert.small {
+  font-size: 80%;
+  font-weight: 400; }
 
 /* MAIN CONTENT ******************************/
 .pace {
@@ -469,7 +481,7 @@ div.pace.pace-inactive ~ #loaderSplash {
 form div.group, div.form-group {
   margin-bottom: 2rem; }
 
-div.form-group small {
+div.form-group small, small.about {
   display: block;
   font-family: var(--font-main);
   margin-top: -7px;
@@ -589,13 +601,18 @@ div.modal .modal-content {
   overflow: hidden;
   border: none; }
 
+div.modal .modal-header {
+  padding-bottom: 0px; }
+
 div.modal .modal-body {
-  padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-top: 22px;
+  padding-bottom: 10px; }
 
 div.modal .modal-footer {
   background-color: var(--accent-2);
-  border: none; }
+  border: none;
+  align-items: unset;
+  justify-content: flex-end; }
 
 /********************************************************************/
 /* BUTTON */
