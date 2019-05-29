@@ -32,4 +32,5 @@ fields:
   label: Redirect to
   description: Where to redirect
 pages:
+- _redirects/films-stack.md
 - _redirects/github.md
