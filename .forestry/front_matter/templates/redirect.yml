@@ -32,6 +32,7 @@ fields:
   label: Redirect to
   description: Where to redirect
 pages:
+- _redirects/Social media/instagram.md
 - _redirects/films-stack.md
 - _redirects/github.md
 - _redirects/new/new-project.md
