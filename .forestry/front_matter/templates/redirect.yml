@@ -31,3 +31,5 @@ fields:
     required: true
   label: Redirect to
   description: Where to redirect
+pages:
+- _redirects/github.md
