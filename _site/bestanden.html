@@ -364,6 +364,7 @@ Bestanden die online gepubliceerd worden zal u meestal als .jpeg, .png of .svg o
 </div>
 
 <script>
+    var inputClientfilesCode = document.getElementById("inputClientfilesCode").value;
     var cookieClientfilesCode = getCookie('client-CFCode');
     var btnTestClientfilesCodeExists = document.getElementById("btnTestClientfilesCodeExists");
     var btnTestClientfilesCodeNotExisting = document.getElementById("btnTestClientfilesCodeNotExisting");
@@ -371,6 +372,7 @@ Bestanden die online gepubliceerd worden zal u meestal als .jpeg, .png of .svg o
     if (cookieClientfilesCode != "") {
         // btnTestClientfilesCodeNotExisting.outerHTML = "";
         btnTestClientfilesCodeNotExisting.style.display = "none"
+        document.getElementById("inputClientfilesCode").value = cookieClientfilesCode;
     } else {
         // btnTestClientfilesCodeExists.outerHTML = "";
         btnTestClientfilesCodeExists.style.display = "none"

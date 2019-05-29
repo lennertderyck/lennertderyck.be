@@ -43,6 +43,7 @@ collections:
     output: true
   projects:
     output: true
+  shortlinks:
 
 defaults:
   - scope:
