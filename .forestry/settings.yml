@@ -5,6 +5,11 @@ admin_path: "/admin"
 webhook_url: 
 sections:
 - type: directory
+  path: _redirects
+  label: Redirects
+  create: all
+  match: "**/*"
+- type: directory
   path: pages
   label: Pagina's
   create: all
