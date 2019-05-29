@@ -34,5 +34,6 @@ fields:
 pages:
 - _redirects/films-stack.md
 - _redirects/github.md
+- _redirects/new/new-project.md
 - _redirects/fonts-stack.md
 - _redirects/new/new-page.md
