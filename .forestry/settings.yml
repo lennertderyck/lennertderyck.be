@@ -18,6 +18,15 @@ sections:
   match: "**/*"
   templates:
   - project
+- type: heading
+  label: ANDERE
+- type: directory
+  path: _redirects
+  label: Redirects
+  create: all
+  match: "**/*"
+  templates:
+  - redirect
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''

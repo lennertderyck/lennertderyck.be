@@ -1,0 +1,35 @@
+---
+label: Redirect
+hide_body: true
+fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: layout
+  hidden: true
+  default: redirect
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: active
+  type: boolean
+  label: Active
+  default: true
+  description: Whether this redirect work
+- name: permalink
+  type: text
+  config:
+    required: true
+  label: Permalink
+  default: "/"
+- name: redirect_to
+  type: text
+  config:
+    required: true
+  label: Redirect to
+  description: Where to redirect
+pages:
+- _redirects/github.md
