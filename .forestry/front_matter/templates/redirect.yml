@@ -31,10 +31,6 @@ fields:
     required: true
   label: Redirect to
   description: Where to redirect
-- name: draft
-  type: boolean
-  label: Draft
-  default: false
 pages:
 - _redirects/films-stack.md
 - _redirects/github.md
