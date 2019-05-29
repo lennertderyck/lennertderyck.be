@@ -1,6 +1,7 @@
 ---
 label: Redirect
 hide_body: true
+draft: false
 fields:
 - name: layout
   type: text
