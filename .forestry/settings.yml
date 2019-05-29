@@ -25,6 +25,8 @@ sections:
   label: Redirects
   create: all
   match: "**/*"
+  templates:
+  - redirect
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
