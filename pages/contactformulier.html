@@ -15,256 +15,270 @@ short-desc: Vraag een offerte aan, kom meer te weten over projecten, ...
 widgets-bottom: false
 
 ---
+
 <form action="https://getform.io/f/d8172339-fed5-487a-84b7-aa99aeb6b0b3" method="POST" enctype="multipart/form-data">
-  <div class="row">
-    <div class="col-5 group">
-      <p class="txt-modern">
-          Naam
-        </p>
-        <input class="w-100" type="text" name="name">
+  <nav>
+    <div class="nav nav-tabs" id="tabContact" role="tablist">
+      <a class="nav-item nav-link active" id="nav-contact-info-tab" data-toggle="tab" href="#nav-contact-info" role="tab" aria-controls="nav-contact-info" aria-selected="true">Info</a>
+      <a class="nav-item nav-link" id="nav-contact-offerte-tab" data-toggle="tab" href="#nav-contact-offerte" role="tab" aria-controls="nav-contact-offerte" aria-selected="false">Offerte</a>
     </div>
-
-    <div class="col group">
-      <p class="txt-modern">
-          Email
-        </p>
-        <input class="longer w-100" type="email" name="email">
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-5 group">
-      <p class="txt-modern">
-        Organisatie of bedrijf
-      </p>
-      <div class="input-container maxw-fit">
-        <input type="checkbox" name="is-org-bedrijf"><span class="font-main ml-2 mr-3 txt-modern mb-0">Ja</span>
-        <input class="longer checked-show" type="text" name="org-bedrijf" placeholder="Organisatie of bedrijf">
+  </nav>
+  <div class="tab-content" id="tabContactContent">
+    <div class="tab-pane fade show active pt-4" id="nav-contact-info" role="tabpanel" aria-labelledby="nav-contact-info-tab">
+      <div class="row">
+        <div class="col-5 group">
+          <p class="txt-modern">
+              Naam
+            </p>
+            <input class="w-100" type="text" name="name">
+        </div>
+    
+        <div class="col group">
+          <p class="txt-modern">
+              Email
+            </p>
+            <input class="longer w-100" type="email" name="email">
+        </div>
       </div>
-    </div>
-
-    <div class="col-auto group">
-        <p class="txt-modern">
-            Onderwerp
+    
+      <div class="row">
+        <div class="col-5 group">
+          <p class="txt-modern">
+            Organisatie of bedrijf
           </p>
-          <div class="container-select">
-            <select name="onderwerp">
-              <option value="offerte">Offerte</option>
-              <option value="stack">Stack</option>
-              <option value="bestanden">Bestanden</option>
-              <option value="other">Andere</option>
-            </select>
-          </div>
-    </div>
-  </div>
-
-  <div class="group">
-    <p class="txt-modern">
-      Bericht
-    </p>
-    <textarea name="bericht" class="w-100" cols="50" rows="7"></textarea>
-  </div>
-
-  <div class="accordion group" id="accordionExample">
-    <div class="card">
-      <div class="card-header p-3" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        <p class="mb-0 txt-modern">
-          Logo's
-        </p>
-      </div>
-  
-      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-        <div class="card-body p-4">
-          <div class="group mb-4">
-            <p class="txt-modern">
-              soort
-            </p>
-            <div class="input-container w-fit d-inline-flex mr-3">
-              <input type="checkbox" name="logo-nieuw"><span class="font-main ml-2 mr-3 txt-modern mb-0">Nieuw of vernieuwd logo</span>
-            </div>
-            <div class="input-container w-fit d-inline-flex">
-              <input type="checkbox" name="logo-iconen"><span class="font-main ml-2 mr-3 txt-modern mb-0">Iconen</span>
-            </div>
-          </div>
-          <div class="group mb-0">
-            <p class="txt-modern">Deadline</p>  
-            <input type="date" id="start" name="job-logo-deadline">
+          <div class="input-container maxw-fit">
+            <input type="checkbox" name="is-org-bedrijf"><span class="font-main ml-2 mr-3 txt-modern mb-0">Ja</span>
+            <input class="longer checked-show" type="text" name="org-bedrijf" placeholder="Organisatie of bedrijf">
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-header p-3" id="headingOne" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-        <p class="mb-0 txt-modern">
-          Digitaal
-        </p>
-      </div>
-
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-        <div class="card-body">
-          <div class="group mb-4">
+    
+        <div class="col-auto group">
             <p class="txt-modern">
-              soort
-            </p>
-            <div class="input-container w-fit d-inline-flex mr-3">
-              <input type="checkbox" name="digtaal-banner"><span class="font-main ml-2 mr-3 txt-modern mb-0">Banner</span>
-            </div>
-            <div class="input-container w-fit d-inline-flex mr-3">
-              <input type="checkbox" name="digitaal-reclame"><span class="font-main ml-2 mr-3 txt-modern mb-0">Reclame</span>
-            </div>
-            <div class="input-container w-fit d-inline-flex">
-              <input type="checkbox" name="digitaal-andere"><span class="font-main ml-2 mr-3 txt-modern mb-0">Andere</span>
-            </div>
-          </div>
-          <div class="group mb-0">
-            <p class="txt-modern">Deadline</p>  
-            <input type="date" id="start" name="digitaal-deadline">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-header p-3" id="headingOne" data-toggle="collapse" data-target="#Two" aria-expanded="true" aria-controls="Two">
-        <p class="mb-0 txt-modern">
-          Drukwerk
-        </p>
-      </div>
-
-      <div id="Two" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-        <div class="card-body">
-            <div class="group mb-4">
-              <p class="txt-modern">
-                soort
-              </p>
-              <div class="input-container w-fit d-inline-flex mr-3">
-                <input type="checkbox" name="drukwerk-banner"><span class="font-main ml-2 mr-3 txt-modern mb-0">Persoonlijk</span>
-              </div>
-              <div class="input-container w-fit d-inline-flex mr-3">
-                <input type="checkbox" name="drukwerk-reclame"><span class="font-main ml-2 mr-3 txt-modern mb-0">Commercieel</span>
-              </div>
-              <div class="input-container w-fit d-inline-flex">
-                <input type="checkbox" name="drukwerk-andere"><span class="font-main ml-2 mr-3 txt-modern mb-0">Andere</span>
-              </div>
-            </div>
-
-            <div class="group mb-4">
-              <p class="txt-modern">
-                Aantal kleuren
-              </p>
-
-              <div class="input-container d-inline-flex mr-3 mb-3"><input type="radio" name="drukwerk-kleuren" value="quadri"><span class="font-main ml-2 mr-3 txt-modern mb-0">Standaard drukwerk - Quadri (4 kleuren, CMYK)</span></div>
-              <div class="input-container d-inline-flex mr-3 mb-3"><input type="radio" name="drukwerk-kleuren" value="monotoon"><span class="font-main ml-2 mr-3 txt-modern mb-0">Monotoon (1 kleur)</span></div>
-              <div class="input-container d-inline-flex mr-3 mb-3"><input type="radio" name="drukwerk-kleuren" value="duotoon"><span class="font-main ml-2 mr-3 txt-modern mb-0">Duotoon (2 kleuren)</span></div>
-              <div class="input-container d-inline-flex mr-3"><input type="radio" name="drukwerk-kleuren" value="tritoon"><span class="font-main ml-2 mr-3 txt-modern mb-0">Tritoon (3 kleuren)</span></div>
-            </div>
-
-            <div class="group mb-4">
-              <p class="txt-modern">
-                Gebruik PMS-inkten (Pantone)
-              </p>
-                <div class="input-container w-fit">
-                  <input type="checkbox" name="drukwerk-pms" value="ja"><span class="font-main ml-2 mr-3 txt-modern mb-0">Ja</span>
-                </div>
-              </div>
-
-            <div class="group mb-0">
-              <p class="txt-modern">Deadline</p>  
-              <input type="date" id="start" name="drukwerk-deadline">
-          </div>
-      </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-header p-3" id="headingOne" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-        <p class="mb-0 txt-modern">
-          Flex & floc
-        </p>
-      </div>
-
-      <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-        <div class="card-body">
-          <div class="row">
-            <div class="col-12 col-md-auto group">
-              <p class="txt-modern">
-                soort
-              </p>
-              <div class="input-container w-fit d-inline-flex mr-3">
-                <input type="checkbox" name="flex-floc-textiel"><span class="font-main ml-2 mr-3 txt-modern mb-0">Textiel</span>
-              </div>
-              <div class="input-container w-fit d-inline-flex mr-3">
-                <input type="checkbox" name="flex-floc-bestickering"><span class="font-main ml-2 mr-3 txt-modern mb-0">bestickering</span>
-              </div>
-            </div>
-
-            <div class="col-12 col-md group">
-              <p class="txt-modern">
-                Kleuren
+                Onderwerp
               </p>
               <div class="container-select">
-                <select name="flex-floc-kleuren">
-                  <option value="transparant">Transparant (bestickering)</option>
-                  <option value="1">1 kleur</option>
-                  <option value="2">2 kleuren</option>
-                  <option value="3">3 kleuren</option>
-                  <option value="4">4 kleuren</option>
-                  <option value="meer">Meer dan 4</option>
+                <select id="contactSelectOnd" name="onderwerp">
+                  <option value="meer info">Meer info</option>
+                  <option value="offerte" id="contactSelectOnd-optionOfferte">Offerte</option>
+                  <option value="stack">Stack</option>
+                  <option value="bestanden">Bestanden</option>
+                  <option value="other">Andere</option>
                 </select>
+              </div>
+        </div>
+      </div>
+    
+      <div class="group">
+        <p class="txt-modern">
+          Bericht
+        </p>
+        <textarea name="bericht" class="w-100" cols="50" rows="7"></textarea>
+      </div>
+    </div>
+
+    <div class="tab-pane fade pt-4" id="nav-contact-offerte" role="tabpanel" aria-labelledby="nav-contact-offerte-tab">
+      <div class="accordion group" id="accordionExample">
+        <div class="card">
+          <div class="card-header p-3" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <p class="mb-0 txt-modern">
+              Logo's
+            </p>
+          </div>
+      
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body p-4">
+              <div class="group mb-4">
+                <p class="txt-modern">
+                  soort
+                </p>
+                <div class="input-container w-fit d-inline-flex mr-3">
+                  <input type="checkbox" name="logo-nieuw"><span class="font-main ml-2 mr-3 txt-modern mb-0">Nieuw of vernieuwd logo</span>
+                </div>
+                <div class="input-container w-fit d-inline-flex">
+                  <input type="checkbox" name="logo-iconen"><span class="font-main ml-2 mr-3 txt-modern mb-0">Iconen</span>
+                </div>
+              </div>
+              <div class="group mb-0">
+                <p class="txt-modern">Deadline</p>  
+                <input type="date" id="start" name="job-logo-deadline">
               </div>
             </div>
           </div>
-
-          <div class="group mb-0">
-            <p class="txt-modern">Deadline</p>  
-            <input type="date" id="start" name="job-flex-floc-deadline">
-          </div>
         </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-header p-3" id="headingOne" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-        <p class="mb-0 txt-modern">
-          Andere 
-        </p>
-      </div>
-
-      <div id="collapseFive" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-        <div class="card-body">
-          <div class="group">
-            <p class="txt-modern">
-              Gedetailleerde beschrijving
+    
+        <div class="card">
+          <div class="card-header p-3" id="headingOne" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <p class="mb-0 txt-modern">
+              Digitaal
             </p>
-            <textarea name="andere-beschrijving" class="w-100" cols="50" rows="7"></textarea>
           </div>
-
-          <div class="group mb-0">
-            <p class="txt-modern">Deadline</p>  
-            <input type="date" id="start" name="andere-deadline">
+    
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="group mb-4">
+                <p class="txt-modern">
+                  soort
+                </p>
+                <div class="input-container w-fit d-inline-flex mr-3">
+                  <input type="checkbox" name="digtaal-banner"><span class="font-main ml-2 mr-3 txt-modern mb-0">Banner</span>
+                </div>
+                <div class="input-container w-fit d-inline-flex mr-3">
+                  <input type="checkbox" name="digitaal-reclame"><span class="font-main ml-2 mr-3 txt-modern mb-0">Reclame</span>
+                </div>
+                <div class="input-container w-fit d-inline-flex">
+                  <input type="checkbox" name="digitaal-andere"><span class="font-main ml-2 mr-3 txt-modern mb-0">Andere</span>
+                </div>
+              </div>
+              <div class="group mb-0">
+                <p class="txt-modern">Deadline</p>  
+                <input type="date" id="start" name="digitaal-deadline">
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-header p-3" id="headingOne" data-toggle="collapse" data-target="#Two" aria-expanded="true" aria-controls="Two">
+            <p class="mb-0 txt-modern">
+              Drukwerk
+            </p>
+          </div>
+    
+          <div id="Two" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                <div class="group mb-4">
+                  <p class="txt-modern">
+                    soort
+                  </p>
+                  <div class="input-container w-fit d-inline-flex mr-3">
+                    <input type="checkbox" name="drukwerk-banner"><span class="font-main ml-2 mr-3 txt-modern mb-0">Persoonlijk</span>
+                  </div>
+                  <div class="input-container w-fit d-inline-flex mr-3">
+                    <input type="checkbox" name="drukwerk-reclame"><span class="font-main ml-2 mr-3 txt-modern mb-0">Commercieel</span>
+                  </div>
+                  <div class="input-container w-fit d-inline-flex">
+                    <input type="checkbox" name="drukwerk-andere"><span class="font-main ml-2 mr-3 txt-modern mb-0">Andere</span>
+                  </div>
+                </div>
+    
+                <div class="group mb-4">
+                  <p class="txt-modern">
+                    Aantal kleuren
+                  </p>
+    
+                  <div class="input-container d-inline-flex mr-3 mb-3"><input type="radio" name="drukwerk-kleuren" value="quadri"><span class="font-main ml-2 mr-3 txt-modern mb-0">Standaard drukwerk - Quadri (4 kleuren, CMYK)</span></div>
+                  <div class="input-container d-inline-flex mr-3 mb-3"><input type="radio" name="drukwerk-kleuren" value="monotoon"><span class="font-main ml-2 mr-3 txt-modern mb-0">Monotoon (1 kleur)</span></div>
+                  <div class="input-container d-inline-flex mr-3 mb-3"><input type="radio" name="drukwerk-kleuren" value="duotoon"><span class="font-main ml-2 mr-3 txt-modern mb-0">Duotoon (2 kleuren)</span></div>
+                  <div class="input-container d-inline-flex mr-3"><input type="radio" name="drukwerk-kleuren" value="tritoon"><span class="font-main ml-2 mr-3 txt-modern mb-0">Tritoon (3 kleuren)</span></div>
+                </div>
+    
+                <div class="group mb-4">
+                  <p class="txt-modern">
+                    Gebruik PMS-inkten (Pantone)
+                  </p>
+                    <div class="input-container w-fit">
+                      <input type="checkbox" name="drukwerk-pms" value="ja"><span class="font-main ml-2 mr-3 txt-modern mb-0">Ja</span>
+                    </div>
+                  </div>
+    
+                <div class="group mb-0">
+                  <p class="txt-modern">Deadline</p>  
+                  <input type="date" id="start" name="drukwerk-deadline">
+              </div>
+          </div>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-header p-3" id="headingOne" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+            <p class="mb-0 txt-modern">
+              Flex & floc
+            </p>
+          </div>
+    
+          <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-12 col-md-auto group">
+                  <p class="txt-modern">
+                    soort
+                  </p>
+                  <div class="input-container w-fit d-inline-flex mr-3">
+                    <input type="checkbox" name="flex-floc-textiel"><span class="font-main ml-2 mr-3 txt-modern mb-0">Textiel</span>
+                  </div>
+                  <div class="input-container w-fit d-inline-flex mr-3">
+                    <input type="checkbox" name="flex-floc-bestickering"><span class="font-main ml-2 mr-3 txt-modern mb-0">bestickering</span>
+                  </div>
+                </div>
+    
+                <div class="col-12 col-md group">
+                  <p class="txt-modern">
+                    Kleuren
+                  </p>
+                  <div class="container-select">
+                    <select name="flex-floc-kleuren">
+                      <option value="transparant">Transparant (bestickering)</option>
+                      <option value="1">1 kleur</option>
+                      <option value="2">2 kleuren</option>
+                      <option value="3">3 kleuren</option>
+                      <option value="4">4 kleuren</option>
+                      <option value="meer">Meer dan 4</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="group mb-0">
+                <p class="txt-modern">Deadline</p>  
+                <input type="date" id="start" name="job-flex-floc-deadline">
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-header p-3" id="headingOne" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+            <p class="mb-0 txt-modern">
+              Andere 
+            </p>
+          </div>
+    
+          <div id="collapseFive" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="group">
+                <p class="txt-modern">
+                  Gedetailleerde beschrijving
+                </p>
+                <textarea name="andere-beschrijving" class="w-100" cols="50" rows="7"></textarea>
+              </div>
+    
+              <div class="group mb-0">
+                <p class="txt-modern">Deadline</p>  
+                <input type="date" id="start" name="andere-deadline">
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <div class="group">
-    <p class="txt-modern">Bestanden</p>
-    <div id="filedad" class="w-100">
-      <div class="input-container mb-3 pl-3 w-100 d-flex flex-column text-center p-4">
-        <i data-feather="upload-cloud"></i>
-        <p class="mb-0 mt-2 d-block">
-          <small><strong>Sleep</strong> je bestanden naar hier of <strong>klik</strong> om bestanden te kiezen</small>
+    
+      <div class="group">
+        <p class="txt-modern">Bestanden</p>
+        <div id="filedad" class="w-100">
+          <div class="input-container mb-3 pl-3 w-100 d-flex flex-column text-center p-4">
+            <i data-feather="upload-cloud"></i>
+            <p class="mb-0 mt-2 d-block">
+              <small><strong>Sleep</strong> je bestanden naar hier of <strong>klik</strong> om bestanden te kiezen</small>
+            </p>
+          </div>
+          <input id="dadField" type="file" name="file" multiple onchange="javascript:updateList()">
+        </div>
+        <p class="txt-modern mt-3 mb-1">
+          <small class="fontw-600">Gekozen bestanden</small>
         </p>
+        <div id="fileList" class="small font-main">
+          Voorlopig heb je nog geen bestanden geupload
+        </div>
       </div>
-      <input id="dadField" type="file" name="file" multiple onchange="javascript:updateList()">
-    </div>
-    <p class="txt-modern mt-3 mb-1">
-      <small class="fontw-600">Gekozen bestanden</small>
-    </p>
-    <div id="fileList" class="small font-main">
-      Voorlopig heb je nog geen bestanden geupload
     </div>
   </div>
   <button class="btn" type="submit">Versturen</button>
@@ -320,6 +334,17 @@ widgets-bottom: false
     }
     output.innerHTML += '</ul>';
   }
+
+  /* var contactSelectOnd = document.getElementById('contactSelectOnd')
+  var optionOfferte = document.getElementById('contactSelectOnd-optionOfferte');
+
+  if (optionOfferte.selected = "true") {
+      console.log("Nieuw contactonderwerp is ")
+  }
+
+  function checkContactSubj() {
+
+  } */
       
       //a.t
 </script>

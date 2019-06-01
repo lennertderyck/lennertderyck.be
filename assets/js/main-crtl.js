@@ -1,14 +1,3 @@
-var loc = window.location.href;
-
-
-if (window.location.href.startsWith("http://lennertderyck.be")) {
-    console.log("This page is not safe");
-    var safeLoc = loc.replace("http", "https");
-    window.location.replace(safeLoc);
-}
-
-console.log("This page is a local version");
-
 var menuCollapse = document.getElementById("NavMainCollapse");
 var btnNavMainCollapse = document.getElementById("btnNavMainCollapse");
 var body = document.getElementById("body");
