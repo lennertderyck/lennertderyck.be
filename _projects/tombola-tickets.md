@@ -5,7 +5,7 @@ tags:
 title: Tombola tickets
 client: Scouts Haegepoorters Destelbergen
 project-url: ''
-ft-img: "/uploads/tombola_tickets_givers.png"
+ft-img: "/uploads/Middel 1.svg"
 galery:
 - "/uploads/tombola_tickets_givers.png"
 
