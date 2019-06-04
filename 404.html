@@ -140,7 +140,7 @@
   <div class="row">
     <div class="col">
       <h2 class="mb-0">Iets ging niet volledig juist</h2>
-      <p class="txt-modern">Deze pagina bestaat niet</p>
+      <p class="txt-modern">Deze pagina of shortlink bestaat niet</p>
       <a href="/" class="btn">Startpagina</a>
     </div>
   </div>
@@ -220,6 +220,21 @@
 </div>
 
 <script>
+    function getQueryVariable(variable)
+    {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+                var pair = vars[i].split("=");
+                if(pair[0] == variable){return pair[1];}
+        }
+        return(false);
+    }
+
+    var paramCurrWindow = getQueryVariable("storagecode");
+    console.log('Url parameters ' + paramCurrWindow);
+
+
     var inputClientfilesCode = document.getElementById("inputClientfilesCode").value;
     var cookieClientfilesCode = getCookie('client-CFCode');
     var btnTestClientfilesCodeExists = document.getElementById("btnTestClientfilesCodeExists");
@@ -234,8 +249,8 @@
         btnTestClientfilesCodeExists.style.display = "none"
     }
 
-    if (window.location.href.endsWith("?storagecode")) {
-        $('#modalClientfiles').modal('show')
+    if (window.location.href.includes("?storagecode")) {
+        $('#modalClientfiles').modal('show');
     }
 
     function saveClientfilesCode() {
@@ -263,6 +278,9 @@
             console.log("client-CFCode cookie not existing");
         }
     }
+
+    inputClientfilesCode.value = paramCurrWindow;
+
 </script>
     </body>
 </html>

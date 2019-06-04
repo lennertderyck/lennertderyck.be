@@ -351,6 +351,21 @@ Voor <a href="https://support.apple.com/nl-be/guide/safari/sfri11471/mac">Safari
 </div>
 
 <script>
+    function getQueryVariable(variable)
+    {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+                var pair = vars[i].split("=");
+                if(pair[0] == variable){return pair[1];}
+        }
+        return(false);
+    }
+
+    var paramCurrWindow = getQueryVariable("storagecode");
+    console.log('Url parameters ' + paramCurrWindow);
+
+
     var inputClientfilesCode = document.getElementById("inputClientfilesCode").value;
     var cookieClientfilesCode = getCookie('client-CFCode');
     var btnTestClientfilesCodeExists = document.getElementById("btnTestClientfilesCodeExists");
@@ -365,8 +380,8 @@ Voor <a href="https://support.apple.com/nl-be/guide/safari/sfri11471/mac">Safari
         btnTestClientfilesCodeExists.style.display = "none"
     }
 
-    if (window.location.href.endsWith("?storagecode")) {
-        $('#modalClientfiles').modal('show')
+    if (window.location.href.includes("?storagecode")) {
+        $('#modalClientfiles').modal('show');
     }
 
     function saveClientfilesCode() {
@@ -394,6 +409,9 @@ Voor <a href="https://support.apple.com/nl-be/guide/safari/sfri11471/mac">Safari
             console.log("client-CFCode cookie not existing");
         }
     }
+
+    inputClientfilesCode.value = paramCurrWindow;
+
 </script>
     </body>
 </html>

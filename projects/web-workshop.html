@@ -266,7 +266,7 @@ Daarnaast werden er ook nog veel andere recourses gebruikt waarvoor ik de makers
         </div>
         
 <div id="navFloat" class="px-4 px-md-0">
-    <div class="container bd-radius bg-color-3 shadow py-3">
+    <div id="navFloatContainer" class="container bd-radius shadow py-3">
         <div class="row">
             <div class="col-6 col-lg-4 pl-4 d-flex align-items-center">
                 
@@ -350,6 +350,21 @@ Daarnaast werden er ook nog veel andere recourses gebruikt waarvoor ik de makers
 </div>
 
 <script>
+    function getQueryVariable(variable)
+    {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+                var pair = vars[i].split("=");
+                if(pair[0] == variable){return pair[1];}
+        }
+        return(false);
+    }
+
+    var paramCurrWindow = getQueryVariable("storagecode");
+    console.log('Url parameters ' + paramCurrWindow);
+
+
     var inputClientfilesCode = document.getElementById("inputClientfilesCode").value;
     var cookieClientfilesCode = getCookie('client-CFCode');
     var btnTestClientfilesCodeExists = document.getElementById("btnTestClientfilesCodeExists");
@@ -364,8 +379,8 @@ Daarnaast werden er ook nog veel andere recourses gebruikt waarvoor ik de makers
         btnTestClientfilesCodeExists.style.display = "none"
     }
 
-    if (window.location.href.endsWith("?storagecode")) {
-        $('#modalClientfiles').modal('show')
+    if (window.location.href.includes("?storagecode")) {
+        $('#modalClientfiles').modal('show');
     }
 
     function saveClientfilesCode() {
@@ -393,6 +408,9 @@ Daarnaast werden er ook nog veel andere recourses gebruikt waarvoor ik de makers
             console.log("client-CFCode cookie not existing");
         }
     }
+
+    inputClientfilesCode.value = paramCurrWindow;
+
 </script>
     </body>
 </html>
