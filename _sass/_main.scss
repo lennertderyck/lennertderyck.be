@@ -565,6 +565,10 @@ p:not(.txt-modern) div:not(.txt-modern) p {
             text-overflow: ellipsis;
         }
 
+        #navFloatContainer {
+            background-color: white;
+        }
+
     /* CAROUSEL */
     .carousel.slide {
         max-height: 395px;
