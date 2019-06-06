@@ -1293,6 +1293,11 @@ p:not(.txt-modern) div:not(.txt-modern) p {
             column-count: 1;
             column-gap: 60px;
         }
+
+    /* MESSENGER BUTTON */
+        #fb-root {
+            display: none !important;
+        }
 }
 
 // Medium devices (tablets, 768px and up)
