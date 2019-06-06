@@ -42,7 +42,7 @@ function filterPortfolio(tag) {
 
 /* COLOR SELECTOR */
 
-var rgb = getAverageRGB(document.getElementById('projectFtImage'));
+/* var rgb = getAverageRGB(document.getElementById('projectFtImage'));
 // document.body.style.backgroundColor = 'rgb('+rgb.r+','+rgb.g+','+rgb.b+')';
 document.getElementById("navFloatContainer").style.backgroundColor = 'rgb('+rgb.r+','+rgb.g+','+rgb.b+')';
 
@@ -70,11 +70,11 @@ context.drawImage(imgEl, 0, 0);
 try {
     data = context.getImageData(0, 0, width, height);
 } catch(e) {
-    /* security error, img on diff domain */alert('x');
+   alert('x');
     return defaultRGB;
-}
+} */
 
-length = data.data.length;
+/* length = data.data.length;
 
 while ( (i += blockSize * 4) < length ) {
     ++count;
@@ -90,4 +90,13 @@ rgb.b = ~~(rgb.b/count);
 
 return rgb;
 
-}
+} */
+
+/* COLOR SELECTOR */
+
+// var sourceImage = document.getElementById('projectFtImage');
+
+myImage = $('#projectFtImage');
+dominantColor = getDominantColor(myImage);
+
+console.log('dominant color is ' + dominantColor)
