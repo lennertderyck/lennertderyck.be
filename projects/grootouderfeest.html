@@ -53,7 +53,7 @@
     <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/quantize@1.0.2/quantize.min.js"></script>
+    <script src="https://unpkg.com/fast-average-color/dist/index.min.js"></script>
 </head>
     <body id="body">
         <!-- Load Facebook SDK for JavaScript -->
@@ -151,7 +151,7 @@
         
       
         
-          <span class="txt-color-white">\ Grootouderfeest.html</span>
+          <span class="txt-color-white">\ Grootouderfeest</span>
         
       
   </small>
@@ -242,25 +242,26 @@
 <div id="navFloat" class="px-4 px-md-0">
     <div id="navFloatContainer" class="container bd-radius shadow py-3">
         <div class="row">
-            <div class="col-6 col-lg-4 pl-4 d-flex align-items-center">
+            <div class="col col-lg-4 pl-4 d-flex align-items-center">
                 
                     <a class="prev d-flex flex-row align-items-center txt-color-white" href="/projects/geboortekaart-igor">
                         <div>
                             <i data-feather="arrow-left"></i>
                         </div>
-                        <div  class="mt-1">
+                        <div class="mt-1 d-none d-md-block">
                             <p id="prevTitle" class="txt-modern ml-2 mb-0 txt-color-white">Geboortekaart Igor</p>
                         </div>
                     </a>
                 
             </div>
-            <div class="col-4 d-none d-lg-block text-center">
-                <h5 class="mb-0 txt-color-white">Grootouderfeest</h5>
+            <div class="col-auto col-md-4 text-center">
+                <a href="/projects" class="txt-modern txt-color-white">Alle projecten</a>
+                <h5 class="mb-0 txt-color-white d-none">Grootouderfeest</h5>
             </div>
-            <div class="col-6 col-lg-4 pr-4 d-flex justify-content-end">
+            <div class="col col-lg-4 pr-4 d-flex justify-content-end">
                 
                 <a class="next d-flex flex-row align-items-center txt-color-white" href="/projects/hotel-iconografie">
-                    <div class="mt-1">
+                    <div class="mt-1 d-none d-md-block">
                         <p id="nextTitle" class="txt-modern mr-2 mb-0 text-right txt-color-white">Hotel Iconografie</p>
                     </div>
                     <div>
@@ -299,6 +300,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="/assets/js/main-crtl.js"></script>
     <script src="/assets/js/cookie-ctrl.js"></script>
+
   
     <script>
         feather.replace()
