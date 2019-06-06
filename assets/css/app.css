@@ -456,7 +456,8 @@ div.pace.pace-inactive ~ #loaderSplash {
   text-overflow: ellipsis; }
 
 #navFloatContainer {
-  background-color: white; }
+  background-color: white;
+  color: var(--color); }
 
 /* CAROUSEL */
 .carousel.slide {
