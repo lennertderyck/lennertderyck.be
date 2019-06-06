@@ -455,6 +455,10 @@ div.pace.pace-inactive ~ #loaderSplash {
   overflow: hidden;
   text-overflow: ellipsis; }
 
+#navFloatContainer {
+  background-color: white;
+  color: var(--color); }
+
 /* CAROUSEL */
 .carousel.slide {
   max-height: 395px; }
