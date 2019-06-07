@@ -20,15 +20,15 @@
             </div>
             <div class="col col-lg-4 pr-4 d-flex justify-content-end">
                 {% if page.next.url %}
-                <a class="next d-flex flex-row align-items-center txt-color-white" href="{{ page.next.url | remove:'.html'}}">
-                    <div class="mt-1 d-none d-md-block">
-                        <p id="nextTitle" class="txt-modern mr-2 mb-0 text-right txt-color-white">{{ page.next.title }}</p>
-                    </div>
-                    <div>
-                        <i data-feather="arrow-right"></i>
-                    </div>
-                </a>
-            {% endif %}
+                    <a class="next d-flex flex-row align-items-center txt-color-white" href="{{ page.next.url | remove:'.html'}}">
+                        <div class="mt-1 d-none d-md-block">
+                            <p id="nextTitle" class="txt-modern mr-2 mb-0 text-right txt-color-white">{{ page.next.title }}</p>
+                        </div>
+                        <div>
+                            <i data-feather="arrow-right"></i>
+                        </div>
+                    </a>
+                {% endif %}
             </div>
         </div>
     </div>
