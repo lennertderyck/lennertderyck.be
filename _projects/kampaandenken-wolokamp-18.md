@@ -5,7 +5,7 @@ tags:
 title: Kampaandenken Wolokamp '18
 client: Scouts Haegepoorters Destelbergen
 project-url: ''
-ft-img: "/uploads/COVER_COPACOWOLO-03.png"
+ft-img: "/uploads/BANDJES_WOLOKAMP_18-03.svg"
 galery:
 - "/uploads/BANDJES_WOLOKAMP_18_VERSIE_1.png"
 - "/uploads/BANDJES_WOLOKAMP_18_VERSIE_2.png"
