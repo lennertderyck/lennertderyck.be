@@ -2,7 +2,7 @@
 layout: page
 widgets: true
 title: Beta projects
-permalink: "/beta"
+permalink: "/beta-projects"
 ft-image: ''
 short-desc: ''
 titlebar: true
