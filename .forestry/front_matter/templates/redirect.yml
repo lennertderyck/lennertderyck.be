@@ -32,6 +32,7 @@ fields:
   label: Redirect to
   description: Where to redirect
 pages:
+- _redirects/stack-series.md
 - _redirects/stack.md
 - _redirects/Social media/pintrest.md
 - _redirects/Social media/unsplash.md
