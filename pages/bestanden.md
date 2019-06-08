@@ -103,7 +103,7 @@ Binnenkort kan u dus verwachten dat bestanden aangeleverd worden via het webadre
 
 We hebben Stack een upgrade gegeven en beschikken nu over hogere download- en upload snelheden en meer capaciteit. Op onze webserver waren we beperkt tot bestanden van maximum 10 MB. De bestandsgrootte is vanaf nu onbeperkt.
 
-Daarnaast kunnen we bestanden aanleveren van een eigen veilig webadres, zo bent u zeker dat al het dataverkeer veilig verloopt.
+De bestanden worden aangeleverd via een veilige (https) verbinding. Zo bent u zeker dat het onmogelijk is voor kwaadwilligen om u bestanden te bekijken zonder de specifieke link. Daarbij is de downloadsnelheid tussen de 3 en 4 mb/s, zo download u ook erg grote bestanden in slechts enkele minuten mits u beschikt over een snelle internet verbinding (dezer dagen is dit meestal wel het geval).
 
 ##### Implementatie
 
