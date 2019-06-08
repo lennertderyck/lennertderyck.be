@@ -25,6 +25,7 @@ fields:
     required: true
   label: Permalink
   default: "/"
+  description: From which page redirect
 - name: redirect_to
   type: text
   config:
