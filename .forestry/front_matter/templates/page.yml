@@ -13,6 +13,7 @@ fields:
 - type: text
   name: permalink
   label: permalink
+  default: "/"
 - type: text
   name: ft-image
   label: ft-image
