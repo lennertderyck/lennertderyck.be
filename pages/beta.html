@@ -1,0 +1,96 @@
+---
+layout: page
+widgets: true
+title: Beta projects
+permalink: "/beta-projects"
+ft-image: ''
+short-desc: ''
+titlebar: true
+add-to-menu: false
+full-width: false
+widgets-bottom: false
+widget-blocks: []
+redirect_plugin:
+  redirect_to: ''
+  redirect_from: ''
+
+---
+
+<link href="https://fonts.googleapis.com/css?family=Overpass:300,400,600,700,800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+<script src="https://ce.lennertderyck.be/library/elements.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://lennertderyck.be/assets/css/app.css">
+
+<nav id="navMain" class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/">
+      <img src="https://lennertderyck.be/assets/images/LOGO_LDR_TEXT_RIGHT_ZWART.svg" alt="Logo Lennert De Ryck" class="no-save" width="300px">
+    </a>
+</nav>
+
+<div class="bg-color-white">
+  <div id="pageTitle" class="bg-main">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <small class="txt-modern d-block">
+            <span class="txt-color-white" style="color: white">Contact</span>   
+          </small>
+          <h1 class="page-title font-scnd uppc txt-color-white fontw-400 mb-0" style="color: white">Nieuw bericht</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" class="bg-color-white py-5" style="max-width: 800px;">
+    <div class="row">
+      <div class="col">          
+            <p class="txt-modern mb-0">Gegevens</p>
+            <p>
+              Naam: {{ name }}<br>
+              Email: {{ email }}
+            </p>
+
+            {% if is-org-bedrijf == "on" %} 
+              <p class="txt-modern mb-0">Organisatie</p>
+              <p>{{ org-bedrijf }}</p>
+            {% endif %}
+            
+            <p class="txt-modern mb-0">Onderwerp</hp>
+            <p>
+              {{ onderwerp }}
+            </p>
+            
+            <p class="txt-modern mb-0">Bericht</hp>
+            <p>
+              {{ bericht }}
+            </p>
+            
+            <h3 class="mb-0">Offerte</h3>
+            {% if onderwerp == "offerte" %}
+              {% if logo-nieuw == "on" or logo-iconen == "on" or job-logo-deadline == "on" %}
+                <p>
+                    <p class="txt-modern mb-0">Logo's</p>
+                  <strong>Soort</strong><br>
+                  Logo nieuw / vernieuwing {{ logo-nieuw }}<br>
+                  Iconen {{ logo-iconen }}<br><br>
+                  <strong>Deadline {{ job-logo-deadline }}</strong>
+                </p>
+              {% endif %}
+            
+              {% if digitaal-reclame == "on" or digtaal-banner == "on" or digitaal-andere == "on" %}
+                <p>
+                  <p class="txt-modern mb-0">Digitaal</p>
+                  <strong>Soort</strong><br>
+                  Reclame {{ digitaal-reclame }}<br>
+                  Banner {{ digitaal-banner }}<br>
+                  Andere {{ digitaal-andere }}<br><br>
+                  <strong>Deadline {{ digitaal-deadline }}</strong>
+                </p>
+              {% endif %}
+            {% endif %}
+
+            {{ file }}
+      </div>
+    </div>
+  </div>
+</div>
