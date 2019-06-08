@@ -65,7 +65,5 @@ fields:
     label: redirect_from
   label: Redirect plugin
 pages:
-- pages/test.md
-- pages/beta.md
 - pages/branding-guidelines.md
 - pages/bestanden.md
