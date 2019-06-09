@@ -13,6 +13,8 @@ fields:
 - type: text
   name: permalink
   label: permalink
+  default: "/"
+  description: The url of the page after 'lennertderyck.be'
 - type: text
   name: ft-image
   label: ft-image

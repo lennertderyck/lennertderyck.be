@@ -25,6 +25,7 @@ fields:
     required: true
   label: Permalink
   default: "/"
+  description: From which page redirect
 - name: redirect_to
   type: text
   config:
@@ -32,6 +33,7 @@ fields:
   label: Redirect to
   description: Where to redirect
 pages:
+- _redirects/stack-series.md
 - _redirects/stack.md
 - _redirects/Social media/pintrest.md
 - _redirects/Social media/unsplash.md
