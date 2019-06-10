@@ -26,8 +26,8 @@ if (cookieStat == "consent") {
     window.onload = gaOptout();
 
     alertCookies.classList.add("d-none");
-    btnCookieStatus.innerHTML = "Cookies toestaan"
-    btnCookieStatus.setAttribute('onclick', 'cookieConsent()');
+    // btnCookieStatus.innerHTML = "Cookies toestaan"
+    // btnCookieStatus.setAttribute('onclick', 'cookieConsent()');
 } else {
     alertCookies.classList.add("show");
     btnCookieStatus.innerHTML = "Keuze niet mogelijk";

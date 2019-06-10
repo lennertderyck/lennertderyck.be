@@ -54,6 +54,8 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <script src="https://unpkg.com/fast-average-color/dist/index.min.js"></script>
+
+    <!---->
 </head>
     <body id="body">
         <!-- Load Facebook SDK for JavaScript -->
@@ -190,6 +192,63 @@
     <script>
         feather.replace()
     </script>
+
+
+
+<script>
+ fetch('https://getsimpleform.com/messages.json?api_token=836f185cefa43bb3193dd990b6266768')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (source) {
+                appendData(source);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+        function appendData(source) {
+            var mainContainer = document.getElementById("myData");
+            for (var i = 0, il = source.length; i < il; i++) {
+                    var div = document.createElement("div");
+                    div.innerHTML = 'Id: ' + source[i].data.email;
+                    mainContainer.appendChild(div);
+
+                    div.innerHTML = 
+                    '<div><span class="txt-modern">Datum</span> ' + source[i].created_at.split("T")[0].split("-").reverse().join("/") + '</div>' +
+                    '<div><span class="txt-modern">Naam</span> ' + source[i].data.name + '</div>' +
+                    '<div><span class="txt-modern">Email</span> <a href="mailto:' + source[i].data.email + '?subject=' + source[i].data.onderwerp + '">' + source[i].data.email + '</a></div>' +
+                    '<div><span class="txt-modern">Onderwerp</span> ' + source[i].data.onderwerp + '</div>' +
+                    '<div><span class="txt-modern">Bericht</span></div>' + '<p>' + source[i].data.bericht + '</p>' +
+                    '<div><span class="txt-modern">Bestanden</span></div>' + '<p>' + source[i].data.files + '</p>' +
+                    '<hr>';
+            }
+        }
+</script>
+<!--
+<script>
+    fetch('//getsimpleform.com/messages.json?api_token=836f185cefa43bb3193dd990b6266768')
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            appendData(data);
+        })
+        .catch(function (err) {
+            console.log('error: ' + err);
+        });
+    function appendData(data) {
+        var mainContainer = document.getElementById("myData");
+        for (var i = 0; i < data.length; i++) {
+            var formData = data.data[i];
+            for (var j = 0; j < formData.length; j++) {
+                var clientInfo = formData[j]
+                var div = document.createElement("div");
+                div.innerHTML = 'Name: ' + clientInfo.name + ' ' + clientInfo.email;
+                mainContainer.appendChild(div);
+            }
+        } 
+    }
+</script> -->
         <div class="modal fade" id="modalClientfiles" tabindex="-1" role="dialog" aria-labelledby="modalClientfilesTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
