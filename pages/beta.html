@@ -97,5 +97,23 @@ redirect_plugin:
 
 </div>
 
+<input type="text" id="filterMyData" onchange="filterJson()">
+
 <div id="myData"></div>
+
+<script>
+  var mydata = document.getElementById("myData");
+  var div = document.createElement("div");
+  var filterMyData = document.getElementById("filterMyData")
+
+  var item = mydata.getElementsByClassName('jsonItem');
+
+  function filterJson() {
+    for (var i = 0, il = item.length; i < il; i++) {
+        if (item[i].innerHTML.includes(filterMyData.value)) {
+          item[i].classList.add('filterTrue');
+        }
+    }
+  }
+</script>
   
