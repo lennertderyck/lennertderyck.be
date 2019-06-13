@@ -63,3 +63,8 @@ defaults:
       type: "redirects"
     values:
       layout: "redirect"
+- scope:
+      path: ""
+      type: "page"
+    values:
+      published: "true"
