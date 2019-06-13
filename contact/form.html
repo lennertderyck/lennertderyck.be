@@ -170,7 +170,7 @@
     <div class="row">
         
             <div class="page-content col-12">
-                <form action="https://getsimpleform.com/messages?form_api_token=96062ca48bf40b13aa97da2d537ce2af" method="post" enctype="multipart/form-data">
+                <form id="formContact" action method="post" enctype="multipart/form-data">
   <nav>
     <div class="nav nav-tabs" id="tabContact" role="tablist">
       <a class="nav-item nav-link active" id="nav-contact-info-tab" data-toggle="tab" href="#nav-contact-info" role="tab" aria-controls="nav-contact-info" aria-selected="true">Info</a>
@@ -435,7 +435,12 @@
       </div>
     </div>
   </div>
-  <button class="btn" type="submit">Versturen</button>
+  <div class="containerHumanCheck mb-3">
+    <input class="mr-2" type="checkbox" name="human" id="humanCheck" onchange="areYouHumanCheck()"><label for="humanCheck" class="txt-modern">I am human</label>
+  </div>
+  <div class="group">
+    <button id="btnFormSubmit" class="btn" type="submit">Versturen</button> <p id="notifHumanCheck" style="display: none;" class="ml-3 mb-0 fontw-600">Het lijkt er op dat je geen persoon bent</p>
+  </div>
 </form>
 
 <style>
@@ -488,20 +493,9 @@
     }
     output.innerHTML += '</ul>';
   }
-
-  /* var contactSelectOnd = document.getElementById('contactSelectOnd')
-  var optionOfferte = document.getElementById('contactSelectOnd-optionOfferte');
-
-  if (optionOfferte.selected = "true") {
-      console.log("Nieuw contactonderwerp is ")
-  }
-
-  function checkContactSubj() {
-
-  } */
-      
-      //a.t
 </script>
+
+
             </div>
             <div class="page-widgets col-12 col-md-3">                
                 
@@ -552,6 +546,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="/assets/js/main-crtl.js"></script>
     <script src="/assets/js/cookie-ctrl.js"></script>
+    <script src="/assets/js/humanCheck.js"></script>
 
   
     <script>
