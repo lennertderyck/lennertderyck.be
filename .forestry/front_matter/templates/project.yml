@@ -34,6 +34,18 @@ fields:
   type: image_gallery
   config: {}
   label: Gallerij
+- name: date
+  type: datetime
+  label: date
+  description: ''
+  config:
+    required: false
+    date_format: DD/MM/YYYY
+    time_format: 
+    display_utc: false
+    export_format: 'DD/MM/YYYY h:mm: A ZZ'
+  default: now
+  hidden: true
 pages:
 - _projects/nomatic.md
 - _projects/spaghettiavond.md
