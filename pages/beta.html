@@ -20,7 +20,7 @@ widget-blocks:
 redirect_plugin:
   redirect_to: ''
   redirect_from: ''
-published: false
+published: true
 
 ---
 <div class="d-none">
@@ -105,7 +105,15 @@ published: false
 
 </div>
 
-<input type="text" id="filterMyData" onchange="filterJson()">
+<div class="p-3 mb-5 bg-color-2 bd-radius">
+  <div class="h-section">
+  <h4>Berichten</h4>
+    <p class="txt-modern mb-3">
+      Filter
+    </p>
+  </div>
+  <input class="w-100 bg-color-white" type="text" id="filterMyData" onkeyup="filterJson()" placeholder="Zoek een bericht">
+</div>
 
 <div id="myData"></div>
 
@@ -117,11 +125,20 @@ published: false
   var item = mydata.getElementsByClassName('jsonItem');
 
   function filterJson() {
-    for (var i = 0, il = item.length; i < il; i++) {
-        if (item[i].innerHTML.includes(filterMyData.value)) {
-          item[i].classList.add('filterTrue');
+    var input, filter, myData, li, a, i, txtValue;
+    input = document.getElementById("filterMyData");
+    filter = input.value.toUpperCase();
+    myData = document.getElementById("myData");
+    li = myData.getElementsByClassName('jsonItem');
+    for (i = 0; i < li.length; i++) {
+        // a = li[i].getElementsByTagName("div");
+        txtValue = li[i].textContent || li[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
         }
     }
-  }
+}
 </script>
   
