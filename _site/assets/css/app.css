@@ -560,6 +560,9 @@ form .container-select::after {
 /* form .tab-content select, form .tab-content input, form .tab-content textarea {
     background-color: white;
 } */
+.containerHumanCheck {
+  display: none; }
+
 /* ACCORDION */
 .accordion {
   border-radius: var(--border-radius);
