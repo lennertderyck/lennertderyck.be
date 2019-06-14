@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+    <script src="/assets/js/console.image.js"></script>
+    <script>
+        console.image("https://lennertderyck.be/assets/images/LOGO_LDR_TEXT_RIGHT_ZWART.svg");
+        console.meme("Not sure if memes in dev tools is stupid", "or disastrous.", "Not Sure Fry", 400, 300);
+
+    </script>
     <script src="/assets/js/redirect-https.js"></script>
     <script src="/assets/js/cookies.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -90,13 +96,15 @@
         <div id="loaderSplash">
             <img src="/assets/images/LOGO_LDR_ZWART.svg" alt="" height="155px">
         </div>
-        <!-- REAL CONTENT -->
+        
         <div class="d-none alert alert-warning alert-dismissible fade show" role="alert" id="testAlert">
             <p class="mb-0"><strong>Holy guacamole!</strong> Deze site is nu nog sneller! <br class="d-inline d-md-none"> <a class="btn d-inline ml-4" onclick="hideAlert('testAlert')">Lees meer</a></p>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
+
+        <!-- REAL CONTENT -->
         <nav id="navMain" class="navbar navbar-expand-lg">
   <a class="navbar-brand" href="/">
     <img src="/assets/images/LOGO_LDR_TEXT_RIGHT_ZWART.svg" alt="Logo Lennert De Ryck" class="no-save" width="300px">
@@ -182,6 +190,50 @@
     </div>
   </div>
 </footer>
+        <div class="modal fade" id="modalClientfiles" tabindex="-1" role="dialog" aria-labelledby="modalClientfilesTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+            <div class="h-section mb-0">
+                <h5 class="modal-title" id="modalClientfilesTitle">Cloud bestanden</h5>
+                <p class="txt-modern mb-0">Storage code</p>
+            </div>
+            <button type="button" class="close d-none" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group mb-3">
+                <small class="about">Dit is de code die u per mail kreeg en lijkt op 'DsmDTjS48IKTfvy'</small>
+                <input type="text" class="w-100" id="inputClientfilesCode">
+            </div>
+        </div>
+        <div class="modal-footer pt-0 bg-color-white">
+            <button type="button" class="btn bg-color-3" data-dismiss="modal">Annuleren</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="saveClientfilesCode()">Opslaan & testen</button>
+        </div>
+        <div class="alert small mb-0 w-100 text-center" role="alert">
+            Na het opslaan van je code wordt deze pagina herladen.
+        </div>
+      </div>
+    </div>
+</div>
+
+<script>
+    
+
+</script>
+        <div id="menuContext" class="bd-radius shadow">
+    <ul class="menu-options mb-0">
+        <li class="menu-option"><a href="/projects">Portfolio</a></li>
+        <li class="menu-option"><a href="/contact">Contact</a></li>
+        <li class="menu-option"><a href="mailto:hello@lennertderyck.be">Emailen</a></li>
+        <hr class="my-1 mx-3">
+        <li class="menu-option"><a href="/privacy">Privacy</a></li>
+        <li class="menu-option txt-modern"><span onclick="$('#modalClientfiles').modal('show');">Storagecode</span></li>
+    </ul>
+</div>
+
         <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -254,97 +306,5 @@
         } 
     }
 </script> -->
-        <div class="modal fade" id="modalClientfiles" tabindex="-1" role="dialog" aria-labelledby="modalClientfilesTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header border-0">
-            <div class="h-section mb-0">
-                <h5 class="modal-title" id="modalClientfilesTitle">Cloud bestanden</h5>
-                <p class="txt-modern mb-0">Storage code</p>
-            </div>
-            <button type="button" class="close d-none" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="modal-body">
-            <div class="form-group mb-3">
-                <small class="about">Dit is de code die u per mail kreeg en lijkt op 'DsmDTjS48IKTfvy'</small>
-                <input type="text" class="w-100" id="inputClientfilesCode">
-            </div>
-        </div>
-        <div class="modal-footer pt-0 bg-color-white">
-            <button type="button" class="btn bg-color-3" data-dismiss="modal">Annuleren</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="saveClientfilesCode()">Opslaan & testen</button>
-        </div>
-        <div class="alert small mb-0 w-100 text-center" role="alert">
-            Na het opslaan van je code wordt deze pagina herladen.
-        </div>
-      </div>
-    </div>
-</div>
-
-<script>
-    function getQueryVariable(variable)
-    {
-        var query = window.location.search.substring(1);
-        var vars = query.split("&");
-        for (var i=0;i<vars.length;i++) {
-                var pair = vars[i].split("=");
-                if(pair[0] == variable){return pair[1];}
-        }
-        return(false);
-    }
-
-    var paramCurrWindow = getQueryVariable("storagecode");
-    console.log('Url parameters ' + paramCurrWindow);
-
-
-    var inputClientfilesCode = document.getElementById("inputClientfilesCode").value;
-    var cookieClientfilesCode = getCookie('client-CFCode');
-    var btnTestClientfilesCodeExists = document.getElementById("btnTestClientfilesCodeExists");
-    var btnTestClientfilesCodeNotExisting = document.getElementById("btnTestClientfilesCodeNotExisting");
-
-    if (cookieClientfilesCode != "") {
-        // btnTestClientfilesCodeNotExisting.outerHTML = "";
-        btnTestClientfilesCodeNotExisting.style.display = "none"
-        document.getElementById("inputClientfilesCode").value = cookieClientfilesCode;
-    } else {
-        // btnTestClientfilesCodeExists.outerHTML = "";
-        btnTestClientfilesCodeExists.style.display = "none"
-    }
-
-    if (window.location.href.includes("?storagecode")) {
-        $('#modalClientfiles').modal('show');
-    }
-
-    function saveClientfilesCode() {
-        var inputClientfilesCode = document.getElementById("inputClientfilesCode").value;
-        createCookie('client-CFCode',inputClientfilesCode,1000);
-        // window.location.replace("https://storage.lennertderyck.be/s/" + inputClientfilesCode)
-        var winStack = window.open("https://storage.lennertderyck.be/s/" + inputClientfilesCode, '_blank');
-        winStack.focus();
-        location.reload();
-    }
-
-    function testClientfilesCode() {
-        var inputClientfilesCode = document.getElementById("inputClientfilesCode").value;
-        var cookieClientfilesCode = getCookie('client-CFCode');
-        var modalClientfiles = document.getElementById("modalClientfiles");
-
-        if (cookieClientfilesCode != "") {
-            // window.location.href = "http://www.w3schools.com" + "/storage";
-            // window.location.replace("https://storage.lennertderyck.be/s/" + cookieClientfilesCode)
-            var winStack = window.open("https://storage.lennertderyck.be/s/" + cookieClientfilesCode, '_blank');
-            winStack.focus();
-            console.log("client-CFCode cookie exists");
-        } else {
-            modalClientfiles.classList.add('show');
-            console.log("client-CFCode cookie not existing");
-        }
-    }
-
-    inputClientfilesCode.value = paramCurrWindow;
-
-</script>
     </body>
 </html>

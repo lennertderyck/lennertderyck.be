@@ -111,7 +111,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
 .shadow {
   box-shadow: 0px 6px 25px 3px rgba(0, 0, 0, 0.32) !important; }
 
-.txt-modern:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6), .nav.nav-tabs > a.nav-item, tl, #site-content h5 {
+.txt-modern:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6), .nav.nav-tabs > a.nav-item, #menuContext, #menuContext *, tl, #site-content h5 {
   text-transform: uppercase;
   font-family: "Overpass" !important;
   font-weight: 700;
@@ -661,6 +661,34 @@ div.modal .modal-footer {
   left: 0%;
   right: 0%;
   transition-duration: 0.2s; }
+
+/* CUSTOM CONTEXT MENU */
+#menuContext {
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0 4px 5px 3px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  display: none;
+  overflow: hidden; }
+
+#menuContext .menu-options {
+  list-style: none;
+  padding: 0px 0;
+  z-index: 1; }
+
+#menuContext .menu-options .menu-option {
+  font-weight: 500;
+  z-index: 1;
+  font-size: 14px;
+  cursor: pointer; }
+
+#menuContext .menu-options .menu-option > * {
+  display: block;
+  padding: 10px 20px 10px 20px; }
+
+#menuContext .menu-options .menu-option:hover {
+  background: rgba(0, 0, 0, 0.2);
+  background: var(--accent-2); }
 
 /********************************************************************/
 /* BUTTON */
