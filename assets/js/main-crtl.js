@@ -38,7 +38,68 @@ function filterPortfolio(tag) {
     }
 }
 
-/* CLIENT STACK FORWARD */
+/* MODAL CLIENT FILES FORWARD */
+
+function getQueryVariable(variable)
+    {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+                var pair = vars[i].split("=");
+                if(pair[0] == variable){return pair[1];}
+        }
+        return(false);
+    }
+
+    var paramCurrWindow = getQueryVariable("storagecode");
+    console.log('Url parameters ' + paramCurrWindow);
+
+
+    var inputClientfilesCode = document.getElementById("inputClientfilesCode").value;
+    var cookieClientfilesCode = getCookie('client-CFCode');
+    var btnTestClientfilesCodeExists = document.getElementById("btnTestClientfilesCodeExists");
+    var btnTestClientfilesCodeNotExisting = document.getElementById("btnTestClientfilesCodeNotExisting");
+
+    if (cookieClientfilesCode != "") {
+        // btnTestClientfilesCodeNotExisting.outerHTML = "";
+        btnTestClientfilesCodeNotExisting.style.display = "none"
+        document.getElementById("inputClientfilesCode").value = cookieClientfilesCode;
+    } else {
+        // btnTestClientfilesCodeExists.outerHTML = "";
+        btnTestClientfilesCodeExists.style.display = "none"
+    }
+
+    if (window.location.href.includes("?storagecode")) {
+        $('#modalClientfiles').modal('show');
+    }
+
+    function saveClientfilesCode() {
+        var inputClientfilesCode = document.getElementById("inputClientfilesCode").value;
+        createCookie('client-CFCode',inputClientfilesCode,1000);
+        // window.location.replace("https://storage.lennertderyck.be/s/" + inputClientfilesCode)
+        var winStack = window.open("https://storage.lennertderyck.be/s/" + inputClientfilesCode, '_blank');
+        winStack.focus();
+        location.reload();
+    }
+
+    function testClientfilesCode() {
+        var inputClientfilesCode = document.getElementById("inputClientfilesCode").value;
+        var cookieClientfilesCode = getCookie('client-CFCode');
+        var modalClientfiles = document.getElementById("modalClientfiles");
+
+        if (cookieClientfilesCode != "") {
+            // window.location.href = "http://www.w3schools.com" + "/storage";
+            // window.location.replace("https://storage.lennertderyck.be/s/" + cookieClientfilesCode)
+            var winStack = window.open("https://storage.lennertderyck.be/s/" + cookieClientfilesCode, '_blank');
+            winStack.focus();
+            console.log("client-CFCode cookie exists");
+        } else {
+            modalClientfiles.classList.add('show');
+            console.log("client-CFCode cookie not existing");
+        }
+    }
+
+    inputClientfilesCode.value = paramCurrWindow;
 
 /* COLOR SELECTOR */
 
@@ -58,3 +119,34 @@ window.addEventListener('load', function() {
 
     console.log(color);
 }, false);
+
+/* CUSTOM CONTEXT MENU */
+    const menu = document.getElementById('menuContext');
+    let menuVisible = false;
+
+    const toggleMenu = command => {
+        menu.style.display = command === "show" ? "block" : "none";
+        menuVisible = !menuVisible;
+    };
+
+    const setPosition = ({ top, left }) => {
+        menu.style.left = `${left}px`;
+        menu.style.top = `${top}px`;
+        toggleMenu("show");
+    };
+
+    window.addEventListener("click", e => {
+        if(menuVisible)toggleMenu("hide");
+        menu.style.top = "unset";
+        menu.style.left = "unset";
+    });
+
+    window.addEventListener("contextmenu", e => {
+    e.preventDefault();
+        const origin = {
+            left: e.screenX,
+            top: e.screenY - 134
+    };
+        setPosition(origin);
+        return false;
+    });

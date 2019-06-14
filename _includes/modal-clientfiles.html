@@ -28,65 +28,6 @@
 </div>
 
 <script>
-    function getQueryVariable(variable)
-    {
-        var query = window.location.search.substring(1);
-        var vars = query.split("&");
-        for (var i=0;i<vars.length;i++) {
-                var pair = vars[i].split("=");
-                if(pair[0] == variable){return pair[1];}
-        }
-        return(false);
-    }
-
-    var paramCurrWindow = getQueryVariable("storagecode");
-    console.log('Url parameters ' + paramCurrWindow);
-
-
-    var inputClientfilesCode = document.getElementById("inputClientfilesCode").value;
-    var cookieClientfilesCode = getCookie('client-CFCode');
-    var btnTestClientfilesCodeExists = document.getElementById("btnTestClientfilesCodeExists");
-    var btnTestClientfilesCodeNotExisting = document.getElementById("btnTestClientfilesCodeNotExisting");
-
-    if (cookieClientfilesCode != "") {
-        // btnTestClientfilesCodeNotExisting.outerHTML = "";
-        btnTestClientfilesCodeNotExisting.style.display = "none"
-        document.getElementById("inputClientfilesCode").value = cookieClientfilesCode;
-    } else {
-        // btnTestClientfilesCodeExists.outerHTML = "";
-        btnTestClientfilesCodeExists.style.display = "none"
-    }
-
-    if (window.location.href.includes("?storagecode")) {
-        $('#modalClientfiles').modal('show');
-    }
-
-    function saveClientfilesCode() {
-        var inputClientfilesCode = document.getElementById("inputClientfilesCode").value;
-        createCookie('client-CFCode',inputClientfilesCode,1000);
-        // window.location.replace("https://storage.lennertderyck.be/s/" + inputClientfilesCode)
-        var winStack = window.open("https://storage.lennertderyck.be/s/" + inputClientfilesCode, '_blank');
-        winStack.focus();
-        location.reload();
-    }
-
-    function testClientfilesCode() {
-        var inputClientfilesCode = document.getElementById("inputClientfilesCode").value;
-        var cookieClientfilesCode = getCookie('client-CFCode');
-        var modalClientfiles = document.getElementById("modalClientfiles");
-
-        if (cookieClientfilesCode != "") {
-            // window.location.href = "http://www.w3schools.com" + "/storage";
-            // window.location.replace("https://storage.lennertderyck.be/s/" + cookieClientfilesCode)
-            var winStack = window.open("https://storage.lennertderyck.be/s/" + cookieClientfilesCode, '_blank');
-            winStack.focus();
-            console.log("client-CFCode cookie exists");
-        } else {
-            modalClientfiles.classList.add('show');
-            console.log("client-CFCode cookie not existing");
-        }
-    }
-
-    inputClientfilesCode.value = paramCurrWindow;
+    
 
 </script>
