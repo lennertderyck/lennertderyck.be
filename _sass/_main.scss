@@ -1473,3 +1473,17 @@ p:not(.txt-modern) div:not(.txt-modern) p {
     }
 }
 
+/* @media (prefers-color-scheme: dark) {
+    nav#navMain {
+        background-color: rgb(63, 61, 61);
+        background-color: #333639;
+
+        * {
+            color: white;
+        }
+
+        #NavMainCollapse li::after {
+            background-color: white;
+        }
+    }
+} */
