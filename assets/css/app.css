@@ -1174,3 +1174,17 @@ div.modal .modal-footer {
 
   #project-new {
     column-count: 3; } }
+/* @media (prefers-color-scheme: dark) {
+    nav#navMain {
+        background-color: rgb(63, 61, 61);
+        background-color: #333639;
+
+        * {
+            color: white;
+        }
+
+        #NavMainCollapse li::after {
+            background-color: white;
+        }
+    }
+} */
