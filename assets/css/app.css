@@ -342,9 +342,19 @@ div.pace.pace-inactive ~ #loaderSplash {
 .page-content h3:first-child {
   margin-top: 0px !important; }
 
-#over
+/* WIDGETS */
+.page-widgets hr {
+  border-color: var(--accent-3);
+  border-style: dashed; }
+
 .page-widgets .h-section {
   margin-bottom: 5px; }
+
+.page-widgets .widget {
+  margin-bottom: 3rem; }
+
+.page-widgets .widget:last-child {
+  margin-bottom: 0px; }
 
 /* PORTFOLIO CARDS */
 .cards-portfolio {
@@ -579,7 +589,6 @@ form .container-select::after {
 
 /* FOOTER */
 footer {
-  min-height: 90px;
   background-color: #f1f2f3; }
 
 /* ALERTS */
@@ -1069,7 +1078,15 @@ div.modal .modal-footer {
     max-width: 15ch;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; } }
+    text-overflow: ellipsis; }
+
+  .navbar-toggler:hover > div.top {
+    width: 100%;
+    transform: translateX(0%); }
+
+  .navbar-toggler:hover > div.bottom {
+    width: 100%;
+    transform: translateX(0%); } }
 @media (min-width: 576px) {
   /* PORTFOLIO CARDS */
   .cards-portfolio {

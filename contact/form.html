@@ -88,7 +88,8 @@
                 attribution="setup_tool"
                 page_id="1997323257173637"
                 logged_in_greeting="Hoi. Waar kunnen we je mee helpen?"
-                logged_out_greeting="Hoi. Waar kunnen we je mee helpen?">
+                logged_out_greeting="Hoi. Waar kunnen we je mee helpen?"
+                greeting_dialog_display="hide">
             </div>
         </div>
 
@@ -127,6 +128,10 @@
       </li>
       <li class="nav-item after-none pr-lg-0 ">
         <a class="nav-link" href="/contact">Contact</a>
+      </li>
+      <li class="nav-item after-none d-md-none">
+          <a class="nav-link d-md-none clickable" id="navTestClientfilesCodeNotExisting" data-toggle="modal" data-target="#modalClientfiles" onclick="testClientfilesCode()">client files</a>
+          <a class="nav-link d-md-none clickable" id="navTestClientfilesCodeExists" onclick="testClientfilesCode()">client files</a>
       </li>
       <li class="nav-item dropdown d-none">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -504,7 +509,9 @@
 
 
             </div>
-            <div class="page-widgets col-12 col-md-3">                
+            <div class="page-widgets col-12 col-md-5 col-lg-3">
+                <hr class="my-5 d-block d-md-none">
+            
                 
             </div>
         
@@ -526,22 +533,29 @@
     </div>
 </div>
         </div>
+        </div>
         
         
-        <footer class="mt-5 d-flex align-items-center"  >
+        <footer class="mt-5 p-4"  >
   <div class="container">
     <div class="row">
-      <div class="col-auto mb-1">
+      <div class="col-12 col-lg-auto mb-1">
           <div style="font-family: Oswald; font-weight: 300; letter-spacing: 2px; font-size: 1.2rem; pointer-events: none; user-select: none;">#THINKBEYONDTHEBOX</div>
           <div class="txt-modern" style="font-size: 0.8rem; letter-spacing: 1px;">
             <p class="mb-0" style="line-height: 15px;">
-              © 2019 Lennert De Ryck &nbsp;・&nbsp; Alle <br class="d-inline d-md-none">rechten voorbehouden &nbsp;⎥&nbsp; <a href="/privacy" class="txt-color-main">Privacy</a><br class="d-md-none"><span class="txt-color-3 d-none d-md-inline"> &nbsp;・&nbsp;<a href="https://app.forestry.io/sites/rrgolibtmktc8w/#/" class="txt-color-3" target="_blank" rel="noopener">Admin</a></span>
+              © 2019 Lennert De Ryck &nbsp;・&nbsp; Alle <br class="d-inline d-md-none">rechten voorbehouden &nbsp;⎥ <br class="d-none d-md-initial d-lg-none">&nbsp; <a href="/privacy" class="txt-color-main">Privacy</a><br class="d-md-none"><span class="txt-color-3 d-none d-md-inline"> &nbsp;・&nbsp;<a href="https://app.forestry.io/sites/rrgolibtmktc8w/#/" class="txt-color-3" target="_blank" rel="noopener">Admin</a></span>
             </p>
           </div>
       </div>
-      <div class="col d-flex align-items-center justify-content-end">
+      <div class="col align-items-center justify-content-end d-none d-lg-flex">
         <button class="btn h-fit bg-color-3" id="btnTestClientfilesCodeNotExisting" data-toggle="modal" data-target="#modalClientfiles" onclick="testClientfilesCode()">client files</button>
         <button class="btn h-fit bg-color-3" id="btnTestClientfilesCodeExists" onclick="testClientfilesCode()">client files</button>
+      </div>
+      <div class="col d-md-none mt-2">
+        <p class="mb-0 txt-color-3">De link naar je bestanden vind je in het menu</p>
+      </div>
+      <div class="col d-none d-md-block d-lg-none">
+          <p class="mb-0 txt-color-3">Gebruik je rechtermuisknop om je bestanden te bekijken</p>
       </div>
     </div>
   </div>
@@ -585,7 +599,8 @@
         <li class="menu-option"><a href="/contact/form">Contact</a></li>
         <li class="menu-option"><a href="mailto:hello@lennertderyck.be">Emailen</a></li>
         <hr class="my-1 mx-3">
-        <li class="menu-option"><a href="/privacy">Privacy</a></li>
+        <li class="menu-option d-none"><a href="/privacy">Privacy</a></li>
+        <li class="menu-option"><span onclick="testClientfilesCode()">Client files</span></li>
         <li class="menu-option txt-modern"><span onclick="$('#modalClientfiles').modal('show');">Storagecode</span></li>
     </ul>
 </div>
