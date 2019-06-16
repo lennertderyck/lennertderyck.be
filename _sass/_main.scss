@@ -428,11 +428,22 @@ p:not(.txt-modern) div:not(.txt-modern) p {
         margin-top: 0px !important;
     }
 
-    #over
-
     /* WIDGETS */
+    .page-widgets hr {
+        border-color: var(--accent-3);
+        border-style: dashed;
+    }
+
     .page-widgets .h-section {
         margin-bottom: 5px;
+    }
+
+    .page-widgets .widget {
+        margin-bottom: 3rem;
+    }
+
+    .page-widgets .widget:last-child {
+        margin-bottom: 0px;
     }
 
 /* PORTFOLIO CARDS */
@@ -719,7 +730,7 @@ p:not(.txt-modern) div:not(.txt-modern) p {
     footer {
         // position: absolute;
         // bottom: 0px;
-        min-height: 90px;
+        // min-height: 90px;
         background-color: #f1f2f3;
     }
 
@@ -1318,6 +1329,16 @@ p:not(.txt-modern) div:not(.txt-modern) p {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+
+    .navbar-toggler:hover > div.top {
+        width: 100%;
+        transform: translateX(0%);
+    }
+
+    .navbar-toggler:hover > div.bottom {
+        width: 100%;
+        transform: translateX(0%);
     }
 }
 

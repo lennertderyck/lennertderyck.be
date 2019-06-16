@@ -59,14 +59,18 @@ function getQueryVariable(variable)
     var cookieClientfilesCode = getCookie('client-CFCode');
     var btnTestClientfilesCodeExists = document.getElementById("btnTestClientfilesCodeExists");
     var btnTestClientfilesCodeNotExisting = document.getElementById("btnTestClientfilesCodeNotExisting");
+    var navTestClientfilesCodeNotExisting = document.getElementById('navTestClientfilesCodeNotExisting');
+    var navTestClientfilesCodeExists = document.getElementById('navTestClientfilesCodeExists');
 
     if (cookieClientfilesCode != "") {
         // btnTestClientfilesCodeNotExisting.outerHTML = "";
         btnTestClientfilesCodeNotExisting.style.display = "none"
+        navTestClientfilesCodeNotExisting.style.display = "none"
         document.getElementById("inputClientfilesCode").value = cookieClientfilesCode;
     } else {
         // btnTestClientfilesCodeExists.outerHTML = "";
         btnTestClientfilesCodeExists.style.display = "none"
+        navTestClientfilesCodeExists.style.display = "none"
     }
 
     if (window.location.href.includes("?storagecode")) {
@@ -94,7 +98,8 @@ function getQueryVariable(variable)
             winStack.focus();
             console.log("client-CFCode cookie exists");
         } else {
-            modalClientfiles.classList.add('show');
+            $('#modalClientfiles').modal('show')
+            // modalClientfiles.classList.add('show');
             console.log("client-CFCode cookie not existing");
         }
     }

@@ -4,12 +4,14 @@ layout   : default
 <div class="container" {% if page.full-width == true %}style="max-width: 800px;"{% endif %}>
     <div class="row">
         {% if page.widgets == true %}
-            <div class="page-content col-12{% if page.full-width == false %} col-md-9{% endif %}">
+            <div class="page-content col-12{% if page.full-width == false %} col-md-7 col-lg-9{% endif %}">
                 {{ content }}
             </div>
-            <div class="page-widgets col-12 col-md-3">                
+            <div class="page-widgets col-12 col-md-5 col-lg-3">
+                <hr class="my-5 d-block d-md-none">
+            
                 {% for item in page.widget-blocks %}
-                    <div class="widget mb-5">
+                    <div class="widget">
 
                         {% if item.template == "widget" %}
                             <div class="h-section mb-1">
