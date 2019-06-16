@@ -90,6 +90,15 @@ p:not(.txt-modern) div:not(.txt-modern) p {
 .h-fit {
   height: fit-content !important; }
 
+.scale-child-75 > * {
+  transform: scale(0.75); }
+
+.transl-up-2 {
+  transform: translateY(-2px); }
+
+span.transl-up-2 {
+  display: inline-block; }
+
 .txt-sm {
   font-size: 0.8rem;
   text-transform: uppercase;
