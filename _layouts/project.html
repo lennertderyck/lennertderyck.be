@@ -20,14 +20,14 @@ layout   : default
                                     <li data-target="#carouselExampleIndicators" data-slide-to="{% increment foo %}"></li>
                                 {% endfor %}
                             </ol>
-                            <div class="carousel-inner bd-radius" style="overflow: hidden;">
+                            <div class="carousel-inner bd-radius" style="overflow: hidden;" data-touch="true">
                                 {% for img in page.galery.first %}
-                                    <div class="carousel-item active" style="overflow: hidden;">
+                                    <div class="carousel-item active" style="overflow: hidden;" data-touch="true">
                                         <img src="{{ img }}" class="d-block w-100" alt="Project foto" style="object-fit: contain;">
                                     </div>
                                 {% endfor %}
                                 {% for img in page.galery offset:1 %}
-                                    <div class="carousel-item" style="overflow: hidden;">
+                                    <div class="carousel-item" style="overflow: hidden;" data-touch="true">
                                         <img src="{{ img }}" class="d-block w-100" alt="Project foto" style="object-fit: contain;">
                                     </div>
                                 {% endfor %}
