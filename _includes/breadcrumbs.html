@@ -1,5 +1,5 @@
-<div id="breadcrumbs" class="txt-color-white text-center">
-  <small class="txt-modern text-center">
+<div id="breadcrumbs" class="txt-color-white {% if page.layout == "project" %}text-center{% endif %}">
+  <small class="txt-modern {% if page.layout == "project" %}text-center{% endif %}">
       {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
       {% if page.layout != "project" %}
         <a href="/" class="txt-color-white">Home</a>
