@@ -537,7 +537,7 @@ div.form-group small, small.about {
 div.form-group small + input {
   margin-top: 7px; }
 
-form div.group .txt-modern, div.form-group .txt-modern {
+div.group .txt-modern, div.form-group .txt-modern {
   margin-bottom: 7px; }
 
 form div[class*="col-"], form div[class="col"] {
