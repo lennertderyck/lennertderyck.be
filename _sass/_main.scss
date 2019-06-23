@@ -133,6 +133,10 @@ span.transl-up-2 {
     letter-spacing: 2px;
 }
 
+.txt-color {
+
+}
+
 .h-section {
     margin-bottom: 1rem;
 }
@@ -198,9 +202,16 @@ span.transl-up-2 {
     background-color: var(--accent-5);
     font-family: var(--font-main);
     border-radius: var(--border-radius);
-    border-radius: 0px;
     color: white;
     border: none;
+}
+
+.alert.note p:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.alert.note > *:last-child {
+    margin-bottom: 0px;
 }
 
 .alert.small {

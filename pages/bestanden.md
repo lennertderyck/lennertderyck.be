@@ -23,6 +23,11 @@ widgets-bottom: false
 
 ---
 ### Vereisten
+{% include opmerking.html 
+  title="dit is een opmerking" 
+  content="
+  Afbeeldingen stuur je door zonder ze te plaatsen in een ander document (zoals een Word of Exel bestand." 
+%}
 
 ##### AFBEELDINGEN / ILLUSTRATIES (NIET VECTORIEEL)
 
