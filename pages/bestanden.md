@@ -20,7 +20,7 @@ redirect_plugin:
   redirect_to: ''
   redirect_from: ''
 widgets-bottom: false
-published: false
+published: true
 
 ---
 ### Vereisten
@@ -108,7 +108,7 @@ We hebben Stack een upgrade gegeven en beschikken nu over hogere download- en up
 
 De bestanden worden aangeleverd via een veilige (https) verbinding. Zo bent u zeker dat het onmogelijk is voor kwaadwilligen om u bestanden te bekijken zonder de specifieke link. Daarbij is de downloadsnelheid tussen de 3 en 5 mb/s, zo download u ook erg grote bestanden in slechts enkele minuten mits u beschikt over een snelle internet verbinding (dezer dagen is dit meestal wel het geval).
 
-{% include opmerking.html title="Downloadsnelheid" content="De snelheid van downloads hangt voornamelijk af van het netwerk waar je met bent verbonden en de infrastructuur er van." %}
+{% include opmerking.html title="Downloadsnelheid" sidelean="true" content="De snelheid van downloads hangt voornamelijk af van het netwerk waar je met bent verbonden en de infrastructuur er van." %}
 
 ##### Implementatie
 

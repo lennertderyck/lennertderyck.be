@@ -158,6 +158,9 @@ span.transl-up-2 {
   color: white;
   border: none; }
 
+.alert.note.side {
+  margin-left: -16px; }
+
 .alert.note p:not(:last-child) {
   margin-bottom: 5px; }
 
