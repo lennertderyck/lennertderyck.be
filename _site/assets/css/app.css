@@ -158,8 +158,9 @@ span.transl-up-2 {
   color: white;
   border: none; }
 
-.alert.note.side {
-  margin-left: -16px; }
+.alert.note.sidelean {
+  margin-left: -16px;
+  margin-right: -16px; }
 
 .alert.note p:not(:last-child) {
   margin-bottom: 5px; }
@@ -1121,11 +1122,11 @@ div.modal .modal-footer {
     overflow: hidden;
     text-overflow: ellipsis; }
 
-  .navbar-toggler:hover > div.top {
+  .navbar-toggler:not(.collapsed):hover > div.top {
     width: 100%;
     transform: translateX(0%); }
 
-  .navbar-toggler:hover > div.bottom {
+  .navbar-toggler:not(.collapsed):hover > div.bottom {
     width: 100%;
     transform: translateX(0%); } }
 @media (min-width: 576px) {

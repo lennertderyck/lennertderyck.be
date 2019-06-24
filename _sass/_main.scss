@@ -206,8 +206,9 @@ span.transl-up-2 {
     border: none;
 }
 
-.alert.note.side {
+.alert.note.sidelean {
     margin-left: -16px;
+    margin-right: -16px;
 }
 
 .alert.note p:not(:last-child) {
@@ -1386,12 +1387,12 @@ span.transl-up-2 {
         text-overflow: ellipsis;
     }
 
-    .navbar-toggler:hover > div.top {
+    .navbar-toggler:not(.collapsed):hover > div.top {
         width: 100%;
         transform: translateX(0%);
     }
 
-    .navbar-toggler:hover > div.bottom {
+    .navbar-toggler:not(.collapsed):hover > div.bottom {
         width: 100%;
         transform: translateX(0%);
     }
