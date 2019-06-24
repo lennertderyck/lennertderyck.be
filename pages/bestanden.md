@@ -20,18 +20,10 @@ redirect_plugin:
   redirect_to: ''
   redirect_from: ''
 widgets-bottom: false
-published: true
+published: false
 
 ---
 ### Vereisten
-
-{% include opmerking.html
-title="dit is een opmerking"
-content="
-Afbeeldingen stuur je door zonder ze te plaatsen in een ander document (zoals een Word of Exel bestand."
-%}
-
-{% include opmerking.html title="dit is een opmerking" content="Afbeeldingen stuur je door zonder ze te plaatsen in een ander document (zoals een Word of Exel bestand."%}
 
 ##### AFBEELDINGEN / ILLUSTRATIES (NIET VECTORIEEL)
 
@@ -77,6 +69,8 @@ Vectortekeningen of logo’s worden aangeleverd met enkel de nodige elementen. D
 Geef doorgestuurde documenten een duidelijke naam, dit maakt de verwerking van bestanden makkelijker.  
 Bv.: Een logo stuur je door als LOGO_\[ONDERWERP\].\[extensie\], dus als je een logo voor het bedrijf Febelgra doorstuurt noem je het logo LOGO_FEBELGRA.ai
 
+{% include opmerking.html title="Kapitalen" content="Geef bestanden en folders namen in kapitalen (hoofdletters) en gebruik underscores ( _ ) in plaats van spaties. Dit maakt maakt een lijst van bestanden goed doorzoekbaar." %}
+
 Het komt vaak voor dat u als klant afbeeldingen, illustraties of teksten in uw ontwerp wil laten opnemen. Daarom geven we u de kans deze snel en makkelijk te versturen.
 
 ### Bestanden aanleveren
@@ -112,7 +106,9 @@ Binnenkort kan u dus verwachten dat bestanden aangeleverd worden via het webadre
 
 We hebben Stack een upgrade gegeven en beschikken nu over hogere download- en upload snelheden en meer capaciteit. Op onze webserver waren we beperkt tot bestanden van maximum 10 MB. De bestandsgrootte is vanaf nu onbeperkt.
 
-De bestanden worden aangeleverd via een veilige (https) verbinding. Zo bent u zeker dat het onmogelijk is voor kwaadwilligen om u bestanden te bekijken zonder de specifieke link. Daarbij is de downloadsnelheid tussen de 3 en 4 mb/s, zo download u ook erg grote bestanden in slechts enkele minuten mits u beschikt over een snelle internet verbinding (dezer dagen is dit meestal wel het geval).
+De bestanden worden aangeleverd via een veilige (https) verbinding. Zo bent u zeker dat het onmogelijk is voor kwaadwilligen om u bestanden te bekijken zonder de specifieke link. Daarbij is de downloadsnelheid tussen de 3 en 5 mb/s, zo download u ook erg grote bestanden in slechts enkele minuten mits u beschikt over een snelle internet verbinding (dezer dagen is dit meestal wel het geval).
+
+{% include opmerking.html title="Downloadsnelheid" content="De snelheid van downloads hangt voornamelijk af van het netwerk waar je met bent verbonden en de infrastructuur er van." %}
 
 ##### Implementatie
 
