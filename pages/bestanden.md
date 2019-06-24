@@ -20,7 +20,7 @@ redirect_plugin:
   redirect_to: ''
   redirect_from: ''
 widgets-bottom: false
-published: false
+published: true
 
 ---
 ### Vereisten
