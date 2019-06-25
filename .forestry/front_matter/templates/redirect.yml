@@ -33,6 +33,7 @@ fields:
   label: Redirect to
   description: Where to redirect
 pages:
+- _redirects/transfer.md
 - _redirects/offerte.md
 - _redirects/stack-series.md
 - _redirects/stack.md
