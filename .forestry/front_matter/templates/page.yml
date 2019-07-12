@@ -43,6 +43,16 @@ fields:
   name: full-width
   label: Full width
   description: Display content centered on page, without widgets
+- name: top-widget
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Widget-top
+  description: Display content after the page title, before the page content
 - type: boolean
   name: widgets
   label: Widgets side
