@@ -44,7 +44,7 @@ widget-blocks:
     width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;"
     allowtransparency="true"></iframe>
   title: Spotify
-  content: Ontdek ook mijn muziek tijdens het werken
+  content: ''
 short-desc: Mijn naam is Lennert De Ryck. Sinds 2012 studeer ik in het grafisch vakgebied
   en sinds 2015 ben ik bezig met werk voor derden. Mijn plan? ...
 widgets-bottom: false
