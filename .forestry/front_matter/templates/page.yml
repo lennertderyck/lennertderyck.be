@@ -74,6 +74,16 @@ fields:
 - name: more_settings
   type: field_group
   config: {}
+  fields:
+  - name: titlebar
+    type: boolean
+    label: Titlebar
+    description: Show titlebar
+    default: true
+  - name: add-to-menu
+    type: boolean
+    label: Main nav
+    description: Add this page to the main navigation bar
   label: More settings
 - type: field_group
   name: redirect_plugin
