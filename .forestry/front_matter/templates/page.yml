@@ -70,6 +70,10 @@ fields:
     label: Titlebar
     description: Show titlebar
     default: true
+  - name: centered-titlebar
+    type: boolean
+    label: Centered titlebar
+    description: Display the title centered on the page without background
   - name: add-to-menu
     type: boolean
     label: Main nav
