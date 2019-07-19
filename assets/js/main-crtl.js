@@ -1,6 +1,16 @@
 var menuCollapse = document.getElementById("NavMainCollapse");
 var btnNavMainCollapse = document.getElementById("btnNavMainCollapse");
 var body = document.getElementById("body");
+var titleOrig = document.title;
+
+/* IF RUNS LOCAL */
+
+if (window.location.href.startsWith("http://127.0.0.1")) {
+    console.log("This page runs local + " + titleOrig);
+    document.title = "[local] " + titleOrig;
+}
+
+/* * */
 
 function checkMenuOpen() {
     body.classList.toggle("no-scroll");

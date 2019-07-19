@@ -40,7 +40,7 @@
     </ul>
   </div>
 </nav>
-{% if page.titlebar == true %}
+{% if page.more_settings.titlebar == true %}
 <div id="pageTitle" class="bg-main">
     <div class="container">
       <div class="row">
@@ -52,6 +52,17 @@
     </div>
   </div>
 {% endif %}
+
+{% if page.topWidget == true %}
+  <div class="container" id="pageTopWidget">
+    <div class="row">
+      <div class="col">
+        {{ page.top-widget }}
+      </div>
+    </div>
+  </div>
+{% endif %}
+
 {% if page.layout == "project" %}
 <div id="pageTitle" class="project-heading">
   <img id="projectFtImage" src="{{ page.ft-img }}" class="img-fit w-100" alt="">

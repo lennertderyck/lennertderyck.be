@@ -49,7 +49,7 @@ short-desc: Mijn naam is Lennert De Ryck. Sinds 2012 studeer ik in het grafisch 
   en sinds 2015 ben ik bezig met werk voor derden. Mijn plan? ...
 widgets-bottom: false
 more_settings:
-  titlebar: false
+  titlebar: true
 widget-settings:
   widget-blocks:
   - template: widget
