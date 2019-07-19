@@ -28,6 +28,7 @@ widget-blocks:
   button-label: Github
   button-url: https://github.com/lennertderyck
   show-button: true
+  new-tab: true
 - template: widget
   title: Mijn uitrusting
   content: "##### Apple MacBook Pro 2016\n\n13-inch  \n265GB SSD\n\n##### Stack cloud-platform\n\nVoor
