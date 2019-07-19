@@ -18,7 +18,7 @@
     --accent-7: #0e484e;
 }
 html, body {
-    min-height: calc(100vh - 90px - 150px);
+    // min-height: calc(100vh - 90px - 150px);
     width: 100%;
 }
 
@@ -176,7 +176,7 @@ span.transl-up-2 {
 
 #site-content {
     // position: relative;
-    min-height: calc(100vh - 90px - 150px - 250px);
+    min-height: calc(100vh - 90px - 150px - 48px);
     height: 100%;
     width: 100%;
     padding-top: 70px;
