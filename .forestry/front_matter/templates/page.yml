@@ -33,9 +33,6 @@ fields:
       format: markdown
   label: Short description
   description: A short description for web indexing
-- type: boolean
-  name: add-to-menu
-  label: Add to main nav
 - name: top-widget
   type: textarea
   default: ''
