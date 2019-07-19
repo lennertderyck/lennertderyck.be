@@ -19,8 +19,8 @@ layout   : default
                                 <tl>{{ item.subtitle }}</tl>
                             </div>
                             {{ item.content | markdownify }}
-                            {% if item.show-button == true %}
-                                <a href="{{ item.button-url }}" class="btn">{{ item.button-label }}</a>
+                            {% if item.button-url != "" %}
+                                <a href="{{ item.button-url }}" class="btn" {% if item.new-tab == true %} rel="noopener" target="_blank"{% endif %}>{{ item.button-label }}</a>
                             {% endif %}
                         {% endif %}
     
@@ -33,7 +33,7 @@ layout   : default
                             <div>
                                 {{ item.code | remove: "<p>" | remove: "</p>" }}
                             </div>
-                            {% if item.show-button == true %}
+                            {% if item.button-url != "" %}
                                 <a href="{{ item.button-url }}" class="btn">{{ item.button-label }}</a>
                             {% endif %}
                         {% endif %}
