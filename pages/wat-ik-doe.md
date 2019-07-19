@@ -39,6 +39,8 @@ widget-blocks:
   button-label: ''
   button-url: ''
   show-button: false
+more_settings:
+  titlebar: true
 code: |-
   <div class="slider-wrapper d-none">
 
