@@ -32,7 +32,6 @@ fields:
   config:
     required: false
   label: Button url
-- name: show-button
+- name: new-tab
   type: boolean
-  label: Show button
-  default: true
+  label: Open in new tab
