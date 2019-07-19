@@ -51,6 +51,7 @@ fields:
 - name: widgets-bottom
   type: boolean
   label: Widgets bottom
+  hidden: true
 - name: widget-blocks
   type: blocks
   label: Widget blocks
@@ -60,20 +61,6 @@ fields:
   config:
     min: 
     max: 
-- name: widget-settings
-  type: field_group
-  config: {}
-  fields:
-  - name: widget-blocks
-    type: blocks
-    label: Widgets side
-    template_types:
-    - widget
-    - widget-code
-    config:
-      min: 
-      max: 
-  label: Widget settings
 - name: more_settings
   type: field_group
   config: {}
