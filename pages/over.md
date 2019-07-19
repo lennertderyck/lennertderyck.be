@@ -48,6 +48,15 @@ widget-blocks:
 short-desc: Mijn naam is Lennert De Ryck. Sinds 2012 studeer ik in het grafisch vakgebied
   en sinds 2015 ben ik bezig met werk voor derden. Mijn plan? ...
 widgets-bottom: false
+more_settings:
+  titlebar: false
+widget-settings:
+  widget-blocks:
+  - template: widget
+    show-button: true
+    title: This is a test
+    subtitle: Subtitle test
+    content: This is a block from the new widgets settings
 
 ---
 ### HALLO!
