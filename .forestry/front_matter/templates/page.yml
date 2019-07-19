@@ -71,6 +71,10 @@ fields:
   config:
     min: 
     max: 
+- name: more_settings
+  type: field_group
+  config: {}
+  label: More settings
 - type: field_group
   name: redirect_plugin
   fields:
@@ -81,6 +85,7 @@ fields:
     name: redirect_from
     label: redirect_from
   label: Redirect plugin
+  hidden: true
 pages:
 - pages/branding-guidelines.md
 - pages/bestanden.md
