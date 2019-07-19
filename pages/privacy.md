@@ -7,22 +7,21 @@ title: Privacy
 permalink: privacy
 add-to-menu: false
 full-width: false
-widget-settings:
-  widget-blocks:
-  - template: widget
-    show-button: false
-    title: Beheer
-    subtitle: Cookies aanpassen
-    content: "Voor [Google Chrome](https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=nl)
-      \ \nVoor [Mozilla Firefox]( \"https://support.mozilla.org/nl/kb/cookies-verwijderen-gegevens-wissen-websites-opgeslagen\")
-      \ \nVoor [Safari](https://support.apple.com/nl-be/guide/safari/sfri11471/mac)"
-    button-label: ''
-    button-url: ''
-  - template: widget-code
-    title: Cookies
-    subtitle: toestemming
-    content: Hier kan u kiezen of dat u cookies van derden wil toestaan, of blokkeren.
-    code: <button id="cookieStatus" class="btn" onclick="cookieConsent()">Toestemming</button>
+widget-blocks:
+- template: widget
+  show-button: false
+  title: Beheer
+  subtitle: Cookies aanpassen
+  content: "Voor [Google Chrome](https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=nl)
+    \ \nVoor [Mozilla Firefox]( \"https://support.mozilla.org/nl/kb/cookies-verwijderen-gegevens-wissen-websites-opgeslagen\")
+    \ \nVoor [Safari](https://support.apple.com/nl-be/guide/safari/sfri11471/mac)"
+  button-label: ''
+  button-url: ''
+- template: widget-code
+  title: Cookies
+  subtitle: toestemming
+  content: Hier kan u kiezen of dat u cookies van derden wil toestaan, of blokkeren.
+  code: <button id="cookieStatus" class="btn" onclick="cookieConsent()">Toestemming</button>
 redirect_plugin:
   redirect_to: ''
   redirect_from: ''

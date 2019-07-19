@@ -7,35 +7,34 @@ title: Wat ik doe
 permalink: wat-ik-doe
 add-to-menu: false
 full-width: false
-widget-settings:
-  widget-blocks:
-  - template: widget
-    title: Portfolio
-    subtitle: Projecten en stijl
-    content: Ontdek wat ik al deed van projecten, ontdek mijn stijl.
-    button-label: Portfolio
-    button-url: "/projects"
-    show-button: true
-  - template: widget
-    title: Github
-    subtitle: Webdev
-    content: Ontdek wat ik doe op vlak van webdesign
-    button-label: Github
-    button-url: https://github.com/lennertderyck
-    show-button: true
-  - template: widget
-    title: Mijn uitrusting
-    content: "##### Apple MacBook Pro 2016\n\n13-inch  \n265GB SSD\n\n##### Stack cloud-platform\n\nVoor
-      het makkelijk delen van bestanden en maken van backups\n\n##### Adobe Creative
-      Cloud\n\nAcrobat Pro  \nPhotoshop CC 2018  \nLightroom Classic CC 2018  \nIllustrator
-      CC 2018  \nInDesign CC 2018\n\n##### Canon EOS D1300\n\nMet 18-55mm IS II lens
-      \ \nUV-filter  \nVelbon statief"
-    subtitle: ''
-    button-label: ''
-    button-url: ''
-    show-button: false
-  - template: widget-code
-  code: |-
+widget-blocks:
+- template: widget
+  title: Portfolio
+  subtitle: Projecten en stijl
+  content: Ontdek wat ik al deed van projecten, ontdek mijn stijl.
+  button-label: Portfolio
+  button-url: "/projects"
+  show-button: true
+- template: widget
+  title: Github
+  subtitle: Webdev
+  content: Ontdek wat ik doe op vlak van webdesign
+  button-label: Github
+  button-url: https://github.com/lennertderyck
+  show-button: true
+- template: widget
+  title: Mijn uitrusting
+  content: "##### Apple MacBook Pro 2016\n\n13-inch  \n265GB SSD\n\n##### Stack cloud-platform\n\nVoor
+    het makkelijk delen van bestanden en maken van backups\n\n##### Adobe Creative
+    Cloud\n\nAcrobat Pro  \nPhotoshop CC 2018  \nLightroom Classic CC 2018  \nIllustrator
+    CC 2018  \nInDesign CC 2018\n\n##### Canon EOS D1300\n\nMet 18-55mm IS II lens
+    \ \nUV-filter  \nVelbon statief"
+  subtitle: ''
+  button-label: ''
+  button-url: ''
+  show-button: false
+- template: widget-code
+code: |-
     <div class="slider-wrapper d-none">
 
     <div class="slider">

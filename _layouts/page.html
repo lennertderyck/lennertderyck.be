@@ -3,14 +3,14 @@ layout   : default
 ---
 <div class="container" {% if page.full-width == true %}style="max-width: 800px;"{% endif %}>
     <div class="row">
-        {% if page.widget-settings.widgets == true %}
+        {% if page.widgets == true %}
             <div class="page-content col-12{% if page.full-width == false %} col-md-7 col-lg-9{% endif %}">
                 {{ content }}
             </div>
             <div class="page-widgets col-12 col-md-5 col-lg-3">
                 <hr class="my-5 d-block d-md-none">
             
-                {% for item in page.widget-settings.widget-blocks %}
+                {% for item in page.widget-blocks %}
                     <div class="widget">
 
                         {% if item.template == "widget" %}
@@ -42,7 +42,7 @@ layout   : default
                 {% endfor %}
             </div>
         {% endif %}
-        {% if page.widget-settings.widgets == false %}
+        {% if page.widgets == false %}
             <div class="page-content col-12">
                 <div class="container">
                     {{ content }}

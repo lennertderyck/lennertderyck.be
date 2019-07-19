@@ -10,36 +10,35 @@ redirect_plugin:
   redirect_to: ''
   redirect_from: ''
 widgets: true
-widget-settings:
-  widget-blocks:
-  - template: widget-code
-    code: "<div id=\"about\" class=\"p-4 bd-radius\">\n\t<img src=\"https://github.lennertderyck.be/assets/images/about_profile.jpg\"
-      height=\"150px\" width=\"150px\" class=\"d-none\">\n\t<p class=\"no-margin-b txt-modern\">\n\t\tREGIO\n\t\n\t</p><p
-      class=\"no-margin-t\">\n\t\tGent\n\t\n\t</p><p class=\"no-margin-b txt-modern\">\n\t\tOPLEIDING\n\t\n\t</p><p
-      class=\"no-margin-t\">\n\t\tGrafische &amp; Digitale Media<br>\n\t\tArteveldehogeschool\n\t\n\t\n\t</p><p
-      class=\"mb-0 txt-modern\">HOBBY'S</p>\n<p class=\"mb-0\">scouts, (web)design,
-      muziek</p>\n<a href=\"https://lennertderyck.be/wp-content/uploads/CV_LENNERT_DE_RYCK.pdf\"
-      target=\"_blank\" class=\"btn w-100 mt-3\" rel=\"noopener\">BEKIJK CV</a>\n<p></p></div>\n<style>\n\t#about
-      {\n\t\tdisplay: flex;\n\t\tflex-direction: column;\n\t\tjustify-content: center;\n\t\tposition:
-      relative;\n\t\ttext-align: left;\n\t\tbackground-color: var(--accent-2);\n\t}\n\t\n\t#about
-      img {\n\t\tposition: absolute;\n\t\ttop: -100px;\n\t\tleft: calc(50% - 75px);\n\t\talign-self:
-      center;\n\t\tmargin-bottom: 35px;\n\t\tborder-radius: 120px;\n\t}\n\t\n\t#about
-      a.aux-button {\n\t\twidth: 100%;\n\t\ttext-align: center;\n\t\tmargin-top: 1em;\n\t\tmargin-bottom:
-      0px;\n\t}\n</style>"
-    title: ''
-    subtitle: ''
-    content: ''
-  - template: widget
-    title: Portfolio
-    subtitle: Projecten & stijl
-    content: "Ontdek wat ik al deed van projecten,  \nontdek mijn stijl."
-    button:
-      btn-text: ''
-      btn-url: ''
-    button-label: Portfolio
-    button-url: "{{ site.baseurl }}/projects"
-    show-button: true
-  - template: widget-code
+widget-blocks:
+- template: widget-code
+  code: "<div id=\"about\" class=\"p-4 bd-radius\">\n\t<img src=\"https://github.lennertderyck.be/assets/images/about_profile.jpg\"
+    height=\"150px\" width=\"150px\" class=\"d-none\">\n\t<p class=\"no-margin-b txt-modern\">\n\t\tREGIO\n\t\n\t</p><p
+    class=\"no-margin-t\">\n\t\tGent\n\t\n\t</p><p class=\"no-margin-b txt-modern\">\n\t\tOPLEIDING\n\t\n\t</p><p
+    class=\"no-margin-t\">\n\t\tGrafische &amp; Digitale Media<br>\n\t\tArteveldehogeschool\n\t\n\t\n\t</p><p
+    class=\"mb-0 txt-modern\">HOBBY'S</p>\n<p class=\"mb-0\">scouts, (web)design,
+    muziek</p>\n<a href=\"https://lennertderyck.be/wp-content/uploads/CV_LENNERT_DE_RYCK.pdf\"
+    target=\"_blank\" class=\"btn w-100 mt-3\" rel=\"noopener\">BEKIJK CV</a>\n<p></p></div>\n<style>\n\t#about
+    {\n\t\tdisplay: flex;\n\t\tflex-direction: column;\n\t\tjustify-content: center;\n\t\tposition:
+    relative;\n\t\ttext-align: left;\n\t\tbackground-color: var(--accent-2);\n\t}\n\t\n\t#about
+    img {\n\t\tposition: absolute;\n\t\ttop: -100px;\n\t\tleft: calc(50% - 75px);\n\t\talign-self:
+    center;\n\t\tmargin-bottom: 35px;\n\t\tborder-radius: 120px;\n\t}\n\t\n\t#about
+    a.aux-button {\n\t\twidth: 100%;\n\t\ttext-align: center;\n\t\tmargin-top: 1em;\n\t\tmargin-bottom:
+    0px;\n\t}\n</style>"
+  title: ''
+  subtitle: ''
+  content: ''
+- template: widget
+  title: Portfolio
+  subtitle: Projecten & stijl
+  content: "Ontdek wat ik al deed van projecten,  \nontdek mijn stijl."
+  button:
+    btn-text: ''
+    btn-url: ''
+  button-label: Portfolio
+  button-url: "{{ site.baseurl }}/projects"
+  show-button: true
+- template: widget-code
   subtitle: ''
   code: <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:twoledery&size=detail&theme=light&show-count=0"
     width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;"
