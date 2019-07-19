@@ -11,6 +11,8 @@ redirect_plugin:
   redirect_from: ''
 widgets: false
 widgets-bottom: false
+more_settings:
+  titlebar: true
 
 ---
 <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
