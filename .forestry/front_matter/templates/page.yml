@@ -34,16 +34,8 @@ fields:
   label: Short description
   description: A short description for web indexing
 - type: boolean
-  name: titlebar
-  label: Titlebar
-  description: Show titlebar
-- type: boolean
   name: add-to-menu
   label: Add to main nav
-- type: boolean
-  name: full-width
-  label: Full width
-  description: Display content centered on page, without widgets
 - name: top-widget
   type: textarea
   default: ''
@@ -84,6 +76,10 @@ fields:
     type: boolean
     label: Main nav
     description: Add this page to the main navigation bar
+  - name: full-width
+    type: boolean
+    label: Full width
+    description: Display content centered on page, without widgets
   label: More settings
 - type: field_group
   name: redirect_plugin
