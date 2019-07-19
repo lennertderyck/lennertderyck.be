@@ -155,6 +155,7 @@ span.transl-up-2 {
   background-color: var(--accent-5);
   font-family: var(--font-main);
   border-radius: var(--border-radius);
+  border-radius: 0px;
   color: white;
   border: none; }
 
@@ -786,6 +787,9 @@ div.modal .modal-footer {
 .btn + .btn {
   margin-left: 7px; }
 
+.btn.simple {
+  background-color: #ffffff00; }
+
 /* 404 */
 .error404 {
   display: flex;
@@ -1122,11 +1126,11 @@ div.modal .modal-footer {
     overflow: hidden;
     text-overflow: ellipsis; }
 
-  .navbar-toggler:not(.collapsed):hover > div.top {
+  .navbar-toggler:hover > div.top {
     width: 100%;
     transform: translateX(0%); }
 
-  .navbar-toggler:not(.collapsed):hover > div.bottom {
+  .navbar-toggler:hover > div.bottom {
     width: 100%;
     transform: translateX(0%); } }
 @media (min-width: 576px) {
