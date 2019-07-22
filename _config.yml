@@ -20,6 +20,7 @@ highlighter: rouge
 exclude:
   - Gemfile
   - README.md
+  - vendor/bundle
 
 plugins:
   - jekyll-feed
