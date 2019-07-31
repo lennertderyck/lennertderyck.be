@@ -1,7 +1,7 @@
 ---
 label: Widget - code
 hide_body: false
-display_field: title
+display_field: content
 fields:
 - name: title
   type: text
