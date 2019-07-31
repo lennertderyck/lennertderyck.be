@@ -95,5 +95,5 @@ fields:
   label: Redirect plugin
   hidden: true
 pages:
-- pages/branding-guidelines.md
 - pages/bestanden.md
+- pages/branding-guidelines.md
