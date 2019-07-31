@@ -162,6 +162,16 @@ Bent u niet zeker op welk materiaal u wilt drukken (papier, karton, stickervelle
 
 Ik doe geen fotografie op vraag. Wanneer beelden vereist zijn voor een job is het echter mogelijk dat ik zelf beelden aanlever. Deze worden dan ook verrekend bij de kostenberekening.
 
+<div class="display-block p-4 shadow bd-radius txt-color-white" style="background-image: url(https://source.unsplash.com/user/lennertderyck/); background-size: cover;" href="https://unsplash.com/@lennertderyck" rel="noopener" target="_blank">
+  <div class="h-section mb-0 txt-color-white">
+    <h3>Unplash</h3>
+    <p class="txt-modern mb-3">
+      Gratis beelden
+    </p>
+  </div>
+  <p class="mb-0">Gebruik gratis zelfgemaakte beelden die ik publiceerde op Unsplash voor persoonlijke en commerciële doeleinden.</p>
+</div>
+
 ### WEBDESIGN
 
 Ik hou mij voornamelijk bezig met de esthetische kant van het web. Met ruime kennis van HTML en CSS kan u uw offline huisstijl verder doortrekken op het web of kan u verschillende onderdelen voor uw site laten ontwikkelen.

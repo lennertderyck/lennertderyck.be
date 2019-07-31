@@ -146,8 +146,9 @@ span.transl-up-2 {
     margin-top: -9px;
 }
 
-.h-section h4 {
-    margin-bottom: 4px;
+.h-section h4, 
+.h-section h3 {
+    margin-bottom: 4px !important;
 }
 
 .shadow {
