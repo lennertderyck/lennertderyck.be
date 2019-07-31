@@ -21,7 +21,14 @@ redirect_plugin:
   redirect_to: ''
   redirect_from: ''
 widgets-bottom: false
-published: true
+widget-blocks: []
+published: false
+top-widget: ''
+more_settings:
+  titlebar: false
+  centered-titlebar: false
+  add-to-menu: false
+  full-width: false
 
 ---
 ### Vereisten
