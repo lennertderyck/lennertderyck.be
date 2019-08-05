@@ -33,6 +33,7 @@ fields:
   label: Redirect to
   description: Where to redirect
 pages:
+- _redirects/local-working-server-2.md
 - _redirects/local-working-server.md
 - _redirects/Social media/instagram.md
 - _redirects/new/new-shortlink.md
