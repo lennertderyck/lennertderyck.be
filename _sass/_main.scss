@@ -17,6 +17,7 @@
     --accent-6: #fbfbfb;
     --accent-7: #0e484e;
 }
+
 html, body {
     // min-height: calc(100vh - 90px - 150px);
     width: 100%;
@@ -284,7 +285,8 @@ span.transl-up-2 {
 /* MAIN NAV */
     #navMain {
         height: 150px;
-        padding: 0px 35px
+        padding: 0px 35px;
+        z-index: 9000;
     }
 
     #navMain > #NavMainCollapse li, #navMain li.nav-item.dropdown a.dropdown-item {
@@ -607,6 +609,42 @@ span.transl-up-2 {
         }
 
     /* CAROUSEL */
+    .carousel-indicators {
+        background-color: white;
+        border-radius: 120px;
+        display: flex;
+        align-items: center;
+        height: 17px;
+        width: fit-content;
+        padding-left: 1px;
+        padding-right: 1px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .carousel-indicators li {
+        position: relative;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        width: 10px;
+        height: 10px;
+        margin-right: 9px;
+        margin-left: 3px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: rgba(255,255,255,.5);
+        background-color: var(--accent-3);
+        border-radius: 120px;
+    }
+
+    .carousel-indicators li:last-child {
+        margin-right: 3px;
+    }
+
+    .carousel-indicators .active {
+        background-color: var(--accent-main);
+    }
+
     .carousel.slide .carousel-item img {
         max-height: 395px;
     }
