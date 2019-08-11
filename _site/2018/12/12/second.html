@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <script src="/assets/js/console.image.js"></script>
+    <script>
+        console.image("https://lennertderyck.be/assets/images/LOGO_LDR_TEXT_RIGHT_ZWART.svg");
+    </script>
+    <script src="/assets/js/redirect-https.js"></script>
+    <script src="/assets/js/cookies.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140323499-1"></script>
+    <script id="googleAnalyics">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-140323499-1');
+    </script>
+    <script>
+        // GOOGLE ANALYTICS OPT OUT
+        // Set to the same value as the web property used on the site
+        var gaProperty = 'UA-140323499-1';
+
+        // Disable tracking if the opt-out cookie exists.
+        var disableStr = 'ga-disable-' + gaProperty;
+        if (document.cookie.indexOf(disableStr + '=true') > -1) {
+        window[disableStr] = true;
+        }
+
+        // Opt-out function
+        function gaOptout() {
+        document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+        window[disableStr] = true;
+        }
+    </script>
+
+    <script src="/assets/js/pace.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Welcome to Jekyll &nbsp; &mdash; &nbsp; Lennert De Ryck</title>
+    <link rel="shortcut icon" type='image/x-icon' href="/assets/images/LOGO_LDR_ZWART.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <script src="https://ce.lennertderyck.be/library/elements.js"></script>
+    <link rel="stylesheet" href="/assets/css/app.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+    
+
+    <!-- Other recources-->
+    <script src="/assets/js/color-thief.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://unpkg.com/fast-average-color/dist/index.min.js"></script>
+
+    <!---->
+</head>
+    <body id="body">
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                xfbml            : true,
+                version          : 'v3.3'
+                });
+            };
+
+            (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/nl_NL/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <!-- Your customer chat code -->
+        <div class="d-none d-lg-block">
+            <div class="fb-customerchat"
+                attribution="setup_tool"
+                page_id="1997323257173637"
+                logged_in_greeting="Hoi. Waar kunnen we je mee helpen?"
+                logged_out_greeting="Hoi. Waar kunnen we je mee helpen?"
+                greeting_dialog_display="hide">
+            </div>
+        </div>
+
+        <div id="loaderSplash">
+            <img src="/assets/images/LOGO_LDR_ZWART.svg" alt="" height="155px">
+        </div>
+        
+        <!-- ALERTS PAGE TOP -->
+        <div class="d-none alert alert-warning alert-dismissible fade show" role="alert" id="testAlert">
+            <p class="mb-0"><strong>Holy guacamole!</strong> Deze site is nu nog sneller! <br class="d-inline d-md-none"> <a class="btn d-inline ml-4" onclick="hideAlert('testAlert')">Lees meer</a></p>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="d-none alert alert-warning alert-dismissible fade show bg-color-2" role="alert" id="alert01">
+            <p class="mb-0"><strong class="txt-modern small">Over dromen</strong><span class="mx-1">・</span>Personen veranderen en zo ook dromen, ik ga daarom ... <br class="d-inline d-md-none"> <a class="btn simple d-inline ml-auto" onclick="hideAlert('testAlert')">Lees meer</a></p>
+            <button type="btn" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <!-- REAL CONTENT -->
+        <nav id="navMain" class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="/">
+    <img src="/assets/images/LOGO_LDR_TEXT_RIGHT_ZWART.svg" alt="Logo Lennert De Ryck" class="no-save" width="300px">
+  </a>
+  <button id="btnNavMainCollapse" onclick="checkMenuOpen()" class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#NavMainCollapse" aria-controls="NavMainCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="top"></div>
+    <div class="center"></div>
+    <div class="bottom"></div>
+  </button>
+
+  <div class="collapse navbar-collapse" id="NavMainCollapse">
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="/wat-ik-doe">Wat ik doe</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/over">Over mij</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/social">Social</a>
+      </li>
+      <li class="nav-item after-none pr-lg-0 ">
+        <a class="nav-link" href="/contact">Contact</a>
+      </li>
+      <li class="nav-item after-none d-md-none">
+          <a class="nav-link d-md-none clickable" id="navTestClientfilesCodeNotExisting" data-toggle="modal" data-target="#modalClientfiles" onclick="testClientfilesCode()">client files</a>
+          <a class="nav-link d-md-none clickable" id="navTestClientfilesCodeExists" onclick="testClientfilesCode()">client files</a>
+      </li>
+      <li class="nav-item dropdown d-none">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Meer
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/bestanden">Bestanden</a>
+          <a class="dropdown-item" href="/opdrachten">Opdrachten</a>
+          <div class="dropdown-divider d-none"></div>
+          <a class="dropdown-item d-none" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+
+        <div id="site-content" >
+            <div class="container" >
+    <div class="row">
+        
+        
+    </div>
+</div>
+
+        </div>
+        <div id="alerts">
+            <div id="alertCookies" class="alert alert-warning fade animated faster" role="alert">
+    <div class="h-section mb-2">
+        <h4 class="mb-1">Fan van koekjes?</h4>
+        <p class="txt-modern mb-0">wij ook</p>
+    </div>
+    <p>We gebruiken cookies om deze site goed weer te geven en van enkele handige functies te voorzien.</p>
+    <div>
+        <button type="button" class="btn d-inline btn-secondary" onclick="cookieConsent()">Dat is ok</button>
+        <button type="button" class="btn d-inline btn-secondary bg-color-3" onclick="cookieBlock()">Cookies uitschakelen</button>
+    </div>
+</div>
+        </div>
+        </div>
+        
+        
+        <footer class=" py-4"  >
+  <div class="container">
+    <div class="row">
+      <div class="col-auto mb-1">
+          <div style="font-family: Oswald; font-weight: 300; letter-spacing: 2px; font-size: 1.2rem; pointer-events: none; user-select: none;">#THINKBEYONDTHEBOX</div>
+          <div class="txt-modern" style="font-size: 0.8rem; letter-spacing: 1px;">
+            <p class="mb-0" style="line-height: 15px;">
+              © 2019 Lennert De Ryck &nbsp;・&nbsp; Alle <br class="d-inline d-md-none">rechten voorbehouden &nbsp;⎥ <br class="d-none d-md-initial d-lg-none">&nbsp; <a href="/privacy" class="txt-color-main">Privacy</a><br class="d-md-none"><span class="txt-color-3 d-none d-md-inline"> &nbsp;・&nbsp;<a href="/admin" class="txt-color-3" target="_blank" rel="noopener">Admin</a> </span>
+            </p>
+          </div>
+      </div>
+      <div class="col align-items-center justify-content-end d-none d-lg-flex">
+        <button class="btn h-fit bg-color-3" id="btnTestClientfilesCodeNotExisting" data-toggle="modal" data-target="#modalClientfiles" onclick="testClientfilesCode()">client files</button>
+        <button class="btn h-fit bg-color-3" id="btnTestClientfilesCodeExists" onclick="testClientfilesCode()">client files</button>
+      </div>
+      <div class="col d-md-none mt-2">
+        <p class="mb-0 txt-color-3">De link naar je bestanden vind je in het menu</p>
+      </div>
+      <div class="col d-none d-md-block d-lg-none">
+          <p class="mb-0 txt-color-3">Gebruik je rechtermuisknop om je bestanden te bekijken</p>
+      </div>
+    </div>
+  </div>
+</footer>
+        <div class="modal fade" id="modalClientfiles" tabindex="-1" role="dialog" aria-labelledby="modalClientfilesTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+            <div class="h-section mb-0">
+                <h5 class="modal-title" id="modalClientfilesTitle">Cloud bestanden</h5>
+                <p class="txt-modern mb-0">Storage code</p>
+            </div>
+            <button type="button" class="close d-none" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group mb-3">
+                <small class="about">Dit is de code die u per mail kreeg en lijkt op 'DsmDTjS48IKTfvy'</small>
+                <input type="text" class="w-100" id="inputClientfilesCode">
+            </div>
+        </div>
+        <div class="modal-footer pt-0 bg-color-white">
+            <button type="button" class="btn bg-color-3" data-dismiss="modal">Annuleren</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="saveClientfilesCode()">Opslaan & testen</button>
+        </div>
+        <div class="alert small mb-0 w-100 text-center" role="alert">
+            Na het opslaan van je code wordt deze pagina herladen.
+        </div>
+      </div>
+    </div>
+</div>
+
+<script>
+    
+
+</script>
+        <div id="menuContext" class="bd-radius shadow">
+    <ul class="menu-options mb-0">
+        <li class="menu-option"><a href="/projects">Portfolio</a></li>
+        <li class="menu-option"><a href="/contact/form">Contact</a></li>
+        <li class="menu-option"><a href="mailto:hello@lennertderyck.be">Emailen</a></li>
+        <hr class="my-1 mx-3">
+        <li class="menu-option d-none"><a href="/privacy">Privacy</a></li>
+        <li class="menu-option"><span onclick="testClientfilesCode()">Client files</span></li>
+        <li class="menu-option txt-modern"><span onclick="$('#modalClientfiles').modal('show');">Storagecode</span></li>
+    </ul>
+</div>
+
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="/assets/js/main-crtl.js"></script>
+    <script src="/assets/js/cookie-ctrl.js"></script>
+    <script src="/assets/js/humanCheck.js"></script>
+
+  
+    <script>
+        feather.replace()
+    </script>
+
+
+
+<script>
+ fetch('https://getsimpleform.com/messages.json?api_token=836f185cefa43bb3193dd990b6266768')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (source) {
+                appendData(source);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+        function appendData(source) {
+            var mainContainer = document.getElementById("myData");
+            for (var i = 0, il = source.length; i < il; i++) {
+                    var div = document.createElement("div");
+                    div.innerHTML = 'Id: ' + source[i].data.email;
+                    mainContainer.appendChild(div);
+
+                    div.innerHTML = 
+                    '<div><span class="txt-modern">Datum</span> ' + source[i].created_at.split("T")[0].split("-").reverse().join("/") + '</div>' +
+                    '<div><span class="txt-modern">Naam</span> ' + source[i].data.name + '</div>' +
+                    '<div><span class="txt-modern">Email</span> <a href="mailto:' + source[i].data.email + '?subject=' + source[i].data.onderwerp + '">' + source[i].data.email + '</a></div>' +
+                    '<div><span class="txt-modern">Onderwerp</span> ' + source[i].data.onderwerp + '</div>' +
+                    '<div><span class="txt-modern">Bericht</span></div>' + '<p>' + source[i].data.bericht + '</p>' +
+                    '<div><span class="txt-modern">Bestanden</span></div>' + '<p>' + source[i].data.files + '</p>' +
+                    '<hr>';
+
+                    div.classList.add('jsonItem');
+            }
+        }
+</script>
+<!--
+<script>
+    fetch('//getsimpleform.com/messages.json?api_token=836f185cefa43bb3193dd990b6266768')
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            appendData(data);
+        })
+        .catch(function (err) {
+            console.log('error: ' + err);
+        });
+    function appendData(data) {
+        var mainContainer = document.getElementById("myData");
+        for (var i = 0; i < data.length; i++) {
+            var formData = data.data[i];
+            for (var j = 0; j < formData.length; j++) {
+                var clientInfo = formData[j]
+                var div = document.createElement("div");
+                div.innerHTML = 'Name: ' + clientInfo.name + ' ' + clientInfo.email;
+                mainContainer.appendChild(div);
+            }
+        } 
+    }
+</script> -->
+    </body>
+</html>
