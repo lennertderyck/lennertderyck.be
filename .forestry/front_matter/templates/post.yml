@@ -20,3 +20,5 @@ fields:
   label: permalink
   hidden: true
   default: "/blog/:year/:title"
+pages:
+- _posts/2018-12-30-first.md
