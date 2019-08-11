@@ -42,3 +42,7 @@ fields:
     required: false
   label: Button url
   default: https://
+- name: new-tab
+  type: boolean
+  label: Open in new tab
+  default: true
