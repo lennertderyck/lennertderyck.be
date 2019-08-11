@@ -432,11 +432,23 @@ div.pace.pace-inactive ~ #loaderSplash {
   background: none; }
 
 /* TAGS */
-.tag::after {
+.tag.sep::after {
   content: ", "; }
 
-.tag:last-child::after {
+.tag.sep:last-child::after {
   display: none; }
+
+.tag.box {
+  font-family: var(--font-mono);
+  padding: 2px 4.5px;
+  border: 1px solid var(--accent-3);
+  margin-right: 7px;
+  border-radius: 4px;
+  user-select: none;
+  color: var(--accent-3); }
+
+#postTags > .tag.box {
+  display: inline-block; }
 
 /* PROJECTS PAGE */
 #portfolio {

@@ -8,6 +8,11 @@ permalink: /:day/:month/:year
             {{ content }}
         </div>
     </div>
+    <div class="row">
+        <div class="col">
+            <div id="postTags" class="txt-modern small">{% for tag in page.tags %}<div class="tag box">#{{ tag }} </div>{% endfor %}</div>
+        </div>
+    </div>
 </div>
 
 <div class="container" style="max-width: 750px;">

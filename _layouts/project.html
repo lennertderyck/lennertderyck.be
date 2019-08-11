@@ -63,7 +63,7 @@ layout   : default
                 Tags
             </p>
             <p>
-                {% for tags in page.tags %}<span class="tag">{{ tags }}</span>{% endfor %}
+                {% for tags in page.tags %}<span class="tag sep">{{ tags }}</span>{% endfor %}
             </p>
             {% if page.project-url != "" %}
                 <a class="btn mt-2" href="{{ page.project-url }}" target="_blank" rel="noopener">Project bekijken</a>
