@@ -7,8 +7,7 @@ sections:
 - type: jekyll-posts
   label: Blog
   create: all
-  match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 - type: directory
   path: pages
   label: Pagina's
