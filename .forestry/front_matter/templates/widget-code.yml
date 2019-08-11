@@ -31,3 +31,14 @@ fields:
     schema:
       format: markdown
   label: Code
+- name: button-label
+  type: text
+  config:
+    required: false
+  label: Button
+- name: button-url
+  type: text
+  config:
+    required: false
+  label: Button url
+  default: https://
