@@ -50,7 +50,7 @@ function filterPortfolio(tag) {
 
 /* MODAL CLIENT FILES FORWARD */
 
-function getQueryVariable(variable)
+    function getQueryVariable(variable)
     {
         var query = window.location.search.substring(1);
         var vars = query.split("&");
@@ -118,22 +118,50 @@ function getQueryVariable(variable)
 
 /* COLOR SELECTOR */
 
-// https://www.npmjs.com/package/fast-average-color
+    // https://www.npmjs.com/package/fast-average-color
 
-var container = document.querySelector('#navFloatContainer');
-var colorBased = document.querySelectorAll('.color-based')
+    var container = document.querySelector('#navFloatContainer');
+    var colorBased = document.querySelectorAll('.color-based')
 
-window.addEventListener('load', function() {
-    var
-        fac = new FastAverageColor(),
-        // container = document.querySelector('#projectFtImage'),
-        color = fac.getColor(document.querySelector('#projectFtImage'));
+    window.addEventListener('load', function() {
+        var
+            fac = new FastAverageColor(),
+            // container = document.querySelector('#projectFtImage'),
+            color = fac.getColor(document.querySelector('#projectFtImage'));
 
-    container.style.backgroundColor = color.rgb;
-    //colorBased.style.color = color.isDark ? '#fff' : '#000';
+        container.style.backgroundColor = color.rgb;
+        //colorBased.style.color = color.isDark ? '#fff' : '#000';
 
-    console.log(color);
-}, false);
+        console.log(color);
+    }, false);
+
+/* TEXT DARK */
+    // https://www.npmjs.com/package/fast-average-color
+
+    // var container = document.querySelector('#navFloatContainer');
+    // var colorBased = document.querySelectorAll('.color-based')
+
+    window.addEventListener('load', function() {
+        var
+            fac = new FastAverageColor(),
+            // container = document.querySelector('#projectFtImage'),
+            color = fac.getColor(document.querySelector('#projectFtImage'));
+
+        // container.style.backgroundColor = color.rgb;
+        // colorBased.style.color = color.isDark ? '#fff' : '#000';
+
+        var navMain = document.getElementById('navMain');
+
+        if (color.isDark == true) {
+            this.console.log("Isdark");
+            navMain.classList.add('imgDarkMode');
+        } else if (color.isDark == false) {
+            this.console.log("Isnotdark")
+            navMain.classList.add('imgLightMode');
+        }
+
+        console.log(color);
+    }, false);
 
 /* CUSTOM CONTEXT MENU */
     const menu = document.getElementById('menuContext');
