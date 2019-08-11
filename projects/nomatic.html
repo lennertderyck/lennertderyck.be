@@ -48,8 +48,10 @@
     <link rel="stylesheet" href="/assets/css/app.css">
 
     <link href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text:400,400i,700|Overpass+Mono:300,400,600,700|Overpass:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
     
 
     <!-- Other recources-->
@@ -112,7 +114,8 @@
         </div>
 
         <!-- REAL CONTENT -->
-        <nav id="navMain" class="navbar navbar-expand-lg">
+        
+<nav id="navMain" class="navbar navbar-expand-lg">
   <a class="navbar-brand" href="/">
     <img src="/assets/images/LOGO_LDR_TEXT_RIGHT_ZWART.svg" alt="Logo Lennert De Ryck" class="no-save" width="300px">
   </a>
@@ -133,8 +136,11 @@
       <li class="nav-item">
         <a class="nav-link" href="/social">Social</a>
       </li>
-      <li class="nav-item after-none pr-lg-0 ">
+      <li class="nav-item">
         <a class="nav-link" href="/contact">Contact</a>
+      </li>
+      <li class="nav-item after-none pr-lg-0">
+        <a class="nav-link" href="/blog">Blog</a>
       </li>
       <li class="nav-item after-none d-md-none">
           <a class="nav-link d-md-none clickable" id="navTestClientfilesCodeNotExisting" data-toggle="modal" data-target="#modalClientfiles" onclick="testClientfilesCode()">client files</a>
@@ -159,33 +165,41 @@
 
 
 
+
+
 <div id="pageTitle" class="project-heading">
   <img id="projectFtImage" src="/uploads/nomatic-travel-pack-on-back.jpg" class="img-fit w-100" alt="">
   <div class="bg h-100">
     <div class="container h-100">
       <div class="row h-100">
         <div class="col d-flex flex-column justify-content-center align-items-center text-center">
-          <div id="breadcrumbs" class="txt-color-white text-center">
-  <small class="txt-modern text-center">
-      
-      
-      
+          
+  <div id="breadcrumbs" class="txt-color-white text-center">
+    <small class="txt-modern text-center">
         
-        <span class="txt-color-white"></span> <a href="/projects/" class="txt-color-white">Projects</a>
         
-      
         
-          <span class="txt-color-white">\ Nomatic</span>
+          
+          <span class="txt-color-white"></span> <a href="/projects/" class="txt-color-white">Projects</a>
+          
         
-      
-  </small>
-</div>
+          
+            <span class="txt-color-white">\ Nomatic</span>
+          
+        
+    </small>
+  </div>
+
+
+
           <h1 class="page-title font-scnd uppc txt-color-white fontw-400 mb-0 text-center">Nomatic Travel Bag</h1>
         </div>
       </div>
     </div>
   </div>
  </div>
+
+
 
 
         <div id="site-content" >
@@ -216,7 +230,7 @@
                                     <li data-target="#carouselExampleIndicators" data-slide-to="16"></li>
                                 
                             </ol>
-                            <div class="carousel-inner bd-radius" style="overflow: hidden;" data-touch="true">
+                            <div class="carousel-inner bd-radius" style="overflow: hidden;     background-color: var(--accent-2);" data-touch="true">
                                 
                                     <div class="carousel-item active" style="overflow: hidden;" data-touch="true">
                                         <img src="/uploads/download-1.png" class="d-block w-100" alt="Project foto" style="object-fit: contain;">
@@ -351,7 +365,7 @@
           <div style="font-family: Oswald; font-weight: 300; letter-spacing: 2px; font-size: 1.2rem; pointer-events: none; user-select: none;">#THINKBEYONDTHEBOX</div>
           <div class="txt-modern" style="font-size: 0.8rem; letter-spacing: 1px;">
             <p class="mb-0" style="line-height: 15px;">
-              © 2019 Lennert De Ryck &nbsp;・&nbsp; Alle <br class="d-inline d-md-none">rechten voorbehouden &nbsp;⎥ <br class="d-none d-md-initial d-lg-none">&nbsp; <a href="/privacy" class="txt-color-main">Privacy</a><br class="d-md-none"><span class="txt-color-3 d-none d-md-inline"> &nbsp;・&nbsp;<a href="/admin" class="txt-color-3" target="_blank" rel="noopener">Admin</a> </span>
+              © 2019 Lennert De Ryck &nbsp;・&nbsp; Alle <br class="d-inline d-md-none">rechten voorbehouden &nbsp;⎥ <br class="d-none d-md-initial d-lg-none">&nbsp; <a href="/privacy" class="txt-color-main">Privacy</a><br class="d-md-none"><span class="txt-color-3 d-none d-md-inline"> &nbsp;・&nbsp;<a href="/admin" class="txt-color-3" target="_blank" rel="noopener">Admin</a></span>
             </p>
           </div>
       </div>
@@ -421,6 +435,7 @@
     <script src="/assets/js/main-crtl.js"></script>
     <script src="/assets/js/cookie-ctrl.js"></script>
     <script src="/assets/js/humanCheck.js"></script>
+    <script src="/assets/js/background-check.min.js"></script>
 
   
     <script>
