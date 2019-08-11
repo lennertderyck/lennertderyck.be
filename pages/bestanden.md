@@ -22,18 +22,18 @@ redirect_plugin:
   redirect_from: ''
 widgets-bottom: false
 widget-blocks: []
-published: false
 top-widget: ''
 more_settings:
   titlebar: false
   centered-titlebar: false
   add-to-menu: false
   full-width: false
+published: false
 
 ---
 ### Vereisten
 
-##### AFBEELDINGEN / ILLUSTRATIES (NIET VECTORIEEL)
+##### Afbeeldingen / illustraties (niet vectorieel)
 
 Afbeeldingen stuur je door zonder ze te plaatsen in een ander document (zoals een Word of Exel bestand).
 
