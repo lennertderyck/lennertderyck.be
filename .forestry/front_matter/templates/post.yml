@@ -1,0 +1,33 @@
+---
+label: Post
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- type: file
+  name: ft-img
+  label: Feature image
+  config:
+    maxSize: '2'
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+- type: text
+  name: excerpt_separator
+  label: excerpt_separator
+  hidden: true
+- type: text
+  name: permalink
+  label: permalink
+  hidden: true
+  default: "/blog/:year/:title"
+pages:
+- _posts/2018-12-30-first.md
