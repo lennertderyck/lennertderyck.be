@@ -5,15 +5,18 @@ fields:
 - type: text
   name: layout
   label: layout
-- type: text
-  name: title
-  label: title
+  hidden: true
 - type: file
   name: ft-img
   label: ft-img
+  config:
+    maxSize: '2'
 - type: text
   name: excerpt_separator
   label: excerpt_separator
+  hidden: true
 - type: text
   name: permalink
   label: permalink
+  hidden: true
+  default: "/blog/:year/:title"
