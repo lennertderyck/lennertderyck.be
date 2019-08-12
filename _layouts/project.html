@@ -53,18 +53,20 @@ layout   : default
         </div>
         <div class="col-12 col-lg-4">
             {{ content }}
+            {% if page.client != "" %}
             <p class="txt-modern mb-1 mt-4">
                 Klant
             </p>
             <p class="mb-0">
-                    {{ page.client }}
+                {{ page.client }}
             </p>
-            <p class="txt-modern mb-1 mt-4">
+            {% endif %}
+            <p class="txt-modern mb-1 mt-4 d-none">
                 Tags
             </p>
-            <p>
-                {% for tags in page.tags %}<span class="tag sep">{{ tags }}</span>{% endfor %}
-            </p>
+            <div>
+                <div id="postTags" class="txt-modern small">{% for tag in page.tags %}<div class="tag box">#{{ tag }} </div>{% endfor %}</div>
+            </div>
             {% if page.project-url != "" %}
                 <a class="btn mt-2" href="{{ page.project-url }}" target="_blank" rel="noopener">Project bekijken</a>
             {% endif %}

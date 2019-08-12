@@ -439,7 +439,6 @@ div.pace.pace-inactive ~ #loaderSplash {
   display: none; }
 
 .tag.box {
-  font-family: var(--font-mono);
   padding: 2px 4.5px;
   border: 1px solid var(--accent-3);
   margin-right: 7px;
