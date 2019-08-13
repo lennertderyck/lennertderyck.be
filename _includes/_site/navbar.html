@@ -1,0 +1,151 @@
+{% if page.layout != "post" %}
+<nav id="navMain" class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="/">
+    <img src="{{ site.baseurl }}/assets/images/LOGO_LDR_TEXT_RIGHT_ZWART.svg" crossorigin="anonymous" alt="Logo Lennert De Ryck" class="no-save" width="300px">
+  </a>
+  <button id="btnNavMainCollapse" onclick="checkMenuOpen()" class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#NavMainCollapse" aria-controls="NavMainCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="top"></div>
+    <div class="center"></div>
+    <div class="bottom"></div>
+  </button>
+
+  <div class="collapse navbar-collapse" id="NavMainCollapse">
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ site.baseurl }}/wat-ik-doe">Wat ik doe</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ site.baseurl }}/over">Over mij</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ site.baseurl }}/social">Social</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ site.baseurl }}/contact">Contact</a>
+      </li>
+      <li class="nav-item after-none pr-lg-0">
+        <a class="nav-link" href="{{ site.baseurl }}/blog">Blog</a>
+      </li>
+      <li class="nav-item after-none d-md-none">
+          <a class="nav-link d-md-none clickable" id="navTestClientfilesCodeNotExisting" data-toggle="modal" data-target="#modalClientfiles" onclick="testClientfilesCode()">client files</a>
+          <a class="nav-link d-md-none clickable" id="navTestClientfilesCodeExists" onclick="testClientfilesCode()">client files</a>
+      </li>
+      <li class="nav-item dropdown d-none">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Meer
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/bestanden">Bestanden</a>
+          <a class="dropdown-item" href="/opdrachten">Opdrachten</a>
+          <div class="dropdown-divider d-none"></div>
+          <a class="dropdown-item d-none" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+{% endif %}
+
+{% if page.more_settings.titlebar == true %}
+<div id="pageTitle" class="bg-main">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          {% include breadcrumbs.html %}
+          <h1 class="page-title font-scnd uppc txt-color-white fontw-400 mb-0">{{ page.title }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% if page.topWidget == true %}
+  <div class="container" id="pageTopWidget">
+    <div class="row">
+      <div class="col">
+        {{ page.top-widget }}
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% if page.layout == "project" %}
+<div id="pageTitle" class="project-heading">
+  <img id="projectFtImage" src="{{ page.ft-img }}" crossorigin="anonymous" class="img-fit w-100" alt="">
+  <div class="bg h-100">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col d-flex flex-column justify-content-center align-items-center text-center">
+          {% include breadcrumbs.html %}
+          <h1 class="page-title font-scnd uppc txt-color-white fontw-400 mb-0 text-center">{{ page.title }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+{% endif %}
+
+{% if page.layout == "post" %}
+<div id="pageTitle" class="project-heading">
+  <img id="projectFtImage" src="{{ page.ft-img }}" crossorigin="anonymous" class="img-fit w-100" alt="" style="height: 640px;">
+  <div class="bg h-100">
+      <nav id="navMain" class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="/">
+            <img src="{{ site.baseurl }}/assets/images/LOGO_LDR_TEXT_RIGHT_ZWART.svg" alt="Logo Lennert De Ryck" class="no-save" width="300px">
+          </a>
+          <button id="btnNavMainCollapse" onclick="checkMenuOpen()" class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#NavMainCollapse" aria-controls="NavMainCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="top"></div>
+            <div class="center"></div>
+            <div class="bottom"></div>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="NavMainCollapse">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="{{ site.baseurl }}/wat-ik-doe">Wat ik doe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}/over">Over mij</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}/social">Social</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}/contact">Contact</a>
+              </li>
+              <li class="nav-item after-none pr-lg-0">
+                <a class="nav-link" href="{{ site.baseurl }}/blog">Blog</a>
+              </li>
+              <li class="nav-item after-none d-md-none">
+                  <a class="nav-link d-md-none clickable" id="navTestClientfilesCodeNotExisting" data-toggle="modal" data-target="#modalClientfiles" onclick="testClientfilesCode()">client files</a>
+                  <a class="nav-link d-md-none clickable" id="navTestClientfilesCodeExists" onclick="testClientfilesCode()">client files</a>
+              </li>
+              <li class="nav-item dropdown d-none">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Meer
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/bestanden">Bestanden</a>
+                  <a class="dropdown-item" href="/opdrachten">Opdrachten</a>
+                  <div class="dropdown-divider d-none"></div>
+                  <a class="dropdown-item d-none" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+    <div class="container h-100" style="max-width: 750px;">
+      <div class="row h-100">
+        <div class="col d-flex flex-column justify-content-center">
+          {% include breadcrumbs.html %}
+          <h1 class="page-title font-scnd uppc txt-color-white fontw-400 mb-2">{{ page.title }}</h1>
+          <small class="txt-modern txt-color-white mb-3" style="opacity: 0.6;">door Lennert De Ryck  ⎥   {{ page.date | date: "%b %d, %Y" }}</small>
+          <button class="d-none on-bg mt-4">kopieer link</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+{% include opmerking.html title="Beta" fullw="true" content="Dit deel van de site is nog in ontwikkeling" %}
+{% endif %}

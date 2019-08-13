@@ -1,0 +1,24 @@
+<footer class="{% if page.widgets-bottom == false %}mt-5{% endif %} {% if page.layout != "project" %}py-4{% endif %}"  {% if page.layout == "project" %}style="padding-bottom: 110px; padding-top: 20px;"{% endif %}>
+  <div class="container">
+    <div class="row">
+      <div class="col-auto mb-1">
+          <div style="font-family: Oswald; font-weight: 300; letter-spacing: 2px; font-size: 1.2rem; pointer-events: none; user-select: none;">#THINKBEYONDTHEBOX</div>
+          <div class="txt-modern" style="font-size: 0.8rem; letter-spacing: 1px;">
+            <p class="mb-0" style="line-height: 15px;">
+              © 2019 Lennert De Ryck &nbsp;・&nbsp; Alle <br class="d-inline d-md-none">rechten voorbehouden &nbsp;⎥ <br class="d-none d-md-initial d-lg-none">&nbsp; <a href="{{ site.baseurl }}/privacy" class="txt-color-main">Privacy</a><br class="d-md-none"><span class="txt-color-3 d-none d-md-inline"> &nbsp;・&nbsp;<a href="/admin" class="txt-color-3" target="_blank" rel="noopener">Admin</a></span>
+            </p>
+          </div>
+      </div>
+      <div class="col align-items-center justify-content-end d-none d-lg-flex">
+        <button class="btn h-fit bg-color-3" id="btnTestClientfilesCodeNotExisting" data-toggle="modal" data-target="#modalClientfiles" onclick="testClientfilesCode()">client files</button>
+        <button class="btn h-fit bg-color-3" id="btnTestClientfilesCodeExists" onclick="testClientfilesCode()">client files</button>
+      </div>
+      <div class="col d-md-none mt-2">
+        <p class="mb-0 txt-color-3">De link naar je bestanden vind je in het menu</p>
+      </div>
+      <div class="col d-none d-md-block d-lg-none">
+          <p class="mb-0 txt-color-3">Gebruik je rechtermuisknop om je bestanden te bekijken</p>
+      </div>
+    </div>
+  </div>
+</footer>
