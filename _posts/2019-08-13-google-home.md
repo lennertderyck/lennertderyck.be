@@ -6,7 +6,7 @@ tags:
 permalink: "/blog/:year/:title"
 title: Google Home
 ft-img: "/uploads/9200000100219731_4.jpg"
-layout: ''
+layout: post
 excerpt_separator: ''
 
 ---
