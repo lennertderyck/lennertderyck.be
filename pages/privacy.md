@@ -37,7 +37,9 @@ Ons privacybeleid is simpel, uw gegevens zijn veilig.
 Doch zijn wij verplicht u hier goed over te informeren. Daarom houden we het eenvoudig en straight-forward.
 
 > **Goed nieuws!**
-Sinds we overgestapt zijn naar een andere CMS (contentmanager) hebben we minder cookies nodig.
+>
+> 
+> Sinds we overgestapt zijn naar een andere CMS (contentmanager) hebben we minder cookies nodig.
 
 ### DOELEINDEN
 
@@ -66,8 +68,7 @@ Sessiecookies zijn tijdelijk, en geldig tot wanneer je je browser afsluit, hiern
 
 ##### PERMANENTE COOKIES
 
-Deze cookies worden voor een tijdje bewaart, in principe zolang de uitgever van de website dat wilt.  
-Hierdoor hoef je maar één keer aan te melden of moet je niet telkens die vervelende meldingen wegklikken.
+Deze cookies worden voor een tijdje bewaart, in principe zolang de uitgever van de website dat wilt. Hierdoor hoef je maar één keer aan te melden of moet je niet telkens die vervelende meldingen wegklikken.
 
 ##### 3RD PARTY COOKIES
 
@@ -75,7 +76,7 @@ Deze cookies worden geplaatst door diensten waar wij rechtstreeks gebruik van ma
 
 ##### TOESTEMMINGEN
 
-Voor functionele cookies, de cookies die er voor zorgen dat de site überhaupt kan werken, hoeven we geen toestemming te vragen. Enkele voorbeelden zijn de banners die u wegklikt, sessiecookies, etc.
+Voor functionele cookies, de cookies die er voor zorgen dat de site überhaupt kan werken, hoeven we geen toestemming te vragen. Enkele voorbeelden zijn de banners die u weg klikt, sessiecookies, etc.
 
 Voor cookies die uw IP-adres registreren en het niet anonimiseren en voor andere specifieke informatie die wordt bijgehouden moeten we wel toestemming vragen. Dit gaat dan vooral om cookies die door derden worden geplaatst. Daarom worden diensten van derden sowieso geblokkeerd wanneer u aangeeft geen cookies te willen toestaan. U kan deze voorkeuren ten alle tijden aanpassen.
 
@@ -86,11 +87,4 @@ We zullen u alleen mailen wanneer u ons mailt, om u op de hoogte te houden van d
 
 ### EIGENDOM
 
-Uw gegevens zijn uw eigendom, als u wenst deze te verwijderen kan u dit aangeven door te mailen naar privacy@lennertderyck.be. Hou er dan wel rekening mee dat door uw gegevens te verwijderen u geen klant meer bij ons kan zijn tot zolang u ons weer hiertoe toegang verschaft aangezien wij niet meer kunnen communiceren met u. Daarbij worden ook uw uploads verwijderd aangezien deze gekoppeld zijn aan uw e-mailadres.
-
-### BEVEILIGING
-
-Buiten uw wachtwoord voor het klantenportaal houden geen privacygevoelige gegevens bij. Toch maken we gebruik van goed beveiligde servers waar er maar weinig mensen (lees: 1 iemand) toegang tot hebben.
-
-Wij kunnen uw wachtwoord niet lezen. We zouden evengoed Chinees kunnen lezen aangezien uw wachtwoord wordt gecodeerd.  
-Als uw wachtwoord bijvoorbeeld ‘koekjes zijn lekker’ zou zijn dan wordt uw wachtwoord weggeschreven als ‘$P$Bnuwp7hNjtwrUzuwQ7PY0cH3.8aBksw’.
+Uw gegevens zijn uw eigendom, als u wenst deze te verwijderen kan u dit aangeven door te mailen naar hello@lennertderyck.be. Hou er dan wel rekening mee dat door uw gegevens te verwijderen u geen klant meer bij ons kan zijn tot zolang u ons weer hiertoe toegang verschaft aangezien wij niet meer kunnen communiceren met u.
