@@ -4,10 +4,6 @@ auto_deploy: true
 admin_path: "/admin"
 webhook_url: 
 sections:
-- type: jekyll-posts
-  label: Blog
-  create: all
-  new_doc_ext: md
 - type: directory
   path: pages
   label: Pagina's
@@ -15,6 +11,10 @@ sections:
   match: "**/*"
   templates:
   - page
+- type: jekyll-posts
+  label: Blog
+  create: all
+  new_doc_ext: md
 - type: directory
   path: _projects
   label: Projects
