@@ -16,6 +16,7 @@ title: Lennert De Ryck
 # Build settings
 # ──────────────
 highlighter: rouge
+livereload: true
 
 exclude:
   - Gemfile
