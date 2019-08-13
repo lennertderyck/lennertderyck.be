@@ -4,10 +4,11 @@ tags:
 title: Personal startpage
 client: Persoonlijk
 project-url: https://personal-startpage.lennertderyck.be/
-ft-img: "/uploads/pf_gh_personal_startpage_dark.png"
+ft-img: "/uploads/1565661246599.png"
 galery:
 - "/uploads/Schermafbeelding-2019-05-23-om-20.26.18-compressor.png"
 - "/uploads/pf_gh_personal_startpage_dark.png"
+date: 
 
 ---
 Een een persoonlijke webpagina die getoond wordt wanneer een nieuw tabblad wordt geopend.

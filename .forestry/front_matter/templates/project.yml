@@ -47,6 +47,7 @@ fields:
   default: now
   hidden: true
 pages:
+- _projects/personal-startpage.md
 - _projects/the-bicycle-shop.md
 - _projects/the-docks.md
 - _projects/tombola-tickets.md
@@ -55,7 +56,6 @@ pages:
 - _projects/cityfest.md
 - _projects/web-workshop.md
 - _projects/spaghettiavond.md
-- _projects/personal-startpage.md
 - _projects/open-scouts-weekend-16.md
 - _projects/koleur-gantoise.md
 - _projects/hotel-iconografie.md
