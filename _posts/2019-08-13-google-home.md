@@ -5,7 +5,7 @@ tags:
 - smart home
 permalink: "/blog/:year/:title"
 title: Google Home
-ft-img: "/uploads/9200000100219731_4.jpg"
+ft-img: "/uploads/Google-Home-Mini-04.jpeg"
 layout: post
 excerpt_separator: ''
 
