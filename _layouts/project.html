@@ -28,7 +28,7 @@ layout   : default
                                 {% endfor %}
                                 {% for img in page.galery offset:1 %}
                                     <div class="carousel-item" style="overflow: hidden;" data-touch="true">
-                                        <img src="{{ img }}" class="d-block w-100" alt="Project foto" style="object-fit: contain;">
+                                        <img src="{{ img }}" class="d-block w-100 no-save" alt="Project foto" style="object-fit: contain;">
                                     </div>
                                 {% endfor %}
                             </div>
@@ -46,7 +46,7 @@ layout   : default
 
                 {% if galleryCount == 1 %} 
                     {% for img in page.galery %}
-                        <img src="{{ img }}" class="d-block w-100 bd-radius" alt="Project foto">
+                        <img src="{{ img }}" class="d-block w-100 bd-radius no-save" alt="Project foto">
                     {% endfor %}
                 {% endif %}
             </div>
@@ -54,21 +54,20 @@ layout   : default
         <div class="col-12 col-lg-4">
             {{ content }}
             {% if page.client != "" %}
-            <p class="txt-modern mb-1 mt-4">
-                Klant
-            </p>
-            <p class="mb-0">
-                {{ page.client }}
-            </p>
+                <p class="txt-modern mb-1 mt-3">
+                    Klant
+                </p>
+                <p class="mb-3">
+                    {{ page.client }}
+                </p>
             {% endif %}
-            <p class="txt-modern mb-1 mt-4 d-none">
-                Tags
-            </p>
+
             <div>
                 <div id="postTags" class="txt-modern small">{% for tag in page.tags %}<div class="tag box">#{{ tag }} </div>{% endfor %}</div>
             </div>
+
             {% if page.project-url != "" %}
-                <a class="btn mt-2" href="{{ page.project-url }}" target="_blank" rel="noopener">Project bekijken</a>
+                <a class="btn mt-3" href="{{ page.project-url }}" target="_blank" rel="noopener">Project bekijken</a>
             {% endif %}
         </div>
     </div>
