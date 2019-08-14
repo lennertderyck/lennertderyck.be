@@ -1,21 +1,23 @@
 ---
 tags:
 - Google
-- Assistant
+- Google Assistant
+- Artificiële Intelligentie
 - smart home
 permalink: "/blog/:year/:title"
-title: Google Home
+title: Slim, slimmer, slimst
+subtitle: De Google Home
 ft-img: "/uploads/Google-Home-Mini-04.jpeg"
 layout: post
-excerpt_separator: ''
+excerpt_separator: '<!--read more-->'
 
 ---
-De Google Home mini is de kleine broer van de Google Home die wat weg heeft van een kabouter.
+De Google Home, die andertussen 3 jaar beschikbaar is, toont nog steeds aan dat het alle verwachtingen kan invullen.
 
-Het fantastische apparaat is als het ware een echte assistent inclusief humor.
+De slimme speaker huist de Google Assistant welke op zijn (of haar, afhankelijk van de instellingen) beurt zowat al je vragen kan beantwoorden. Kan deze dit niet dan laat de Assistant dit meestal op een ludieke wijze weten aan de gebruiker.
 
-De Home mini huist de Google Assistant die sinds mei 2019 ook beschikbaar is in België. Alhoewel de Belgische versie nog niet over evenveel functies beschikt als de Amerikaanse versie, toch is het een geweldige hulp. Zeker in combinatie met andere slimme producten.
+Helaas hebben we in België even moeten wachten op de ondersteuning. Aangezien Google een Amerikaans bedrijf is, is het logisch dat het natuurlijk voorkeur geeft aan de Engelstalige gemeenschap. Nu de Assistant sinds mei beschikbaar is hebben we al even de tijd gehad om deze uit te testen. Alhoewel de verwachtingen niet erg hoog waren aangezien de Nederlandse versie nog niet lang uit is, toch heeft de Assistant al doen verrassen.
 
-### Chromecast
+Het meest opvallende is de snelheid waarmee Belgische bedrijven een samenwerking aangingen met Google. Qmusic, Colruyt, Bpost, en meer ontwikkelden al functies voor de Assitant. Je kan bijvoorbeeld vragen: "Praat met VRT", en dan zal de Assistant je doorvebinden met de applicatie van VRT Nieuws. De zoetgevooisde stem van Martine Tanghe verwelkomt je dan en vraagt je wat je moet doen.
 
-Heb je een Chromecast of Chromecast Audio? Dan komt de Assistant prima van pas. Je hoeft de Assistant enkel maar te vragen om een nummer of playlist te spelen en deze zal automatisch verbinden met je Chromecast. Dit werkt ook voor YouTube, Netflix, ... Je kan in de Google Home app je standaard TV en Muziekspeler instellen en je Assistant zal automatisch je aangevraagde nummer of serie op deze toestellen spelen.
+Het is maar één van enkele voorbeelden van wat je kan doen met de Assistant. Ook het aansturen van slimmer apparaten is mogelijk. Zo kan je ook vragen om muziek af te spelen op je Chromecast (Audio) met slechts enkele woorden.

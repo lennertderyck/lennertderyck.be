@@ -16,9 +16,9 @@ short-desc: |-
 widgets-bottom: false
 more_settings:
   titlebar: false
-
+site-content-padding: false
 ---
-<div class="row mb-5">
+<div class="row mb-5 d-none">
   <div class="col">
     <div class="h-section">
       <h1 class="page-title fontw-400">Blog</h1>
@@ -27,6 +27,20 @@ more_settings:
   </div>
 </div>
 {% include opmerking.html title="Beta" fullw="true" content="Dit deel van de site is nog in ontwikkeling" mb="3rem" %}
+{% assign items = site.posts %}
+{% for item in items limit:1 %}
+  <a class="row overfl-none mb-5 vw-full" href="{{ item.url | remove:'.html' }}" >
+    <div class="col-7 px-0 overfl-none" style="height: '470px;">
+      <img src="{{ site.baseurl }}{{ item.ft-img }}" class="img-fit h-100 w-100" alt="...">      
+    </div>
+    <div class="col p-5">
+      <h1 class="card-title lspacing-1 uppc mb-1">{{ item.title }}</h1>
+      <p class="txt-modern">Een hele slimme speaker</p>
+      <p class="post-intro">{{ item.excerpt | truncatewords: 20 | remove:"<p>" | remove:"</p>" }}</p>
+      <p class="card-text small txt-modern mb-0 fontw-400 txt-color-white">{% for tags in item.tags %}<span class="tag box">#{{ tags }} </span>{% endfor %}</p>
+    </div>
+  </a>
+{% endfor %}
 <div class="row">
     <div class="col px-0">
       <div id="portfolio" class="cards-portfolio pt-3">

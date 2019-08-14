@@ -131,6 +131,10 @@ p:not(.txt-modern) div:not(.txt-modern) p {
     height: fit-content !important;
 }
 
+.overfl-none {
+    overflow: hidden;
+}
+
 .scale-child-75 > * {
     transform: scale(0.75);
 }
@@ -270,6 +274,17 @@ span.transl-up-2 {
         div.pace.pace-inactive ~ #loaderSplash {
             display: none;
         }
+        
+        /* #body > div.pace {
+            width: 200px;
+        }
+
+        #body > div.pace > div.pace-progress {
+            width: 200px;
+            position: fixed;
+            top: 67%;
+            left: calc(50% - 200px - 200px/2);
+        } */
 
 /* MAIN NAV */
     #navMain {
@@ -710,7 +725,7 @@ span.transl-up-2 {
 
 /* BLOG */
     /* INTRO */
-        #blogPost .page-content p:first-child {
+        /* #blogPost .page-content p:first-child {
             font-weight: 700;
             font-size: 1.4rem;
             font-family: var(--font-thrd);
@@ -719,6 +734,13 @@ span.transl-up-2 {
         }
 
         #blogPost .page-content p:not(:first-child) {
+            font-family: var(--font-thrd-d);
+            line-height: 34px;
+            font-size: 18px;
+            font-weight: 300;
+        } */
+
+        #blogPost .page-content p {
             font-family: var(--font-thrd-d);
             line-height: 34px;
             font-size: 18px;
@@ -1706,6 +1728,8 @@ span.transl-up-2 {
     }
 }
 
+
+/* DARK MODE */
 /* @media (prefers-color-scheme: dark) {
     nav#navMain {
         background-color: rgb(63, 61, 61);

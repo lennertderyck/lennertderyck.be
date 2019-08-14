@@ -115,7 +115,7 @@
 
         <!-- REAL CONTENT -->
         {% include navbar.html %}
-        <div id="site-content" {% if page.titlebar == false %}class="page-no-title"{% endif %}>
+        <div id="site-content" class="{% if page.titlebar == false %}page-no-title{% endif %} {% if page.site-content-padding == false %}pt-0{% endif %}">
             {{ content }}
         </div>
         <div id="alerts">
