@@ -3,7 +3,7 @@ tags:
 - Google
 - Google Assistant
 - Artificiële Intelligentie
-- smart home
+- Smart home
 permalink: "/blog/:year/:title"
 title: Slim, slimmer, slimst
 subtitle: De Google Home
