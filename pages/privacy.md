@@ -38,8 +38,7 @@ Doch zijn wij verplicht u hier goed over te informeren. Daarom houden we het een
 
 > **Goed nieuws!**
 >
-> 
-> Sinds we overgestapt zijn naar een andere CMS (contentmanager) hebben we minder cookies nodig.
+> Sinds we overgestapt zijn naar een andere CMS (contentmanager) hebben we minder cookies nodig. Er zijn dus ook minder cookies van derden die je volgen.
 
 ### DOELEINDEN
 
