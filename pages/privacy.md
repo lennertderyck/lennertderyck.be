@@ -36,7 +36,7 @@ more_settings:
 Ons privacybeleid is simpel, uw gegevens zijn veilig.  
 Doch zijn wij verplicht u hier goed over te informeren. Daarom houden we het eenvoudig en straight-forward.
 
-> **Goed nieuws!**
+> **Goed nieuws!** 
 >
 > Sinds we overgestapt zijn naar een andere CMS (contentmanager) hebben we minder cookies nodig. Er zijn dus ook minder cookies van derden die je volgen.
 
