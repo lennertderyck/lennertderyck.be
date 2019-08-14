@@ -26,12 +26,11 @@ site-content-padding: false
     </div>
   </div>
 </div>
-{% include opmerking.html title="Beta" fullw="true" content="Dit deel van de site is nog in ontwikkeling" mb="3rem" %}
 {% assign items = site.posts %}
 {% for item in items limit:1 %}
   <a class="row overfl-none mb-5 vw-full" href="{{ item.url | remove:'.html' }}" >
-    <div class="col-7 px-0 overfl-none" style="height: '470px;">
-      <img src="{{ site.baseurl }}{{ item.ft-img }}" class="img-fit h-100 w-100" alt="...">      
+    <div class="col-7 px-0 overfl-none" style="height: 340px;">
+      <img src="{{ site.baseurl }}{{ item.ft-img }}" class="img-fit h-100 w-100 no-save" alt="...">      
     </div>
     <div class="col p-5">
       <h1 class="card-title lspacing-1 uppc mb-1">{{ item.title }}</h1>
