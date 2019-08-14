@@ -4,9 +4,9 @@
 
 # Site settings
 # ─────────────
-baseurl: # the subpath of your site, e.g. /blog
-# host   : 127.0.0.1
-# port   : 4000
+# baseurl: lennertderyckbe # the subpath of your site, e.g. /blog
+host   : 127.0.0.1
+port   : 4000
 
 # Custom Site variables
 # ─────────────────────
