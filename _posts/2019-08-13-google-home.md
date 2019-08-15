@@ -12,7 +12,7 @@ excerpt_separator: ''
 subtitle: De Google Home
 preface: De Google Home, die ondertussen 3 jaar beschikbaar is, toont nog steeds aan
   dat het alle verwachtingen kan invullen.
-force-darkmode: true
+force-darkmode: false
 
 ---
 De Google Home, die ondertussen 3 jaar beschikbaar is, toont nog steeds aan dat het alle verwachtingen kan invullen.
