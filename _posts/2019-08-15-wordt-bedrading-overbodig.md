@@ -4,7 +4,7 @@ tags:
 - smart home
 layout: post
 permalink: "/blog/:year/:title"
-title: Wordt bedrading overbodig?
+title: Maak van elk huis een smart home
 subtitle: Ikea Tradfi
 preface: Uitgebreider dan de Philips Hue kit en stukken goedkoper, maar vervult het
   alle verwachtingen?
