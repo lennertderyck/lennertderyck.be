@@ -11,7 +11,7 @@ preface: De derde generatie Chromecast heeft van Google slechts enkele kleine ve
   voor de Apple TV.
 ft-img: "/uploads/chromecast-2018-review-iphoned2.jpg"
 excerpt_separator: ''
-force-darkmode: false
+force-darkmode: true
 
 ---
 De derde generatie Chromecast heeft van Google slechts enkele kleine verbeteringen gekregen. Desondanks blijft het vernieuwde streamapparaatje een knappe concurrent voor de Apple TV.  

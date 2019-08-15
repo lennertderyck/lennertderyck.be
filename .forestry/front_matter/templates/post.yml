@@ -49,6 +49,7 @@ fields:
   type: boolean
   label: Force imgDarkMode
   description: For navbar, make white
+  default: true
 pages:
 - _posts/een-upgrade-voor-de-chromecast.md
 - _posts/wordt-bedrading-overbodig.md
