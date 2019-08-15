@@ -32,11 +32,13 @@ site-content-padding: false
     <div class="col-7 px-0 overfl-none" style="height: 340px;">
       <img src="{{ site.baseurl }}{{ item.ft-img }}" class="img-fit h-100 w-100 no-save" alt="...">      
     </div>
-    <div class="col p-5">
-      <h1 class="card-title lspacing-1 uppc mb-1">{{ item.title }}</h1>
-      <p class="txt-modern">Een hele slimme speaker</p>
-      <p class="post-intro">{{ item.preface }}</p>
-      <p class="card-text small txt-modern mb-0 fontw-400 txt-color-white">{% for tags in item.tags %}<span class="tag box">#{{ tags }} </span>{% endfor %}</p>
+    <div class="col p-5 d-flex flex-column justify-content-center">
+      <div>
+        <h1 class="card-title lspacing-1 uppc mb-1">{{ item.title }}</h1>
+        <p class="txt-modern">Een hele slimme speaker</p>
+        <p class="post-intro font-thrd" style="font-size: 18px;">{{ item.preface }}</p>
+        <p class="card-text small txt-modern mb-0 fontw-400 txt-color-white">{% for tags in item.tags %}<span class="tag box">#{{ tags }} </span>{% endfor %}</p>
+      </div>
     </div>
   </a>
 {% endfor %}

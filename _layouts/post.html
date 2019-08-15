@@ -10,8 +10,13 @@ permalink: /:day/:month/:year
     </div>
     <div class="row">
         <div class="col">
-            <div id="postTags" class="txt-modern small">{% for tag in page.tags %}<div class="tag box">#{{ tag }} </div>{% endfor %}</div>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://lennertderyck.be{{ page.url }}" target="_blank" rel="noopener">Delen op Facebook</a>
+            <div id="postTags" class="txt-modern small mb-4">{% for tag in page.tags %}<div class="tag box">#{{ tag }} </div>{% endfor %}</div>
+            <div class="btns-share mt-4">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://lennertderyck.be{{ page.url }}" class="mr-3" target="_blank" rel="noopener"><i data-feather="facebook"></i></a>
+                <a href="http://pinterest.com/pin/create/button/?url=https://lennertderyck.be{{ page.url }}&description={{ page.title }}" class="mr-3 d-none" target="_blank" rel="noopener">Delen op Pinstrest</a>
+                <a href="http://twitter.com/share?text={{ page.title }}&url=https://lennertderyck.be{{ page.url }}" class="mr-3" target="_blank" rel="noopener"><i data-feather="twitter"></i></a>
+                <a onclick="copyPostUrl()" class="txt-color-5" title="Kopieer de link van deze pagina"><i data-feather="link-2"></i></a>
+            </div>
         </div>
     </div>
 </div>
@@ -24,4 +29,16 @@ permalink: /:day/:month/:year
         </div>
     </div>
 </div>
+
+<script>
+    function copyPostUrl() {
+        var dummy = document.createElement('input'),
+        text = window.location.href;
+        document.body.appendChild(dummy);
+        dummy.value = text;
+        dummy.select();
+        document.execCommand('copy');
+        document.body.removeChild(dummy);
+    }
+</script>
 

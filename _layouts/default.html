@@ -64,7 +64,7 @@
 
     <!---->
 </head>
-    <body id="body">
+    <body id="body" class="{% if page.layout == "post" %}blogPost{% endif %}">
         <!-- Load Facebook SDK for JavaScript -->
         <div id="fb-root"></div>
         <script>
