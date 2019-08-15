@@ -322,9 +322,9 @@ div.pace.pace-inactive ~ #loaderSplash {
         width: 50%;
         transform: translateX(-100%)
     } */
-body.blogPost #navMain.imgDarkMode #NavMainCollapse > ul > li > a {
+body.blogPost #navMain.imgDarkMode #NavMainCollapse > ul > li > a, body.blogPost #navMain.forceImgDarkMode #NavMainCollapse > ul > li > a {
   color: white; }
-body.blogPost #navMain.imgDarkMode #NavMainCollapse > ul > li::after {
+body.blogPost #navMain.imgDarkMode #NavMainCollapse > ul > li::after, body.blogPost #navMain.forceImgDarkMode #NavMainCollapse > ul > li::after {
   color: white;
   background-color: white; }
 
@@ -364,7 +364,7 @@ body.blogPost #navMain.imgDarkMode #NavMainCollapse > ul > li::after {
 #navMain.imgDarkMode #logoMainVector .cls-1 {
   fill: white; }
 
-body.blogPost #navMain.imgDarkMode #logoMainVector .cls-1 {
+body.blogPost #navMain.imgDarkMode #logoMainVector .cls-1, body.blogPost #navMain.forceImgDarkMode #logoMainVector .cls-1 {
   fill: white; }
 
 /* PAGE TITLE */

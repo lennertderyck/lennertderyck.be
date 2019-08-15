@@ -35,7 +35,7 @@ site-content-padding: false
     <div class="col p-5 d-flex flex-column justify-content-center">
       <div>
         <h1 class="card-title lspacing-1 uppc mb-1">{{ item.title }}</h1>
-        <p class="txt-modern">Een hele slimme speaker</p>
+        <p class="txt-modern">{{ item.subtitle }}</p>
         <p class="post-intro font-thrd" style="font-size: 18px;">{{ item.preface }}</p>
         <p class="card-text small txt-modern mb-0 fontw-400 txt-color-white">{% for tags in item.tags %}<span class="tag box">#{{ tags }} </span>{% endfor %}</p>
       </div>

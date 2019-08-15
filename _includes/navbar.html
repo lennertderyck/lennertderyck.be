@@ -90,7 +90,7 @@
 <div id="pageTitle" class="project-heading">
   <img id="projectFtImage" src="{{ page.ft-img }}" crossorigin="anonymous" class="img-fit w-100" alt="" style="height: 640px;">
   <div class="bg h-100">
-      <nav id="navMain" class="navbar navbar-expand-lg">
+      <nav id="navMain" class="navbar navbar-expand-lg {% if page.force-darkmode == true %}forceImgDarkMode{% endif %}">
           <a class="navbar-brand" href="/">
             <a class="navbar-brand" href="/">
               <img src="{{ site.baseurl }}/assets/images/LOGO_LDR_TEXT_RIGHT_ZWART.svg" crossorigin="anonymous" alt="Logo Lennert De Ryck" class="no-save d-none" width="300px">
