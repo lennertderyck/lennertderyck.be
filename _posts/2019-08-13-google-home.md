@@ -6,7 +6,7 @@ tags:
 - Smart home
 permalink: "/blog/:year/:title"
 title: Slim, slimmer, slimst
-ft-img: "/uploads/bence-boros-anapPhJFRhM-unsplash-compressor.jpg"
+ft-img: "/uploads/linus-rogge-JAn_aeGk_TM-unsplash-1.jpg"
 layout: post
 excerpt_separator: ''
 subtitle: De Google Home
