@@ -50,5 +50,6 @@ fields:
   label: Force imgDarkMode
   description: For navbar, make white
 pages:
+- _posts/wordt-bedrading-overbodig.md
 - _posts/2019-08-13-google-home.md
 - _posts/2018-12-30-first.md
