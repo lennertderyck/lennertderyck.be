@@ -19,6 +19,8 @@ In april vorig jaar lanceerde Ikea officieel de slimme ledverlichting Tradfri in
 
 De slimme ledlampen van Ikea kan je via een app of afstandsbediening draadloos bedienen waaronder aan- en uitschakelen, dimmen of het veranderen van kleur.
 
+> De slimme ledlampen van Ikea kan je via een app of afstandsbediening draadloos bedienen
+
 Het assortiment bestond initieel uit een ledlamp met afstandsbediening, maar ondertussen is het assortiment uitgebreid met heel wat andere producten zoals draadloze bewegingssensoren, schakelaars en zelfs volledige lichtpanelen voor inbouw in Ikea-meubels. Sinds kort zijn ook de eerste ledlampen die van kleur kunnen veranderen opgenomen in het aanbod van de meubelgigant.
 
 We testen de set met ledlamp met kleurverlichting (met E27-lampvoet) en bijpassende dimmer. De dimmer (artikelnr. 703.389.51) is een ronde afstandsbediening waarmee je het licht kan dimmen. De kostprijs bedraagt 39,99 euro.
