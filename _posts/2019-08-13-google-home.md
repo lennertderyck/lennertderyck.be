@@ -12,6 +12,7 @@ excerpt_separator: ''
 subtitle: De Google Home
 preface: De Google Home, die ondertussen 3 jaar beschikbaar is, toont nog steeds aan
   dat het alle verwachtingen kan invullen.
+force-darkmode: false
 
 ---
 De Google Home, die ondertussen 3 jaar beschikbaar is, toont nog steeds aan dat het alle verwachtingen kan invullen.
@@ -22,7 +23,7 @@ Helaas hebben we in België even moeten wachten op de ondersteuning. Aangezien G
 
 Alhoewel de verwachtingen niet erg hoog waren aangezien de Nederlandse versie nog niet lang uit is, toch heeft de Assistant al doen verrassen.
 
-> Het meest opvallende is de snelheid waarmee Belgische bedrijven een samenwerking aangingen met Google
+> Het meest opvallende is de snelheid waarmee Belgische bedrijven een samenwerking aangingen met Google.
 
 Het meest opvallende is de snelheid waarmee Belgische bedrijven een samenwerking aangingen met Google. Qmusic, Colruyt, Bpost, en meer ontwikkelden al functies voor de Assistant. Je kan bijvoorbeeld vragen: "Praat met VRT", en dan zal de Assistant je doorverbinden met de applicatie van VRT Nieuws. De zoetgevooisde stem van Martine Tanghe verwelkomt je dan en vraagt je wat je moet doen.
 
