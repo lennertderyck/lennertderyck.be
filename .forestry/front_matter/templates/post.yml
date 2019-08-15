@@ -26,7 +26,7 @@ fields:
   name: ft-img
   label: Feature image
   config:
-    maxSize: '2'
+    maxSize: '4'
 - name: tags
   type: tag_list
   default: []
