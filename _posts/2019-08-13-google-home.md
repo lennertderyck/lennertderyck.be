@@ -1,6 +1,5 @@
 ---
 tags:
-- Google
 - Google Assistant
 - Artificiële Intelligentie
 - Smart home
@@ -9,7 +8,7 @@ title: Slim, slimmer, slimst
 ft-img: "/uploads/linus-rogge-JAn_aeGk_TM-unsplash-1.jpg"
 layout: post
 excerpt_separator: ''
-subtitle: Een hele slimme speaker
+subtitle: De Google Home
 preface: De Google Home, die ondertussen 3 jaar beschikbaar is, toont nog steeds aan
   dat het alle verwachtingen kan invullen.
 force-darkmode: false
