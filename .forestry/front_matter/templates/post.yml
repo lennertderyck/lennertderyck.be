@@ -45,6 +45,10 @@ fields:
   label: permalink
   hidden: true
   default: "/blog/:year/:title"
+- name: force-darkmode
+  type: boolean
+  label: Force imgDarkMode
+  description: For navbar, make white
 pages:
 - _posts/2019-08-13-google-home.md
 - _posts/2018-12-30-first.md
