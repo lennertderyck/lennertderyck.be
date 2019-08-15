@@ -10,7 +10,7 @@ preface: Uitgebreider dan de Philips Hue kit en stukken goedkoper, maar vervult 
   alle verwachtingen?
 ft-img: "/uploads/ikea-homekit.jpg"
 excerpt_separator: ''
-force-darkmode: false
+force-darkmode: true
 
 ---
 _Dit artikel is afkomstig van een andere bron, en dient enkel als invulling._
