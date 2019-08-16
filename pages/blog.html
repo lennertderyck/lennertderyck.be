@@ -34,7 +34,7 @@ site-content-padding: false
     </div>
     <div class="col p-5 d-flex flex-column justify-content-center">
       <div>
-        <h1 class="card-title lspacing-1 uppc mb-1">{{ item.title }}</h1>
+        <h1 class="card-title lspacing-1 uppc mb-1 balance-text">{{ item.title }}</h1>
         <p class="txt-modern">{{ item.subtitle }}</p>
         <p class="post-intro font-thrd" style="font-size: 18px;">{{ item.preface }}</p>
         <p class="card-text small txt-modern mb-0 fontw-400 txt-color-white">{% for tags in item.tags %}<span class="tag box">#{{ tags }} </span>{% endfor %}</p>
@@ -44,17 +44,20 @@ site-content-padding: false
 {% endfor %}
 <div class="row">
     <div class="col px-0">
-      <div id="portfolio" class="cards-portfolio pt-3">
+      <div id="portfolio" class="cards-row pt-3">
         {% assign items = site.posts %}
         {% for item in items %}
-        <a class="card no-select" href="{{ item.url | remove:'.html' }}">
-            <img src="{{ site.baseurl }}{{ item.ft-img }}" class="img-fit" alt="...">
-            <div class="card-body txt-color-white">
-                <div class="d-flex flex-column justify-content-end w-100 h-100">
-                    <h3 class="card-title lspacing-1 uppc mb-1 txt-color-white">{{ item.title }}</h3>
-                    <p class="card-text txt-modern mb-0 fontw-400 txt-color-white">{% for tags in item.tags limit: 3 %}<span class="tag sep">{{ tags }}</span>{% endfor %}</p>
-                </div>
-            </div>
+        <a class="no-select row mb-5 bd-radius bg-color-2" href="{{ item.url | remove:'.html' }}">
+          <div class="col-5 px-0">
+            <img src="{{ site.baseurl }}{{ item.ft-img }}" class="img-fit no-save" alt="...">
+          </div>
+          <div class="col p-5">
+            <small class="txt-modern mb-2 d-block" style="opacity: 0.6;">{{ item.date | date: "%b %d, %Y" }}</small>
+            <h2 class="balance-text mb-1">{{ item.title }}</h2>
+            <p class="txt-modern">{{ item.subtitle }}</p>
+            <p class="post-intro font-thrd" style="font-size: 18px;">{{ item.preface }}</p>
+            <p class="card-text small txt-modern mb-0 fontw-400 txt-color-white">{% for tags in item.tags %}<span class="tag box">#{{ tags }} </span>{% endfor %}</p>
+          </div>
         </a>
         {% endfor %}
       </div>
