@@ -141,27 +141,30 @@ function filterPortfolio(tag) {
     // var container = document.querySelector('#navFloatContainer');
     // var colorBased = document.querySelectorAll('.color-based')
 
-    window.addEventListener('load', function() {
-        var
-            fac = new FastAverageColor(),
-            // container = document.querySelector('#projectFtImage'),
-            color = fac.getColor(document.querySelector('#projectFtImage'));
+    if (window.location.href.includes("/blog/")) {
+        window.addEventListener('load', function() {
+            var
+                fac = new FastAverageColor(),
+                // container = document.querySelector('#projectFtImage'),
+                color = fac.getColor(document.querySelector('#projectFtImage'));
+    
+            // container.style.backgroundColor = color.rgb;
+            // colorBased.style.color = color.isDark ? '#fff' : '#000';
+    
+            var navMain = document.getElementById('navMain');
+    
+            if (color.isDark == true) {
+                this.console.log("Isdark");
+                navMain.classList.add('imgDarkMode');
+            } else if (color.isDark == false) {
+                this.console.log("Isnotdark")
+                navMain.classList.add('imgLightMode');
+            }
+    
+            console.log(color);
+        }, false);
+    }
 
-        // container.style.backgroundColor = color.rgb;
-        // colorBased.style.color = color.isDark ? '#fff' : '#000';
-
-        var navMain = document.getElementById('navMain');
-
-        if (color.isDark == true) {
-            this.console.log("Isdark");
-            navMain.classList.add('imgDarkMode');
-        } else if (color.isDark == false) {
-            this.console.log("Isnotdark")
-            navMain.classList.add('imgLightMode');
-        }
-
-        console.log(color);
-    }, false);
 
 /* CUSTOM CONTEXT MENU */
     const menu = document.getElementById('menuContext');
