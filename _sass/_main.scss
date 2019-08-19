@@ -536,36 +536,36 @@ span.transl-up-2 {
     }
 
 /* PORTFOLIO CARDS */
-.cards-portfolio {
-    column-count: 1;
-    column-gap: 50px;
-}
+    .cards-portfolio {
+        column-count: 1;
+        column-gap: 50px;
+    }
 
-.cards-portfolio > .card {
-    position: relative;
-    // width: 325px;
-    height: 200px;
-    border: none;
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    box-shadow: 0px 6px 25px 3px rgba(0, 0, 0, 0.32);
-    margin-bottom: 50px;
-}
+    .cards-portfolio > .card {
+        position: relative;
+        // width: 325px;
+        height: 200px;
+        border: none;
+        border-radius: var(--border-radius);
+        overflow: hidden;
+        box-shadow: 0px 6px 25px 3px rgba(0, 0, 0, 0.32);
+        margin-bottom: 50px;
+    }
 
-.cards-portfolio > .card > img {
-    width: 100%;
-    height: 200px;
-}
+    .cards-portfolio > .card > img {
+        width: 100%;
+        height: 200px;
+    }
 
-.cards-portfolio > .card > .card-body {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    padding: 30px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.562) 0%, rgba(255, 255, 255, 0) 100%);
-}
+    .cards-portfolio > .card > .card-body {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.562) 0%, rgba(255, 255, 255, 0) 100%);
+    }
 
 
     .cards-row {
@@ -1158,6 +1158,11 @@ span.transl-up-2 {
             }
         }
 
+/* FB MESSENGER BUBBLE */
+    #fb-root > div.fb_dialog.fb_dialog_advanced.fb_customer_chat_bubble_animated_no_badge.fb_customer_chat_bubble_pop_in {
+        right: 9pt !important;
+        bottom: 31px !important;
+    }
 
 /********************************************************************/
     /* BUTTON */
