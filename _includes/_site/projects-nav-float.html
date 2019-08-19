@@ -13,17 +13,6 @@
                         </div>
                     </a>
                 {% endif %}
-                {% if page.previous == nil %}
-                {% assign proj_last = site.projects | last %}
-                    <a class="prev d-flex flex-row align-items-center txt-color-white" href="{{ proj_last.url | remove:'.html'}}" style="opacity: 0.6;">
-                        <div>
-                            <i data-feather="arrow-left"></i>
-                        </div>
-                        <div class="mt-1 d-none d-md-block">
-                            <p id="prevTitle" class="txt-modern ml-2 mb-0 txt-color-white">{{ proj_last.title }}</p>
-                        </div>
-                    </a>
-                {% endif %}
             </div>
             <div class="col-auto col-md-4 text-center p-0">
                 <a href="/projects" class="txt-modern txt-color-white">Alle projecten</a>
@@ -34,17 +23,6 @@
                     <a class="next d-flex flex-row align-items-center txt-color-white" href="{{ page.next.url | remove:'.html'}}">
                         <div class="mt-1 d-none d-md-block">
                             <p id="nextTitle" class="txt-modern mr-2 mb-0 text-right txt-color-white">{{ page.next.title }}</p>
-                        </div>
-                        <div>
-                            <i data-feather="arrow-right"></i>
-                        </div>
-                    </a>
-                {% endif %}
-                {% if page.next == nil %}
-                {% assign proj_first = site.projects | first %}
-                    <a class="next d-flex flex-row align-items-center txt-color-white" href="{{ proj_first.url | remove:'.html'}}" style="opacity: 0.6;">
-                        <div class="mt-1 d-none d-md-block">
-                            <p id="nextTitle" class="txt-modern mr-2 mb-0 text-right txt-color-white">{{ proj_first.title }}</p>
                         </div>
                         <div>
                             <i data-feather="arrow-right"></i>
