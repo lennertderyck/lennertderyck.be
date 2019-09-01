@@ -11,7 +11,7 @@ if (window.location.href.startsWith("http://lennertderyck.be")) {
 console.log('    ' + 'location is ' + window.location.href);
 
 if (window.location.href.startsWith("http://127.0.0.1") == false) {
-    if (window.location.href.startsWith("http://lennertderyck.be")) {
+    if (window.location.href.startsWith("https://lennertderyck.be")) {
         console.log('    ' + 'URL begins with https://lennertderyck.be');
     } else {
         console.log('    ' + 'URL does not start with https://lennertderyck.be');
