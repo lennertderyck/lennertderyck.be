@@ -1,3 +1,14 @@
+console.log("main-crtl.js script running");
+
+if (window.location.href.startsWith("http://127.0.0.1") == false) {
+    if (window!=window.top) {
+        var siteContent = document.getElementById('site-content');
+        siteContent.outerHTML = " ";
+        siteContent.innerHTML = " ";
+        console.log('    ' + '#site-content content removed');
+    }
+}
+
 var menuCollapse = document.getElementById("NavMainCollapse");
 var btnNavMainCollapse = document.getElementById("btnNavMainCollapse");
 var body = document.getElementById("body");
