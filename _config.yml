@@ -21,6 +21,7 @@ livereload: true
 exclude:
   - Gemfile
   - README.md
+  - vendor/bundle
 
 plugins:
   - jekyll-feed
