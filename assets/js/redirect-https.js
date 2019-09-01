@@ -16,7 +16,7 @@ if (window.location.href.startsWith("http://127.0.0.1") == false) {
         var html = document.getElementById('html');
         var siteContent = document.getElementById('site-content');
         html.classList.add('embedded');
-        siteContent.innerHTML = "";
+        siteContent.outerHTML = "";
     } else {
         console.log('    ' + 'URL begins with https://lennertderyck.be');
     }
