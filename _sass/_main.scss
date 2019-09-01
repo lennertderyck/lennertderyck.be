@@ -61,10 +61,6 @@ body.no-scroll {
     margin-bottom: 5rem;
 }
 
-/* .row {
-    padding: 0px 35px;
-} */
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald';
     font-weight: 400;
@@ -110,6 +106,8 @@ p, small {
 p:not(.txt-modern) div:not(.txt-modern) p {
     font-weight: 400;
 }
+
+/* ADDITIVES */
 
 .vw-full {
     margin: 0 calc(-50vw + 50%);
