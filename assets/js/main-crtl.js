@@ -6,7 +6,7 @@ var titleOrig = document.title;
 /* IF RUNS LOCAL */
 
 if (window.location.href.startsWith("http://127.0.0.1")) {
-    console.log("This page runs local + " + titleOrig);
+    console.log('    ' + 'This page runs local: ' + titleOrig);
     document.title = "[local] " + titleOrig;
 }
 
