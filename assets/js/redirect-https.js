@@ -11,12 +11,12 @@ if (window.location.href.startsWith("http://lennertderyck.be")) {
 console.log('    ' + 'location is ' + window.location.href);
 
 if (window.location.href.startsWith("http://127.0.0.1") == false) {
-    if (window.location.href.startsWith("https://lennertderyck.be")) {
-        console.log('    ' + 'URL begins with https://lennertderyck.be');
-    } else {
+    if (window!=window.top) {
         console.log('    ' + 'URL does not start with https://lennertderyck.be');
         var html = document.getElementById('html');
         html.classList.add('embedded');
+    } else {
+        console.log('    ' + 'URL begins with https://lennertderyck.be');
     }
 } else {
     console.log('    ' + 'URL not checked because site runs local')
