@@ -378,13 +378,23 @@
         } 
     }
 </script> -->
-        <div id="embedMessage">
+        <div id="embedMessage" class="p-4">
+    <img class="pb-5" src="/assets/images/LOGO_LDR_TEXT_HOR_BOTTOM_ZWART.svg" alt="" width="210px">
+    <h3 class="text-center">This page is embedded</h3>
+    <p class="txt-modern">Embedding is not supported</p>
+    <p class="text-center">Developing a website is a lot of work, so just put an url to this page on your site.</p>
+    <a href="https://lennertderyck.be/social" class="btn" rel="noopener" target="_blank">Open on new tab</a>
 </div>
 
 <style>
     #embedMessage {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
         height: 100vh;
-        background: red;
+        background: white;
         position: fixed;
         left: 0px;
         right: 0px;
