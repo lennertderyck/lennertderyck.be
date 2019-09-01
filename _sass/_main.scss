@@ -216,6 +216,40 @@ span.transl-up-2 {
 }
 
 /* MAIN CONTENT ******************************/
+/* POPOVERS */
+    .popover {
+        border: none;
+        background-color: var(--accent-3);
+        user-select: none;
+
+        .arrow {
+            &::after {
+                // border-right-color: #fff;
+                border-right-color: var(--accent-3);
+                /* background-color: var(--accent-main); */
+                border-width: 8px;
+                position: absolute;
+                left: -7px;
+            }
+
+            &::before {
+                display: none;
+                border-right-color: var(--accent-3);
+            }
+        }
+
+        .popover-body {
+            font-family: Overpass;
+            color: white;
+            @extend .txt-modern:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6);
+            font-size: 12.8px;
+        }
+    }
+    
+    .bs-popover-auto[x-placement^=right], .bs-popover-right {
+        margin-left: 20px;
+    }
+
 /* LOADER SPLASH */
     .pace {
         -webkit-pointer-events: none;

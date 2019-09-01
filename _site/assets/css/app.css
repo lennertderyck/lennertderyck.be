@@ -135,7 +135,7 @@ span.transl-up-2 {
 .shadow {
   box-shadow: 0px 6px 25px 3px rgba(0, 0, 0, 0.32) !important; }
 
-.txt-modern:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6), .juicer-feed.polaroid .j-poster-meta, .nav.nav-tabs > a.nav-item, #menuContext, #menuContext *, tl, #site-content h5 {
+.txt-modern:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6), .popover .popover-body, .juicer-feed.polaroid .j-poster-meta, .nav.nav-tabs > a.nav-item, #menuContext, #menuContext *, tl, #site-content h5 {
   text-transform: uppercase;
   font-family: "Overpass" !important;
   font-weight: 700;
@@ -167,6 +167,28 @@ span.transl-up-2 {
   display: none !important; }
 
 /* MAIN CONTENT ******************************/
+/* POPOVERS */
+.popover {
+  border: none;
+  background-color: var(--accent-3);
+  user-select: none; }
+  .popover .arrow::after {
+    border-right-color: var(--accent-3);
+    /* background-color: var(--accent-main); */
+    border-width: 8px;
+    position: absolute;
+    left: -7px; }
+  .popover .arrow::before {
+    display: none;
+    border-right-color: var(--accent-3); }
+  .popover .popover-body {
+    font-family: Overpass;
+    color: white;
+    font-size: 12.8px; }
+
+.bs-popover-auto[x-placement^=right], .bs-popover-right {
+  margin-left: 20px; }
+
 /* LOADER SPLASH */
 .pace {
   -webkit-pointer-events: none;

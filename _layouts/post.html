@@ -15,7 +15,8 @@ permalink: /:day/:month/:year
                 <a href="https://www.facebook.com/sharer/sharer.php?u=https://lennertderyck.be{{ page.url }}" class="mr-3" target="_blank" rel="noopener"><i data-feather="facebook"></i></a>
                 <a href="http://pinterest.com/pin/create/button/?url=https://lennertderyck.be{{ page.url }}&description={{ page.title }}" class="mr-3 d-none" target="_blank" rel="noopener">Delen op Pinstrest</a>
                 <a href="http://twitter.com/share?text={{ page.title }}&url=https://lennertderyck.be{{ page.url }}" class="mr-3" target="_blank" rel="noopener"><i data-feather="twitter"></i></a>
-                <a onclick="copyPostUrl()" class="txt-color-5 clickable" title="Kopieer de link van deze pagina"><i data-feather="link-2"></i></a>
+
+                <button onclick="copyPostUrl()" type="button" style="background: none;" class="txt-color-5 clickable p-0" data-toggle="popover" data-content="url gekopieerd!"><i data-feather="link-2"></i> <span onclick="$('.popover').popover('hide')"></button>
             </div>
         </div>
     </div>
