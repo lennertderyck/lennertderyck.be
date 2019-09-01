@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl" id="html">
 <head>
     <script src="/assets/js/console.image.js"></script>
     <script>
@@ -566,6 +566,14 @@ ontdek mijn stijl">
         top: 0px;
         bottom: 0px;
         z-index: 10000000000000000000000000;
+    }
+
+    html:not(.embedded) #embedMessage {
+        display: none;
+    }
+
+    html.embedded {
+        overflow: hidden;
     }
 </style>
     </body>
