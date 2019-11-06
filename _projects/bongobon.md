@@ -3,13 +3,13 @@ tags:
 - School
 - Print
 - Branding
-title: Bongobon
+title: Bongobon herwerking
 client: Edugo Campus Glorieux
 project-url: ''
-ft-img: "/uploads/IMG_20170529_151736.jpg"
+ft-img: "/uploads/IMG_20170529_151736-compressor.jpg"
 galery:
-- "/uploads/IMG_20170529_151707.jpg"
-- "/uploads/IMG_20170529_151747.jpg"
+- "/uploads/IMG_20170529_151747-compressor.jpg"
+- "/uploads/IMG_20170529_151707-compressor.jpg"
 
 ---
 De opdracht hield in dat we een herwerking maakten van de bekende Bongo verpakkingen. Ik koos voor bestemming Parijs.
