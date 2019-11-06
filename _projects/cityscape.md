@@ -6,7 +6,7 @@ tags:
 title: Cityscape
 client: Arteveldehogeschool
 project-url: ''
-ft-img: "/uploads/VISOFT_OPDR_BASISVORMEN_GEPLAATST_Tekengebied 1.svg"
+ft-img: "/uploads/CITYSCAPE_Tekengebied 1.png"
 galery:
 - "/uploads/CITYSCAPE_DEEL_2.jpg"
 - "/uploads/CITYSCAPE_DEEL_3.jpg"
