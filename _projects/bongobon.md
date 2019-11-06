@@ -8,6 +8,7 @@ client: Edugo Campus Glorieux
 project-url: ''
 ft-img: "/uploads/IMG_20170529_151736.jpg"
 galery:
+- "/uploads/IMG_20170529_151707.jpg"
 - "/uploads/IMG_20170529_151747.jpg"
 
 ---
