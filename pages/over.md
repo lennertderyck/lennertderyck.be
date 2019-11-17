@@ -36,7 +36,7 @@ widget-blocks:
 - template: widget-code
   button-url: https://
   new-tab: true
-  code: <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:twoledery&size=detail&theme=light&show-count=0"
+  code: <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:twoledery&size=detail&theme=light"
     width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;"
     allowtransparency="true"></iframe>
 short-desc: Mijn naam is Lennert De Ryck. Sinds 2012 studeer ik in het grafisch vakgebied
