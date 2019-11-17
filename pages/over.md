@@ -61,11 +61,16 @@ widget-settings:
 ---
 ### HALLO!
 
-Mijn naam is Lennert De Ryck. Sinds 2012 studeer ik in het grafisch vakgebied en sinds 2015 ben ik bezig met werk voor derden. Mijn plan? Zelfstandig grafisch vormgever worden en daarbovenop ga ik voor een opleiding leerkracht secundair Grafische / Print Media, om les te kunnen geven aan 2e en 3e graad.
+Dat mijn naam Lennert is, had je waarschijnlijk al door ;). Sinds 2012 studeer ik in het grafisch vakgebied en sinds 2015 ben ik bezig met werk voor derden. Mijn plan? Zelfstandig grafisch vormgever worden en daarbovenop ga ik voor een opleiding leerkracht secundair Grafische / Print Media, om les te kunnen geven aan 2e en 3e graad en eventueel in het hoger onderwijs.
 
-Momenteel ben ik student Grafische en Digitale Media aan Artevelde Hogeschool te Gent, waarbij ik verder ga in de afstudeerrichting Crossmedia Ontwerp. 29 juli ’17 studeerde ik af aan EDUGO Campus Glorieux t.i. met een diploma Grafische/Printmedia.
+29 juli ’17 studeerde ik af aan [EDUGO Campus Glorieux t.i.]( "https://www.edugo.be/secundair-onderwijs/glorieux/studieaanbod/?study=48") met een diploma Grafische/Printmedia en vervolgens zette ik de stap naar het hoger.
 
-Ik hou van goed design, mooie illustraties en verbluffende foto’s; Dit met een hele hoop passie voor het vak.  
-Qua ontwerp volg ik een beetje de hedendaagse stijl maar retro of alternatief vind ik al even goed. Als je meer wil weten over mijn stijl en wat ik doe, neem je best eens kijkje op mijn portfolio.
+Tot juni 2019 volgde ik Crossmedia Ontwerp, maar toch voelde ik mij niet op mijn plaats. Ik veranderde naar het[ graduaat Programming / Front-end-development]( "https://www.arteveldehogeschool.be/opleidingen/graduaat/programmeren") (eveneens aan Artevelde te Mariakerke en vond mijn tweede passie, code.
+
+Ik hou van goed design, mooie illustraties, verbluffende foto’s en clean code; Dit met een hele hoop passie voor het vak.
+
+Je herkent mijn stijl aan het royaal gebruik van witruimte, juist genoeg letterspatiëring en een groot contrast dat ontstaat door het combineren van fonts.
+
+Tegenwoordig focus ik mij vooral op webdesign, maar mijn grootste passie is nog altijd het ontwerp op papier. Tactiel, tastbaar, analoog, zoals maar één medium dat kan.
 
 <h4 class="fontw-300 lspacing-1">#THINKBEYONDTHEBOX</h4>
