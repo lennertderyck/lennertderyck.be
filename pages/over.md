@@ -11,15 +11,9 @@ redirect_plugin:
   redirect_from: ''
 widgets: true
 widget-blocks:
-- template: widget
-  button-url: "/portfolio"
-  title: Portfolio
-  subtitle: Projecten & stijl
-  content: "Ontdek wat ik al deed van projecten,  \nontdek mijn stijl."
-  button-label: Portfolio
 - template: widget-code
   new-tab: true
-  title: "1"
+  title: ''
   code: "<div id=\"about\" class=\"p-4 bd-radius\">\n\t<img src=\"https://github.lennertderyck.be/assets/images/about_profile.jpg\"
     height=\"150px\" width=\"150px\" class=\"d-none\">\n\t<p class=\"no-margin-b txt-modern\">\n\t\tREGIO\n\t\n\t</p><p
     class=\"no-margin-t\">\n\t\tGent\n\t\n\t</p><p class=\"no-margin-b txt-modern\">\n\t\tOPLEIDING\n\t\n\t</p><p
@@ -33,12 +27,18 @@ widget-blocks:
     center;\n\t\tmargin-bottom: 35px;\n\t\tborder-radius: 120px;\n\t}\n\t\n\t#about
     a.aux-button {\n\t\twidth: 100%;\n\t\ttext-align: center;\n\t\tmargin-top: 1em;\n\t\tmargin-bottom:
     0px;\n\t}\n</style>"
+- template: widget
+  button-url: "/portfolio"
+  title: Portfolio
+  subtitle: Projecten & stijl
+  content: "Ontdek wat ik al deed van projecten,  \nontdek mijn stijl."
+  button-label: Portfolio
 - template: widget-code
   button-url: https://
   new-tab: true
-  code: <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:twoledery&size=detail&theme=light"
-    width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;"
-    allowtransparency="true"></iframe>
+  code: |-
+    <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:twoledery&size=detail&theme=light" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden; display: none;" allowtransparency="true"></iframe>
+    <iframe src="https://open.spotify.com/embed/playlist/0AleYwja1EPED3APSWCN7f" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 short-desc: Mijn naam is Lennert De Ryck. Sinds 2012 studeer ik in het grafisch vakgebied
   en sinds 2015 ben ik bezig met werk voor derden. Mijn plan? ...
 widgets-bottom: false
