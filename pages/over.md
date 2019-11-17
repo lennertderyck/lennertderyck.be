@@ -28,6 +28,7 @@ widget-blocks:
   title: ''
   subtitle: ''
   content: ''
+  new-tab: false
 - template: widget
   title: Portfolio
   subtitle: Projecten & stijl
