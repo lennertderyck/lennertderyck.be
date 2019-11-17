@@ -28,14 +28,10 @@ widget-blocks:
   title: ''
   subtitle: ''
   content: ''
-  new-tab: false
 - template: widget
   title: Portfolio
   subtitle: Projecten & stijl
   content: "Ontdek wat ik al deed van projecten,  \nontdek mijn stijl."
-  button:
-    btn-text: ''
-    btn-url: ''
   button-label: Portfolio
   button-url: "{{ site.baseurl }}/projects"
   show-button: true

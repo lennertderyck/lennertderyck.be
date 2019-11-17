@@ -35,11 +35,7 @@ layout   : default
                             <div>
                                 {{ item.code | remove: "<p>" | remove: "</p>" }}
                             </div>
-                            {% if item.button-url != "" %}
-                                <a href="{{ item.button-url }}" class="btn" style="margin-top: 1rem;" {% if item.new-tab == true %} rel="noopener" target="_blank"{% endif %}>{{ item.button-label }}</a>
-                            {% endif %}
                         {% endif %}
-
                     </div>
                 {% endfor %}
             </div>

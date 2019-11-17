@@ -164,6 +164,9 @@ span.transl-up-2 {
 .after-none::after {
   display: none !important; }
 
+iframe {
+  border-radius: var(--border-radius); }
+
 /* MAIN CONTENT ******************************/
 /* POPOVERS */
 .popover {

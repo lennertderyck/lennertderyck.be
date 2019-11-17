@@ -213,6 +213,11 @@ span.transl-up-2 {
     display: none !important;
 }
 
+iframe {
+    border-radius: var(--border-radius);
+    
+}
+
 /* MAIN CONTENT ******************************/
 /* POPOVERS */
     .popover {
