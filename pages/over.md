@@ -38,7 +38,7 @@ widget-blocks:
   new-tab: true
   code: |-
     <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:twoledery&size=detail&theme=light" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden; display: none;" allowtransparency="true"></iframe>
-    <iframe src="https://open.spotify.com/embed/playlist/0AleYwja1EPED3APSWCN7f" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/playlist/0AleYwja1EPED3APSWCN7f" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 short-desc: Mijn naam is Lennert De Ryck. Sinds 2012 studeer ik in het grafisch vakgebied
   en sinds 2015 ben ik bezig met werk voor derden. Mijn plan? ...
 widgets-bottom: false
