@@ -5,10 +5,9 @@ tags:
 title: Barbord
 client: Persoonlijk
 project-url: https://github.com/lennertderyck/bar-board
-ft-img: "/uploads/LOGO_BARBORD_Tekengebied 1.svg"
+ft-img: "/uploads/photo-1457382713369-161d1d986f54.jpg"
 galery:
 - "/uploads/LOGO_BARBORD_Tekengebied 1-1.svg"
-- "/uploads/LOGO_BARBORD-1.ai"
 
 ---
 Betalingssysteem voor drank, snacks, etc. voor leiding in jeugdverenigingen.
