@@ -11,8 +11,9 @@ tags:
 title: Barbord
 client: Persoonlijk
 project-url: https://github.com/lennertderyck/bar-board
-ft-img: "/uploads/LOGO_BARBORD-1.ai"
+ft-img: "/uploads/LOGO_BARBORD_Tekengebied 1.svg"
 galery:
+- "/uploads/LOGO_BARBORD_Tekengebied 1-1.svg"
 - "/uploads/LOGO_BARBORD-1.ai"
 
 ---
