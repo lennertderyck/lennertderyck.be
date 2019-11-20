@@ -63,7 +63,7 @@ Tot juni 2019 volgde ik Crossmedia Ontwerp, maar toch voelde ik mij niet op mijn
 
 Ik hou van goed design, mooie illustraties, verbluffende foto’s en clean code; Dit met een hele hoop passie voor het vak.
 
-Je herkent mijn stijl aan het royaal gebruik van witruimte, juist genoeg letterspatiëring en een groot contrast dat ontstaat door het combineren van fonts.
+Je herkent mijn stijl aan het royaal gebruik van witruimte, juist genoeg letterspatiëring en een mooi contrast dat ontstaat door het combineren van fonts.
 
 Tegenwoordig focus ik mij vooral op webdesign, maar mijn grootste passie is nog altijd het ontwerp op papier. Tactiel, tastbaar, analoog, zoals maar één medium dat kan.
 
