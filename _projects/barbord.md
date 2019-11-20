@@ -1,12 +1,6 @@
 ---
 tags:
-- Wvd
-- School
-- Print
-- Sign
-- Branding
 - Online
-- Fotografie
 - Web
 title: Barbord
 client: Persoonlijk
