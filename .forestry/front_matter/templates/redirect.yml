@@ -33,6 +33,7 @@ fields:
   label: Redirect to
   description: Where to redirect
 pages:
+- _redirects/stack-series-1.md
 - _redirects/new/new-blog-post.md
 - _redirects/local-working-server-2.md
 - _redirects/local-working-server.md
