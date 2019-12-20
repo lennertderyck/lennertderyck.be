@@ -33,22 +33,23 @@ fields:
   label: Redirect to
   description: Where to redirect
 pages:
-- _redirects/stack-series-1.md
-- _redirects/new/new-blog-post.md
+- _redirects/Social media/facebook.md
+- _redirects/Social media/instagram.md
+- _redirects/Social media/pintrest.md
+- _redirects/Social media/spotify.md
+- _redirects/Social media/unsplash.md
+- _redirects/films-stack.md
+- _redirects/fonts-stack.md
+- _redirects/github.md
 - _redirects/local-working-server-2.md
 - _redirects/local-working-server.md
-- _redirects/Social media/instagram.md
+- _redirects/new/new-blog-post.md
+- _redirects/new/new-page.md
+- _redirects/new/new-project.md
 - _redirects/new/new-shortlink.md
-- _redirects/Social media/spotify.md
-- _redirects/transfer.md
 - _redirects/offerte.md
+- _redirects/stack-series-1.md
 - _redirects/stack-series.md
 - _redirects/stack.md
-- _redirects/Social media/pintrest.md
-- _redirects/Social media/unsplash.md
-- _redirects/Social media/facebook.md
-- _redirects/new/new-project.md
-- _redirects/new/new-page.md
-- _redirects/fonts-stack.md
-- _redirects/films-stack.md
-- _redirects/github.md
+- _redirects/transfer.md
+- _redirects/yarn-serve.md
