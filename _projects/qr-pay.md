@@ -25,3 +25,5 @@ De applicatie die ik ontwikkelde stelt de gebruiker in staat om een qr-code te g
 Er wordt een url gegenereerd waar alle gegevens in staan. Wanneer een gebruiker de url bezoekt interpreteert de applicatie deze gegevens en genereert de gegevens op de pagina.
 
 De qr-codes kunnen gescand worden door elke banking-app die het toelaat een code te scannen. Het rekeningnummer wordt eveneens automatisch gekopieerd zodat men dit kan gebruiken indien het niet mogelijk is de code te scannen.
+
+Payconiq wordt helaas nog niet ondersteund.
