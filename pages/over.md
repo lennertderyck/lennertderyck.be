@@ -44,7 +44,18 @@ widget-blocks:
   new-tab: true
   code: |-
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-    <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="nl_NL" data-type="vertical" data-theme="light" data-vanity="lennert-d-b43737193"><a class="LI-simple-link" href='https://be.linkedin.com/in/lennert-d-b43737193?trk=profile-badge'>Lennert D.</a></div>
+    <div id="badgeLinkedin">
+    <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="nl_NL" data-type="vertical" data-theme="light" data-vanity="lennert-d-b43737193"><a class="LI-simple-link" href='https://be.linkedin.com/in/lennert-d-b43737193?trk=profile-badge'>Lennert D.</a></div>
+    </div>
+    <style>
+    #badgeLinkedin > .LI-profile-badge {
+    width: 100%;
+    }
+
+    #badgeLinkedin > .LI-profile-badge .LI-profile-pic {
+    left: calc(50% - 50px)
+    }
+    </style>
 short-desc: Mijn naam is Lennert De Ryck. Sinds 2012 studeer ik in het grafisch vakgebied
   en sinds 2015 ben ik bezig met werk voor derden. Mijn plan? ...
 widgets-bottom: false
