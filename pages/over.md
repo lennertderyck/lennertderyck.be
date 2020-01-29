@@ -47,8 +47,9 @@ widget-blocks:
     \ data-version=\"v1\" data-size=\"large\" data-locale=\"nl_NL\" data-type=\"vertical\"
     data-theme=\"light\" data-vanity=\"lennert-d-b43737193\"><a class=\"LI-simple-link\"
     href='https://be.linkedin.com/in/lennert-d-b43737193?trk=profile-badge'>Lennert
-    D.</a></div>\n</div>\n<style>\n#badgeLinkedin > .LI-profile-badge {\nwidth: 100%;\n}\n\n#badgeLinkedin
-    > .LI-profile-badge .LI-profile-pic {\nleft: calc(50% - 50px)\n} \n</style>"
+    D.</a></div>\n</div>\n<style>\n#badgeLinkedin .LI-badge-container.vertical {\nwidth:
+    100%;\n}\n\n#badgeLinkedin > .LI-profile-badge .LI-profile-pic {\nleft: calc(50%
+    - 50px)\n} \n</style>"
 short-desc: Mijn naam is Lennert De Ryck. Sinds 2012 studeer ik in het grafisch vakgebied
   en sinds 2015 ben ik bezig met werk voor derden. Mijn plan? ...
 widgets-bottom: false
