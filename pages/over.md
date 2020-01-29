@@ -42,20 +42,13 @@ widget-blocks:
 - template: widget-code
   button-url: https://
   new-tab: true
-  code: |-
-    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-    <div id="badgeLinkedin">
-    <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="nl_NL" data-type="vertical" data-theme="light" data-vanity="lennert-d-b43737193"><a class="LI-simple-link" href='https://be.linkedin.com/in/lennert-d-b43737193?trk=profile-badge'>Lennert D.</a></div>
-    </div>
-    <style>
-    #badgeLinkedin > .LI-profile-badge {
-    width: 100%;
-    }
-
-    #badgeLinkedin > .LI-profile-badge .LI-profile-pic {
-    left: calc(50% - 50px)
-    }
-    </style>
+  code: "<script type=\"text/javascript\" src=\"https://platform.linkedin.com/badges/js/profile.js\"
+    async defer></script>\n<div id=\"badgeLinkedin\">\n<div class=\"LI-profile-badge\"
+    \ data-version=\"v1\" data-size=\"large\" data-locale=\"nl_NL\" data-type=\"vertical\"
+    data-theme=\"light\" data-vanity=\"lennert-d-b43737193\"><a class=\"LI-simple-link\"
+    href='https://be.linkedin.com/in/lennert-d-b43737193?trk=profile-badge'>Lennert
+    D.</a></div>\n</div>\n<style>\n#badgeLinkedin > .LI-profile-badge {\nwidth: 100%;\n}\n\n#badgeLinkedin
+    > .LI-profile-badge .LI-profile-pic {\nleft: calc(50% - 50px)\n} \n</style>"
 short-desc: Mijn naam is Lennert De Ryck. Sinds 2012 studeer ik in het grafisch vakgebied
   en sinds 2015 ben ik bezig met werk voor derden. Mijn plan? ...
 widgets-bottom: false
