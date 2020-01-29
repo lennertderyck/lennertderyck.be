@@ -39,6 +39,12 @@ widget-blocks:
   code: |-
     <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:twoledery&size=detail&theme=light" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden; display: none;" allowtransparency="true"></iframe>
     <iframe src="https://open.spotify.com/embed/playlist/0AleYwja1EPED3APSWCN7f" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+- template: widget-code
+  button-url: https://
+  new-tab: true
+  code: |-
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="nl_NL" data-type="vertical" data-theme="light" data-vanity="lennert-d-b43737193"><a class="LI-simple-link" href='https://be.linkedin.com/in/lennert-d-b43737193?trk=profile-badge'>Lennert D.</a></div>
 short-desc: Mijn naam is Lennert De Ryck. Sinds 2012 studeer ik in het grafisch vakgebied
   en sinds 2015 ben ik bezig met werk voor derden. Mijn plan? ...
 widgets-bottom: false
