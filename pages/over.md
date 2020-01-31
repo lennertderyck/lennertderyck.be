@@ -19,7 +19,7 @@ widget-blocks:
     class=\"no-margin-t\">\n\t\tGent\n\t\n\t</p><p class=\"no-margin-b txt-modern\">\n\t\tOPLEIDING\n\t\n\t</p><p
     class=\"no-margin-t\">\n\t\tGrafische &amp; Digitale Media<br>\n\t\tArteveldehogeschool\n\t\n\t\n\t</p><p
     class=\"mb-0 txt-modern\">HOBBY'S</p>\n<p class=\"mb-0\">scouts, (web)design,
-    muziek</p>\n<a href=\"https://lennertderyck.be/wp-content/uploads/CV_LENNERT_DE_RYCK.pdf\"
+    muziek</p>\n<a href=\"https://res.cloudinary.com/lennertderyckbe/image/upload/v1580473733/CV_LENNERT_DE_RYCK_ktlesr.pdf\"
     target=\"_blank\" class=\"btn w-100 mt-3\" rel=\"noopener\">BEKIJK CV</a>\n<p></p></div>\n<style>\n\t#about
     {\n\t\tdisplay: flex;\n\t\tflex-direction: column;\n\t\tjustify-content: center;\n\t\tposition:
     relative;\n\t\ttext-align: left;\n\t\tbackground-color: var(--accent-2);\n\t}\n\t\n\t#about
