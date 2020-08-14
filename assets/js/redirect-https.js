@@ -2,12 +2,10 @@ console.log("redirect-https.js script running");
 
 var loc = window.location.href;
 
-loc = 'https://beta.lennertderyck.be'
-
 if (window.location.href.startsWith("http://lennertderyck.be")) {
     console.log('    ' + "This page is not safe");
     var safeLoc = loc.replace("http", "https");
-    window.location.replace(safeLoc);
+    
 }
 
 console.log('    ' + 'location is ' + window.location.href);
