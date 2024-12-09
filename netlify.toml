@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/"
+  from = "*"
   to = "https://beta.lennertderyck.be"
   status = 301
-  force = false
+  force = true
